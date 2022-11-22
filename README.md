@@ -1,7 +1,7 @@
 # Using-NFT-and-FT-Tokens-in-Oracle-Blockchain
 This HoL has been created to showcase how easily, thanks to Oracle Blockchain, we can implement without to much efford a real use case using NFT and FT tokens.
 
-NFT is the perfect digital twin for whatever kind of asset, it can be used to track any usage, event, status change, or any other kind of property which makes sense to be tracked. And storing its history in Blockchain, it will become an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the physical asset itself.
+NFT is the perfect digital twin for whatever kind of asset, it can be used to track any usage, event, status change, or any other kind of property which makes sense to be tracked, and storing its history in Blockchain, it will become an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the physical asset itself.
 
 Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
 
