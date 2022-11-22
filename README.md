@@ -14,6 +14,10 @@ AppBuilder will help you to reduce considerably the complexity of the developmen
 This repo is focused in the development of solutions where FTs and/or NFTs were needed, so we assume you know how to use Oracle Blockchain and AppBuilder. If it is not the case, you should start with a great HoL created by Ivan Delic:
 - https://github.com/ivandelic/how-to-smplify-hyperledger-development-with-oracle-blockchain-app-builder
 
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
 
 This toolset is known as AppBuilder, and has been created in two interfaces, as a command line tool, and as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer. You can see all the details in howto install both of them at:
  - command line tool:
