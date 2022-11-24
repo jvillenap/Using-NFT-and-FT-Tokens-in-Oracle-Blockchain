@@ -71,3 +71,31 @@ Once you create your chaincode project based in the specification file, you will
 
 Now our chaincode project is ready to be deployed locally or remotely and tested locally with the VS Code extension, or remotely using Postman or any other REST/JSON tool, but if you need to add any custom logic ....
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Explain the use case:
+rental of assets represented as NFT asking to pay using a digital coin represented as FT both tokens managed in the same blockchjain network!
+
+
