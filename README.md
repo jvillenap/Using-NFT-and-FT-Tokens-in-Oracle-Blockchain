@@ -84,6 +84,16 @@ Now our chaincode project is ready to be deployed locally or remotely and tested
 
 
 
+Explain the use case:
+rental of assets represented as NFT asking to pay using a digital coin represented as FT both tokens managed in the same blockchjain network!
+
+
+1. Blockchain Network creation
+2. Creation and Deployment of the NFT SmartContract
+2. Creation and Deployment of the FT SmartContract
+3. Test the services using Postman 
+
+
 
 
 
