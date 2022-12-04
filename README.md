@@ -98,6 +98,10 @@ rental of assets represented as NFT asking to pay using a digital coin represent
 
 
 
+Prerequisites:
+1. Get Access to an Oracle Cloud tenant.
+2. Install VS Code, and install AppBuilder pluigin in it.
+
 
 
 
