@@ -108,7 +108,7 @@ Prerequisites:
 Prerequisites
 - An Oracle Cloud account
 - AppBuilder installed in your computer as per below instructions:
-	- For the installation of the Visual Studio Code you can follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html]
+	- For the installation of the Visual Studio Code you can follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html "Install and Configure the Blockchain App Builder Extension for Visual Studio Code")
 	- For the installation of the Command line tool, follow the instructions from [Install and Configure Blockchain App Builder CLI](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-cli.html "Install and Configure Blockchain App Builder CLI")
 
 
