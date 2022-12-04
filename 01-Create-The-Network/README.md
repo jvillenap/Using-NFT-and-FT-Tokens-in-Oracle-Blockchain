@@ -14,8 +14,5 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 
 ## Creation of the founder instance
 1. In the OCI services menu, select 'Developer Services' and click on 'Blockchain Platform.'
-![Select Blockchain Service from the OCI console](https://github.com/jvillenap
-/
-Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/
-01-Create-The-Network
-/images/1-obp-2-1.png "Select Blockchain Service from the OCI console")
+
+![Select Blockchain Service from the OCI console](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/01-Create-The-Network/images/1-obp-2-1.png "Select Blockchain Service from the OCI console")
