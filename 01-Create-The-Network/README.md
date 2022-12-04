@@ -12,7 +12,7 @@ We are going to create two instances, the first instance will be the founder of 
 
 As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies required to provision and manage a blockchain network: compute, storage, containers, identity services, event services, and management services. Oracle Blockchain Platform also includes the blockchain network console to support integrated operations. This helps you start developing applications within minutes.
 
-##Prerequisites
+## Prerequisites
 - An Oracle Cloud account
 
 ## Creation of the founder instance
