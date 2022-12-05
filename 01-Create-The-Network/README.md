@@ -22,5 +22,16 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 2. From the combo Compratment selector in the left side of the Console, ensure the correct one is selected:
 ![Select The compartment where the instance of the founder organization will be created](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png "Select The compartment where the instance of the founder organization will be created")
 <p align="center">
-  <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png)">
+  
+<details open>
+  <summary>This is the summary</summary>
+  <p>And here are the details:</p>
+  <ol>
+    <li>Cash on hand: $500.00</li>
+    <li>Current invoice: $75.30</li>
+    <li>Due date: 5/6/19</li>
+  </ol>
+</details>
+
+<img width="283" height="257" src="[http://www.fillmurray.com/460/300](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png)">
 </p>
