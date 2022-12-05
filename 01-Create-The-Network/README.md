@@ -33,5 +33,5 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
   </ol>
 </details>
 
-<img width="283" height="257" src="[http://www.fillmurray.com/460/300](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png)"/>
+<img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png"/>
 </p>
