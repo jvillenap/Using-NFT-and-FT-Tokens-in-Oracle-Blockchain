@@ -9,5 +9,16 @@ In other hand, if you are not confortable installing in your own machine all the
 In Oracle LiveLabs you have a Lab in which you will be able to deploy such machine based on a image already prepared by Oracle Blockchain dev team: 
 to reach the lab where you can .....
 1. Search in Google for "Oracle Live Labs".
-![Search in Google for Oracle Live Labs](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png "Search in Google for Oracle Live Labs")
+<p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
+<img width="577" height="212" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png"/>
+</p>
+
 2. 
+
+
+<p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
+<img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png"/>
+</p>
+
+
+![Search in Google for Oracle Live Labs](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png "Search in Google for Oracle Live Labs")
