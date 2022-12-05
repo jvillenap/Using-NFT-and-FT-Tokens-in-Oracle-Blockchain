@@ -23,7 +23,7 @@ to reach the lab where you can .....
 <img width="328" height="273" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-3.png"/>
 </p>
 
-4. Push the ***Star*** button to start the lab
+4. Push the ***Star*** button to start the lab, and the select the only option you have to execute this lab ***Run on your tenant***.
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
 <img width="954" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-4.png"/>
 </p>
