@@ -23,6 +23,12 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
 <img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-2.png"/>
 </p>
+
+3. Press the button Create Blockchain Platform.
+![Press the button Create Blockchain Platform](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-3.png "Press the button Create Blockchain Platform")
+
+
+
   
 <details open>
   <summary>This is the summary</summary>
