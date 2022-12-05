@@ -18,6 +18,13 @@ to reach the lab where you can .....
 <img width="860" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-2.png"/>
 </p>
 
+3. Select the ***Developing Low Code Blockchain Applications using Apex and Blockchain App Builder*** lab.
+<p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
+<img width="860" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-3.png"/>
+</p>
+
+
+
 
 
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
