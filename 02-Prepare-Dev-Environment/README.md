@@ -28,13 +28,10 @@ to reach the lab where you can .....
 <img width="954" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-4.png"/>
 </p>
 
-
-
-
-
+5. Once you are inside the Lab, to get a machine whith Visual Code Studio installed on it, ready to use the AppBuilder low code tool, you only need to execute the ***Prepare Setup *** and ***Environment Setup*** steps, which should not take more than 25 minutes in total. 
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
-<img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png"/>
+<img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-5.png"/>
 </p>
 
+All this work does not have too much relation with the objective of the HoL, but is something needed to be able to get an environment ready to use the low code tooling needed to begin to develope your smartcontracts.
 
-![Search in Google for Oracle Live Labs](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png "Search in Google for Oracle Live Labs")
