@@ -89,8 +89,8 @@ rental of assets represented as NFT asking to pay using a digital coin represent
 
 
 1. Blockchain Network creation
-2. Creation and Deployment of the NFT SmartContract
-2. Creation and Deployment of the FT SmartContract
+2. Preparation of the AppBuilder Dev environment
+2. Creation and Deployment of the SmartContracts
 3. Test the services using Postman 
 
 
