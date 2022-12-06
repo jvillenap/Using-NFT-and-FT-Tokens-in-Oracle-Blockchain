@@ -1,6 +1,13 @@
 # Create an Oracle Blockchain Network
 
 ## Introduction
+## Prerequisites
+## Creation of the Founder instance
+## Creation of the Participant instance
+## Add The Participant Organizations to the Blockchain Network
+
+
+## Introduction
 
 For the creation of an Hyperledger Fabric network based in Oracle Blockchain, you can use two different kinds of Oracle Blockchain instances:
 - [Oracle Blockchain Cloud Service](https://www.google.com "Oracle Blockchain Cloud Service")
@@ -53,5 +60,12 @@ Once this participant instance gets created, you will be able to access to the O
 <img width="833" height="417" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-8.png"/>
 </p>
 
-  
+## Add The Participant Organizations to the Blockchain Network
 
+## Create a Channel
+
+## Join Participant Organizations - Peer Nodes to Channel
+
+## Set Anchor Peers
+
+## Create Participant Accounts and Enrollments
