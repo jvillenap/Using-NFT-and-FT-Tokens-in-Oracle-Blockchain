@@ -79,7 +79,7 @@ First time you access to a participant instance Blockchain service console, inst
 
 1. Click on the ***2*** to start the joining process:
 <p align="center">
-<img width="283" height="257" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-9.png"/>
+<img width="833" height="338" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-9.png"/>
 </p>
 
 
