@@ -34,9 +34,39 @@ If you prefer to go by this last option, in Oracle LiveLabs you have a Lab in wh
 
 All this work does not have too much relation with the objective of the HoL, but is something needed to be able to get an environment ready to use the low code tooling needed to begin to develope your smartcontracts.
 
-Once you have excevuted one of the three methods exposed you should be able to access Oracle AppBuilder through Visual Studio...
+Once you have executed one of the three methods exposed you should be able to access Oracle AppBuilder through Visual Studio...
 <p align="center"  alt="App Builder in VSCode">
 <img width="840" height="525" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-6.png"/>
 </p>
-... or by the command line tool...
+
+... or by issuing the command line tool...
+
+```[jvillena@localhost ~]$ ochain
+
+Usage: <command> [options]
+
+Options:
+
+  -h, --help       output command usage information
+  -v, --version    display command version number
+  -D, --debug      enable debug logging
+
+Commands:
+
+  deploy     Deploy chaincode project to Oracle Blockchain Platform
+  init       Initialize a new Chaincode project
+  invoke     Invoke a Chaincode transaction
+  package    Package and archive an Ochain chaincode project
+  patch      Apply PatchFix to ochain
+  query      Invoke a Chaincode Query
+  run        Run chaincode project locally in debug mode
+  stop       Shutdown all chaincode services
+  sync       Synchronize Changes from spec file to the required chaincode
+  upgrade    Upgrade App Builder chaincode project
+
+
+About:
+
+  Version: 22.2.1 (Oracle Blockchain Cloud Edition)
+  Copyright © 2022, Oracle and/or its affiliates. All rights reserved.```
 
