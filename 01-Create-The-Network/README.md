@@ -37,12 +37,7 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 <img width="834" height="415" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-5.png"/>
 </p>
 
-6. When the Founder instance gets created , you will be able to access to the Oracle Blockchain console for this instance by pushing the 'Service Console' button::
-<p align="center">
-<img width="833" height="417" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-6.png"/>
-</p>
-
-6. When the Founder instance gets created , you will be able to access to the Oracle Blockchain console for this instance by pushing the 'Service Console' button::
+6. When the Founder instance gets created, you will be able to access to the Oracle Blockchain console for this instance by pushing the 'Service Console' button:
 <p align="center">
 <img width="833" height="417" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-6.png"/>
 </p>
@@ -53,14 +48,10 @@ For the creation of a first participant, you must follow the same steps as per t
 <img width="721" height="846" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-7.png"/>
 </p>
 
+Once this participant instance gets created, you will be able to access to the Oracle Blockchain console for this second instance by pushing the 'Service Console' button:
+<p align="center">
+<img width="833" height="417" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-8.png"/>
+</p>
+
   
-<details open>
-  <summary>This is the summary</summary>
-  <p>And here are the details:</p>
-  <ol>
-    <li>Cash on hand: $500.00</li>
-    <li>Current invoice: $75.30</li>
-    <li>Due date: 5/6/19</li>
-  </ol>
-</details>
 
