@@ -127,6 +127,11 @@ First time you access to a participant instance Blockchain service console, inst
 <img width="840" height="500" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-18.png"/>
 </p>
 
+11. Navigating to the ***Network*** tab you should see both organizations attached to the network:
+<p align="center">
+<img width="827" height="454" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-19.png"/>
+</p>
+
 
 
 
