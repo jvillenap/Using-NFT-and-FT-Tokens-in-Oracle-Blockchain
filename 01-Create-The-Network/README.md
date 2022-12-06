@@ -132,19 +132,15 @@ First time you access to a participant instance Blockchain service console, inst
 <img width="827" height="454" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-19.png"/>
 </p>
 
-
-
-
-
-
-
-
-
+If more participants should join the network, you can repeat these set of steps for the new participant.
 
 <a name="channelCreate"/>
 
 ## Create a Channel
 
+We need to join the organizations at the channel level to allow communication between the founder and participants.
+
+From the founder ('marketplace') console, select the Channels tab. Click 'Create a New Channel.'
 <a name="joinPeersChannel"/>
 
 ## Join Participant Organizations - Peer Nodes to Channel
