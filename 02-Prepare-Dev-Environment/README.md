@@ -1,13 +1,12 @@
 # Preparation of the AppBuilder Dev environment
 
 You can install whatever of the two available versions of AppBuilder in your own computer by following the below instructions:
-	- For the installation of the Visual Studio Code you can follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html "Install and Configure the Blockchain App Builder Extension for Visual Studio Code")
-	- For the installation of the Command line tool, follow the instructions from [Install and Configure Blockchain App Builder CLI](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-cli.html "Install and Configure Blockchain App Builder CLI")
+- If you want to use AppBuilder as a Microsoft Visual Studio plugin, follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html "Install and Configure the Blockchain App Builder Extension for Visual Studio Code")
+- If you prefer to use AppBuilder as a command line tool, follow the instructions from [Install and Configure Blockchain App Builder CLI](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-cli.html "Install and Configure Blockchain App Builder CLI")
   
-In other hand, if you are not confortable installing in your laptop all the dependencies required to execute Microsoft Visual Builder Studio and the Oracle Blockchain App Builder plugin, but you have access to Oracle Cloud, you can opt to create the development box in the cloud, and access to it remotely.
+In other hand, if you are not confortable installing in your laptop this kind of dveloper tools and all its dependencies, but you have access to Oracle Cloud, you can opt to create a development box with all this products already installed in the cloud, and access to it remotely.
 
-In Oracle LiveLabs you have a Lab in which you will be able to deploy such machine based on a image already prepared by Oracle Blockchain dev team: 
-to reach the lab where you can .....
+If you prefer to go by this last option, in Oracle LiveLabs you have a Lab in which you will be able to deploya a remote machine in minutes, based on a image already preconfigured by the Oracle Blockchain development team. Follow below instructions to proceed in this way:
 1. Search in Google for ***Oracle Live Labs***.
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
 <img width="577" height="212" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-1.png"/>
@@ -34,4 +33,10 @@ to reach the lab where you can .....
 </p>
 
 All this work does not have too much relation with the objective of the HoL, but is something needed to be able to get an environment ready to use the low code tooling needed to begin to develope your smartcontracts.
+
+Once you have excevuted one of the three methods exposed you should be able to access Oracle AppBuilder through Visual Studio...
+<p align="center"  alt="App Builder in VSCode">
+<img width="840" height="525" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-6.png"/>
+</p>
+... or by the command line tool...
 
