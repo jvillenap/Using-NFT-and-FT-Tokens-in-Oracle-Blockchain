@@ -32,6 +32,11 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 <img width="727" height="848" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-4.png"/>
 </p>
 
+5. Once pushed the 'Create' button, the creation of the instance for this Organization (e-shop) has been submited, and will be ready in a few minutes:
+<p align="center">
+<img width="834" height="415" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-5.png"/>
+</p>
+
 
   
 <details open>
