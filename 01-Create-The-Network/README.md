@@ -75,6 +75,16 @@ Once this participant instance gets created, you will be able to access to the O
 <a name="partJoinNwk"/>
 
 ## Add The Participant Organizations to the Blockchain Network
+First time you access to a participant instance Blockchain service console, instead of the default Dashboard, you will see a wizard to help you to join an existing Hyperledger Fabric Network. It must be done by exporting their settings and importing them into the founder. It is quite clearly explained in the wizard:
+<p align="center">
+<img width="833" height="338" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-9.png"/>
+</p>
+
+
+
+
+
+
 
 <a name="channelCreate"/>
 
