@@ -48,7 +48,8 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 </p>
 
 ## Creation of the Participant instance
-For the creation of a first participant, you must follow the same steps as per the founder instance, but stating in the creation page that this is an instance which is going to '''Join an Existing Network'''. In the OCI services menu, select 'Developer Services' and click on 'Blockchain Platform.'
+For the creation of a first participant, you must follow the same steps as per the founder instance, but stating in the creation page that this is an instance which is going to '''Join an Existing Network'''
+
 <img width="721" height="846" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-7.png"/>
 
 
