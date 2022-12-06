@@ -122,9 +122,9 @@ First time you access to a participant instance Blockchain service console, inst
 <img width="829" height="478" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-17.png"/>
 </p>
 
-10. If everything works, you should get a message stating the Orderer attributes have been updated successfully, so you can push the step number ***4***:
+10. If everything works, you should get a message stating the Orderer attributes have been updated successfully, so you can push the step number ***4***, and you will be forwarded to the dashboard where you will see how the lessee participant is now part of the network created by the founder:
 <p align="center">
-<img width="830" height="427" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-18.png"/>
+<img width="840" height="500" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-18.png"/>
 </p>
 
 
