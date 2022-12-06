@@ -1,6 +1,6 @@
 # Create an Oracle Blockchain Network
 
-##### Table of Contents  
+#### Table of Contents  
 [Introduction](#Introduction)  
 [Prerequisites](#Prerequisites)  
 [Creation of the Founder instance](#createFounder)  
@@ -26,10 +26,12 @@ We are going to create two instances, the first instance will be the founder of 
 As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies required to provision and manage a blockchain network: compute, storage, containers, identity services, event services, and management services. Oracle Blockchain Platform also includes the blockchain network console to support integrated operations. This helps you start developing applications within minutes.
 
 <a name="Prerequisites"/>
+
 ## Prerequisites
 - Access to an Oracle Cloud tenancy
 
 <a name="createFounder"/>
+
 ## Creation of the Founder instance
 1. In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
 ![Select Blockchain Service from the OCI console](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-1.png "Select Blockchain Service from the OCI console")
@@ -58,6 +60,7 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 </p>
 
 <a name="createParticipant"/>
+
 ## Creation of the Participant instance
 For the creation of a first participant, you must follow the same steps as per the founder instance, but stating in the creation page that this is an instance which is going to ***Join an Existing Network***.
 <p align="center">
@@ -70,16 +73,21 @@ Once this participant instance gets created, you will be able to access to the O
 </p>
 
 <a name="partJoinNwk"/>
+
 ## Add The Participant Organizations to the Blockchain Network
 
 <a name="channelCreate"/>
+
 ## Create a Channel
 
 <a name="joinPeersChannel"/>
+
 ## Join Participant Organizations - Peer Nodes to Channel
 
 <a name="setAnchorPeers"/>
+
 ## Set Anchor Peers
 
 <a name="createAcconts"/>
+
 ## Create Participant Accounts and Enrollments
