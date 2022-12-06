@@ -97,6 +97,40 @@ First time you access to a participant instance Blockchain service console, inst
 <img width="830" height="388" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-12.png"/>
 </p>
 
+5. Into the ***Add Organization*** popup push the link ***Upload Organization Certificates***:
+<p align="center">
+<img width="502" height="246" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-13.png"/>
+</p>
+
+6. Select the proviously downoloaded certifices from the participant instance, and push the ***Add*** button:
+<p align="center">
+<img width="502" height="248" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-14.png"/>
+</p>
+
+7. A message stating the Organization has been succesfully added should be shown, in that case we can continue by exporting the Orderer Settings from this same screen by pushing the ***Export Orderer Settings*** button, It will download in our PC the order settings from the Founder. Once downloaded, we can push the ***Finish*** button:
+<p align="center">
+<img width="502" height="248" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-15.png"/>
+</p>
+
+8. Going back to the participant instance (lessee in my case), we can continue with the next step of the wizard, it is push the step number ***3***, and push the ***Upload Orderer Settings***:
+<p align="center">
+<img width="829" height="470" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-16.png"/>
+</p>
+
+9. In case a message stating the ordering service might be using an older version of OBP, click on the chekbox to execute the import enyhow. Aftar clicking the checkbox, push the ***Finish*** button:
+<p align="center">
+<img width="829" height="478" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-17.png"/>
+</p>
+
+10. If everything works, you should get a message stating the Orderer attributes have been updated successfully, so you can push the step number ***4***:
+<p align="center">
+<img width="830" height="427" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-18.png"/>
+</p>
+
+
+
+
+
 
 
 
