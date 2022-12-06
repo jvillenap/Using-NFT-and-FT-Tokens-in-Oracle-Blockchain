@@ -27,7 +27,7 @@ If you prefer to go by this last option, in Oracle LiveLabs you have a Lab in wh
 <img width="954" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-4.png"/>
 </p>
 
-5. Once you are inside the Lab, to get a cloud machine ready whith Visual Code Studio installed on it and with the AppBuilder low code plugin installed on it, you only need to execute the ***Prepare Setup*** and ***Environment Setup*** steps, which should not take more than 25 minutes in total. 
+5. Once you are inside the Lab, to get a cloud machine ready whith Visual Code Studio, and with the AppBuilder low code plugin installed on it, you only need to execute the ***Prepare Setup*** and ***Environment Setup*** steps, which should not take more than 25 minutes in total. 
 <p align="center"  alt="Select The compartment where the instance of the founder organization will be created">
 <img width="790" height="525" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-5.png"/>
 </p>
