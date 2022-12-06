@@ -13,7 +13,7 @@
 
 <a name="Introduction"/>
 
-##Introduction
+## Introduction
 
 For the creation of an Hyperledger Fabric network based in Oracle Blockchain, you can use two different kinds of Oracle Blockchain instances:
 - [Oracle Blockchain Cloud Service](https://www.google.com "Oracle Blockchain Cloud Service")
