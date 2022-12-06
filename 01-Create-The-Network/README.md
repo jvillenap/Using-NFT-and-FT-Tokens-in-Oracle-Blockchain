@@ -6,14 +6,14 @@ For the creation of an Hyperledger Fabric network based in Oracle Blockchain, yo
 - [Oracle Blockchain Cloud Service](https://www.google.com "Oracle Blockchain Cloud Service")
 - [Oracle Blockchain Platform Enterprise Edition](https://www.oracle.com/blockchain/blockchain-platform-enterprise-edition/ "Oracle Blockchain Platform Enterprise Edition")
 
-For simplicity in this HoL we are going to use the first, the Cloud Version. 
+For simplicity in this HoL we are going to use the first option, the Cloud Version. 
 
-We are going to create two instances, the first instance will be the founder of a new Hyperledger Fabric network, acting as the owner of the assets which will be represented as NFTs and will be available to be rented, and the second one which will be a new participant attached participant of the network, who will represent the lessee of the assets from the first participant.
+We are going to create two instances, the first instance will be the founder of a new Hyperledger Fabric network, acting as the owner of the assets which will be represented as NFTs and will be available to be rented, and the second one which will be a new participant attached participant of the network, who will represent the lessee of the assets.
 
 As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies required to provision and manage a blockchain network: compute, storage, containers, identity services, event services, and management services. Oracle Blockchain Platform also includes the blockchain network console to support integrated operations. This helps you start developing applications within minutes.
 
 ## Prerequisites
-- An Oracle Cloud account
+- Access to an Oracle Cloud tenancy
 
 ## Creation of the Founder instance
 1. In the OCI services menu, select 'Developer Services' and click on 'Blockchain Platform.'
@@ -27,6 +27,10 @@ As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies
 3. Press the button Create Blockchain Platform.
 ![Press the button Create Blockchain Platform](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-3.png "Press the button Create Blockchain Platform")
 
+4. Give your platform a Display Name (e.g. 'eshop'), optionally add a Description, and keep the remaining default selections, as they are the settings to create a Founder instance, which will be the founder of a new Hyperledger Fabric Network, and using the standard shape, which has exactly the same functionality as the Enterprise shape but at a lower cost, but perfectly valid for development work. Click 'Create'.
+<p align="center">
+<img width="727" height="848" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-4.png"/>
+</p>
 
 
   
