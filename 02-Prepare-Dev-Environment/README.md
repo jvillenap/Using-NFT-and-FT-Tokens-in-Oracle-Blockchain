@@ -41,7 +41,8 @@ Once you have executed one of the three methods exposed you should be able to ac
 
 ... or by issuing the command line tool...
 
-```[jvillena@localhost ~]$ ochain
+```
+[jvillena@localhost ~]$ ochain
 
 Usage: <command> [options]
 
@@ -68,5 +69,6 @@ Commands:
 About:
 
   Version: 22.2.1 (Oracle Blockchain Cloud Edition)
-  Copyright © 2022, Oracle and/or its affiliates. All rights reserved.```
+  Copyright © 2022, Oracle and/or its affiliates. All rights reserved.
+  ```
 
