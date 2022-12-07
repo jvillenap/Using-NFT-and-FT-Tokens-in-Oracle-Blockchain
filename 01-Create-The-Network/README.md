@@ -9,7 +9,8 @@
 [Create a Channel](#channelCreate)  
 [Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)  
 [Set Anchor Peers](#setAnchorPeers)  
-[Create Participant Accounts and Enrollments](#createAcconts)  
+[Create Participant Accounts](#createAcconts)  
+[Create Enrollments in Oracle Blockchain](#createEnrollments)  
 
 <a name="Introduction"/>
 
@@ -215,13 +216,20 @@ Repeat for all these steps for the participant organization ***lessee1***.
 </p>
 
 
-
-
-
-
-
-
 <a name="createAcconts"/>
 
-## Create Participant Accounts and Enrollments
-The user you have been using until know, is the owner of the two different instances, so with this user you can execute whatever action against those instances. Ina a real production environment
+## Create Participant Accounts
+We are going to use Oracle Identity Cloud (IDCS) to create at least one user in each organization to have the ownership of the FT and NFT tokens. To each of those users an account will be created to hold in it the tokens they own.
+
+We are going to create the user eshop_manager and the user lessee1_manager, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager, and 'lessee1' for the lessee1_manager.
+
+From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link fromthe ***Identity Link***.
+<p align="center">
+<img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-32.png"/>
+</p>
+
+
+
+<a name="createEnrollments"/>
+
+## Create Enrollments in Oracle Blockchain
