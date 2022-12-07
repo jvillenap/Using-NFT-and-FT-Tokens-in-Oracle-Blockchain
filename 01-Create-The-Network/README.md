@@ -221,7 +221,7 @@ Repeat for all these steps for the participant organization ***lessee1***.
 ## Create Participant Accounts
 We are going to use Oracle Identity Cloud (IDCS) to create at least one user in each organization to have the ownership of the FT and NFT tokens. To each of those users an account will be created to hold in it the tokens they own.
 
-We are going to create the user eshop_manager and the user lessee1_manager, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager, and 'lessee1' for the lessee1_manager.
+We are going to create the users ***eshop_manager*** and ***lessee1_manager***, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager user, and 'lessee1' for the lessee1_manager user.
 
 1. From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link fromthe ***Identity Link***.
 <p align="center">
@@ -267,6 +267,16 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 7. You should see the roles properly assgined.
 <p align="center">
 <img width="695" height="371" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-39.png"/>
+</p>
+
+8. You will be asked to send an email to the email address to the user informing the roles for which has been granted. It's up to you sending or not the email
+<p align="center">
+<img width="691" height="357" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-40.png"/>
+</p>
+
+9. During the user creation process, you should receive to the email account associated with the recently created user, an email to reset the password for this user. Use the link provided to set the password of the user just created.
+<p align="center">
+<img width="610" height="900" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-41.png"/>
 </p>
 
 
