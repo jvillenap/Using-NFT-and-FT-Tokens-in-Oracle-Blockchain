@@ -7,7 +7,7 @@
 [Creation of the Participant instance](#createParticipant)  
 [Add The Participant Organizations to the Blockchain Network](#partJoinNwk)  
 [Create a Channel](#channelCreate)
-[Join Participant Organizations - Peer Nodes to Channel](#joinPeersChannel)
+[Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)
 [Set Anchor Peers](#setAnchorPeers)
 [Create Participant Accounts and Enrollments](#createAcconts)
 
@@ -168,14 +168,58 @@ We need to join the organizations at the channel level to allow communication be
 <img width="740" height="315" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-24.png"/>
 </p>
 
-
 <a name="joinPeersChannel"/>
 
-## Join Participant Organizations - Peer Nodes to Channel
+## Join Participant Organization - Peer Nodes to Channel
+
+You're almost done setting up your blockchain network! Simply use the participant instance to join the channel created in the previous step.
+1. Go to the ***lessee1*** console and select the Channels tab. Click the hamburger icon on the right-hand side of the 'rentalshop' row and select 'Join Peers to Channel.'
+<p align="center">
+<img width="787" height="373" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-25.png"/>
+</p>
+
+2. Select both ***peer0*** and ***peer1*** to join the channel and click ***Join***.
+<p align="center">
+<img width="796" height="274" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-26.png"/>
+</p>
 
 <a name="setAnchorPeers"/>
 
 ## Set Anchor Peers
+
+Each member using a channel (whether founder or participant) must designate at least one anchor peer. Anchor peers are primary network contact points, and are used to discover and communicate with other network peers on the channel.
+
+1. Go to the founder ('rentalshop') console and select the Channels tab. Click 'rentalshop' under the channel table.
+<p align="center">
+<img width="786" height="309" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-27.png"/>
+</p>
+
+2. Click ***Peers*** in the left-hand pane.
+<p align="center">
+<img width="760" height="353" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-28.png"/>
+</p>
+
+3. Locate ***peer0*** and ensure that the ***Anchor Peer*** box is selected.
+<p align="center">
+<img width="758" height="322" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-29.png"/>
+</p>
+
+4. Click ***Set Anchor Peer*** to save changes.
+<p align="center">
+<img width="758" height="325" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-30.png"/>
+</p>
+
+Repeat for all these steps for the participant organization ***lessee1***.
+<p align="center">
+<img width="762" height="325" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-31.png"/>
+</p>
+
+
+
+
+
+
+
 
 <a name="createAcconts"/>
 
