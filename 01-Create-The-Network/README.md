@@ -6,10 +6,10 @@
 [Creation of the Founder instance](#createFounder)  
 [Creation of the Participant instance](#createParticipant)  
 [Add The Participant Organizations to the Blockchain Network](#partJoinNwk)  
-[Create a Channel](#channelCreate)
-[Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)
-[Set Anchor Peers](#setAnchorPeers)
-[Create Participant Accounts and Enrollments](#createAcconts)
+[Create a Channel](#channelCreate)  
+[Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)  
+[Set Anchor Peers](#setAnchorPeers)  
+[Create Participant Accounts and Enrollments](#createAcconts)  
 
 <a name="Introduction"/>
 
