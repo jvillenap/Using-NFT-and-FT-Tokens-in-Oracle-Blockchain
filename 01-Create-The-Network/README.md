@@ -165,7 +165,7 @@ We need to join the organizations at the channel level to allow communication be
 
 5. Note that both necessary organizations are listed.
 <p align="center">
-<img width="1480" height="630" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-24.png"/>
+<img width="740" height="315" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-24.png"/>
 </p>
 
 
