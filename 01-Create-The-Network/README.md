@@ -238,7 +238,7 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 <img width="958" height="378" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-34.png"/>
 </p>
 
-3. Set as username the value you want to use for login into the console or as the authorization username to execute the REST APIs of our smartcontract.
+3. Set as username the value you want to use for login into the console or as the authorization username to execute the REST APIs of our smartcontract. In the email field set the email of your OCI account, so you will receive the email to reset the password for this user, and push the ***Create*** button:
 <p align="center">
 <img width="920" height="574" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-35.png"/>
 </p>
