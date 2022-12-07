@@ -253,7 +253,7 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 <img width="695" height="373" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-37.png"/>
 </p>
 
-6. Depending on the user you have just created, you will give to it grants based on the following table:
+6. Depending on the user you have just created, you will give to it grants based on the following table, and after assign the correct roles, push the ***Update Instance Settings***:
 
 | username        | Instance      | Roles              |
 | --------------- |:-------------:| ------------------ |
