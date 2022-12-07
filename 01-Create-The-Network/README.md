@@ -138,9 +138,37 @@ If more participants should join the network, you can repeat these set of steps 
 
 ## Create a Channel
 
-We need to join the organizations at the channel level to allow communication between the founder and participants.
+We need to join the organizations at the channel level to allow communication between the founder and the participant.
 
-From the founder ('marketplace') console, select the Channels tab. Click 'Create a New Channel.'
+1. From the founder ('e-shop') console, select the ***Channels*** tab. Click ***Create a New Channel***.
+<p align="center">
+<img width="850" height="285" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-20.png"/>
+</p>
+
+2. Fill out the form as shown and click ***Submit***.
+- Set ***rentalshop*** as your Channel Name
+- Check the boxes next to ***lessee1***
+- Select both ***peer0*** and ***peer1*** under Peers to Join Channel
+<p align="center">
+<img width="956" height="578" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-21.png"/>
+</p>
+
+3. Confirm the creation by clicking ***Yes*** in the confirmation popup.
+<p align="center">
+<img width="956" height="572" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-22.png"/>
+</p>
+
+4. Check that the channel table displays the new channel. Click on 'rentalshop' to view channel details.
+<p align="center">
+<img width="948" height="308" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-23.png"/>
+</p>
+
+5. Note that both necessary organizations are listed.
+<p align="center">
+<img width="1480" height="630" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-24.png"/>
+</p>
+
+
 <a name="joinPeersChannel"/>
 
 ## Join Participant Organizations - Peer Nodes to Channel
