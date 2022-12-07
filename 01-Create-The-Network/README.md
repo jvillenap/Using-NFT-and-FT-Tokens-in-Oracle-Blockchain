@@ -254,6 +254,7 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 </p>
 
 6. Depending on the user you have just created, you will give to it grants based on the following table:
+
 | username        | Instance      | Roles       |
 | --------------- |:-------------:| -----------:|
 | eshop_manager   | eshop-....    | ADMIN, REST |
