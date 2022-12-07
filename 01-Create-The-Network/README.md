@@ -243,6 +243,30 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 <img width="920" height="574" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-35.png"/>
 </p>
 
+4. In the next step you are asked to assign roles to recently created user, to do that push the ***Assign Roles*** Button.
+<p align="center">
+<img width="1148" height="324" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-36.png"/>
+</p>
+
+5. In the three dots of the ***AUTOBLKCHAIN*** Service, select the option to ***Manage Instance Access***:
+<p align="center">
+<img width="695" height="373" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-37.png"/>
+</p>
+
+6. Depending on the user you have just created, you will give to it grants based on the following table:
+| username        | Instance      | Roles       |
+| --------------- |:-------------:| -----------:|
+| eshop_manager   | eshop-....    | ADMIN, REST |
+| lessee1_manager | lessee1-....  | ADMIN, REST |
+
+
+
+
+<p align="center">
+<img width="695" height="373" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-37.png"/>
+</p>
+
+
 
 
 <a name="createEnrollments"/>
