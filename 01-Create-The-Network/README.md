@@ -223,9 +223,24 @@ We are going to use Oracle Identity Cloud (IDCS) to create at least one user in 
 
 We are going to create the user eshop_manager and the user lessee1_manager, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager, and 'lessee1' for the lessee1_manager.
 
-From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link fromthe ***Identity Link***.
+1. From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link fromthe ***Identity Link***.
 <p align="center">
 <img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-32.png"/>
+</p>
+
+2. Click in the link ***OracleIdentityCloudService***.
+<p align="center">
+<img width="770" height="345" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-33.png"/>
+</p>
+
+3. Push the button ***Create User***.
+<p align="center">
+<img width="958" height="378" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-34.png"/>
+</p>
+
+3. Set as username the value you want to use for login into the console or as the authorization username to execute the REST APIs of our smartcontract.
+<p align="center">
+<img width="1150" height="718" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-35.png"/>
 </p>
 
 
