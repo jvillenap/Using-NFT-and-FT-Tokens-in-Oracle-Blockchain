@@ -264,6 +264,10 @@ We are going to create the user eshop_manager and the user lessee1_manager, and 
 <img width="691" height="373" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-38.png"/>
 </p>
 
+7. You should see the roles properly assgined.
+<p align="center">
+<img width="695" height="371" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-39.png"/>
+</p>
 
 
 
