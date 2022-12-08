@@ -2,13 +2,13 @@
 
 The creation of an Hyperledger Fabric (HLF) Smartcontract is somehow a quite complex task, you need to know all the intrinsics about HLF, you need to know how to code in Java, Typescript, or GoLang, and you also need to know how to deploy and manage the whole lifecycle of the Smartcontract project.
 
-AppBuilder has been created to simplify the creation of an smartcontract project, in fact AppBuilder is a low-code tool which is able to create the whole project from scratch. A part of that, AppBuilder will also help you in the testing phase, packaging of the project, and also, if you want, in the deployment of the chaincode locally in your own laptop for unitary testing, or remotely into a real Oracle Blockchain Network.
-
-AppBuilder has been created in two flavors, you can use it as a command line tool, or you can use it as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer.
+AppBuilder has been created to simplify the creation of an smartcontract project, in fact AppBuilder is a low-code tool which is able to create the whole Chaincode project from scratch. A part of that, AppBuilder will also help you in the testing phase, packaging of the project, and also, if you want, in the deployment of the chaincode locally in your own laptop for unitary testing, or remotely into a real Oracle Blockchain Network.
 
 <p align="center"  alt="App Builder in VSCode">
 <img width="810" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-0.png"/>
 </p>
+
+AppBuilder has been created in two flavors, you can use it as a command line tool, or you can use it as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer.
 
 To help to understand the benefit of AppBuilder, we can highlight the following features:
 - In development phase: AppBuilder will create the whole chaincode project just creating what is known as an specification file. The project will include all the coded entities, all their accessors together with all the CRUD methods to manage those entities, and also the signature of any custom method required for any non-standard or complex busines logic required by your application, which will become the only code needed to be manually implemented.
