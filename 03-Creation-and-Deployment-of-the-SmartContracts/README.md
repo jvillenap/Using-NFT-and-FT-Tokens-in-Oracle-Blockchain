@@ -139,17 +139,17 @@ You can see how to configure any kind of entity (NFT, FT, or standard entities) 
 You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
 
 Once the Specification file has been created we can mandate AppBuilder to create the scaffold of the project by following the next steps:
-1. If the Specification File has been created outside of App Builder, first of all we will need to import the Specification file into AppBuilder: 
 
+1. If the Specification File has been created outside of App Builder, first of all we will need to import the Specification file into AppBuilder. Push the three dots (***...*** on the upper-right corner of the ***SPECIFICATIONS*** frame of AppBuilder, and from the popup click in the ***Import Specification***: 
+<p align="center">
+<img width="635" height="448" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/3-nft-2-1.png"/>
+</p>
 
+2. Select the specification file just created, and push the button ***Import Specification***.
+<p align="center">
+<img width="565" height="200" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/3-nft-2-2.png"/>
+</p>
 
-
-
-
-
-
-
-PROCEDURE TO load your SPECFILE INTO APPBUILDER AND CREATION OF THE CHAINCODE PROJECT.
 
 
 
