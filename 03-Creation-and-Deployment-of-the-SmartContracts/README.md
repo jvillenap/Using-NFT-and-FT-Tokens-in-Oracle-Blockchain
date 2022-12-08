@@ -105,11 +105,18 @@ customMethods:
     - "getTokenHistoryByBookingId(tokenId: string, bookingId: number)" #get the token History for a specific device and rental contract
 
 ```
-In this sample specification file you can see all the sections defined for a representation of an NFT token. You can see the meaning of all this attributes in the [Input Specification File for Non-Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-non-fungible-tokens.html).
+In this sample specification file you can see all the sections and attributes defined for a representation of an NFT token. Just as a first overview of the sections defined in the file: 
+- ***Assets***: Place where de different assets (standard entities, FTs, NFTs) are defined. Inside each of the assets we can distingish different sections which can vary depending on the kind of asset represented.
+- ***customMethods***: Place where a list of non estandard methods are defined. For those methods AppBuilder will only generate the signature of the method, without any implementation on them. The implementation of these methods are the only code the developer must implement.
+
+You can see the meaning of all these attributes, depending in the kind of token or entity you want to manage in blockchain:
+- For standard entities you can see in [Input Specification File](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-configuration-file.html) how to define them.
+- If you want to create an entity represented as a Non-Fungible Token you can see in [Input Specification File for Non-Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-non-fungible-tokens.html) how to define it. 
+- If what you want to create is an entity represented as a Fungible Token you can see [Input Specification File for Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-fungible-tokens.html) how to define it.
 
 
 
-You can combine different entities in the same smartcontract, but nowadays not NFT and FT tokens in the same smartcontract. It is going to be a feature will is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
+You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
 
 
 The sort of entities used for this use case can be seen in the below image. There is only one NFT entity, which is the envelopeNFT entity. Other entities are dependent entities which can be easily understand.
