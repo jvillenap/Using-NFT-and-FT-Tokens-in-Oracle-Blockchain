@@ -223,7 +223,7 @@ We are going to use Oracle Identity Cloud (IDCS) to create at least one user in 
 
 We are going to create the users ***eshop_manager*** and ***lessee1_manager***, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager user, and 'lessee1' for the lessee1_manager user.
 
-1. From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link fromthe ***Identity Link***.
+1. From the OCI dashboard, select the user icon in the top left-hand corner and click on ***Identity & Security*** and the ***Federation*** link from the ***Identity*** section.
 <p align="center">
 <img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-32.png"/>
 </p>
