@@ -1,4 +1,4 @@
-# Preparation of the AppBuilder Dev environment
+# Preparation of Oracle App Builder development environment
 
 You can install whatever of the two available versions of AppBuilder in your own computer by following the below instructions:
 - If you want to use AppBuilder as a Microsoft Visual Studio plugin, follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html "Install and Configure the Blockchain App Builder Extension for Visual Studio Code")
