@@ -1,5 +1,24 @@
 # Preparation of Oracle App Builder development environment
 
+The creation of an Hyperledger Fabric (HLF) Smartcontract is somehow a quite complex task, you need to know all the intrinsics about HLF, you need to know how to code in Java, Typescript, or GoLang, and you also need to know how to deploy and manage the whole lifecycle of the Smartcontract project.
+
+AppBuilder has been created to simplify the creation of an smartcontract project, in fact AppBuilder is a low-code tool which is able to create the whole project from scratch. A part of that, AppBuilder will also help you in the testing phase, packaging of the project, and also, if you want, in the deployment of the chaincode locally in your own laptop for unitary testing, or remotely into a real Oracle Blockchain Network.
+
+AppBuilder has been created in two flavors, you can use it as a command line tool, or you can use it as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer.
+
+To help to understand the benefit of AppBuilder, we can highlight the following features:
+<<<image: /data/publicaciones/NFT_tokens/images/0_appbuilderworkflow.png>>>
+<p align="center"  alt="App Builder in VSCode">
+<img width="810" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-0.png"/>
+</p>
+- In development phase: AppBuilder will create the whole chaincode project just creating what is known as an specification file. The project will include all the coded entities, all their accessors together with all the CRUD methods to manage those entities, and also the signature of any custom method required for any non-standard or complex busines logic required by your application, which will become the only code needed to be manually implemented.
+- Deployment of the chaincode: Once the chaincode project is ready to be tested you can deploy it locally into the included pre-configured Hyperledger Fabric Network, or remotely to any existing Oracle Blockchain Platform instance, no matter if it is in cloud or onPremises. Another option is to package the project to be deployed manually through the Oracle Blockchain console.  
+- In testing phase: Once the project has been deploye you can test any of the auto-generated methods or the custom methods of the chaincode project.
+- Debug the chaincode: In case you were using the Visual Studio Code extension, you will be able to perform line-by-line debugging of the chaincode.
+  
+
+
+
 You can install whatever of the two available versions of AppBuilder in your own computer by following the below instructions:
 - If you want to use AppBuilder as a Microsoft Visual Studio plugin, follow the instructions from [Install and Configure the Blockchain App Builder Extension for Visual Studio Code](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html "Install and Configure the Blockchain App Builder Extension for Visual Studio Code")
 - If you prefer to use AppBuilder as a command line tool, follow the instructions from [Install and Configure Blockchain App Builder CLI](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-cli.html "Install and Configure Blockchain App Builder CLI")
