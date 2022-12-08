@@ -1,5 +1,5 @@
 # Using-NFT-and-FT-Tokens-in-Oracle-Blockchain
-This HoL has been created to showcase how easily, thanks to Oracle Blockchain, we can implement without to much efford a real use case using NFT and FT tokens.
+This HoL has been created to demonstrate how easily we can develop a solution without to much efford where FTs and/or NFTs were needed, thanks to Oracle Blockchain and the Oracle AppBuilder tool.
 
 Non-Fungible Tokens (NFT) are unique digital identifiers that cannot be copied, substituted, or subdivided, recorded in a blockchain, and that is used to certify authenticity and custodianship. NFT is the perfect digital twin for whatever kind of physical or digital asset which can be used to track any usage, event, status change, or any other kind of peculiarity which makes sense to be tracked. Blockchain will provide an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the tracking performed on the asset itself.
 
@@ -9,7 +9,7 @@ Using Oracle Blockchain you will be able to create in minutes an Hyperledger Fab
 
 AppBuilder will help you to reduce considerably the complexity of the development, packaging, testing, and deployment of Hyperledger Fabric chaincodes, giving you the option to create them in different languages (TypeScript or Go).
 
-This HoL has been created to demonstrate how easily you can develop a solutions where FTs and/or NFTs were needed thanks to App Builder.
+
 ******************************************************************
 
 This toolset is known as AppBuilder, and has been created in two interfaces, as a command line tool, and as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer. You can see all the details in howto install both of them at:
