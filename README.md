@@ -1,30 +1,16 @@
 # Using-NFT-and-FT-Tokens-in-Oracle-Blockchain
 This HoL has been created to showcase how easily, thanks to Oracle Blockchain, we can implement without to much efford a real use case using NFT and FT tokens.
 
-Non-Fungible Token (NFT): An NFT is a unique digital identifier that cannot be copied, substituted, or subdivided, that is recorded in a blockchain, and that is used to certify authenticity and custodianship. 
+Non-Fungible Tokens (NFT) are unique digital identifiers that cannot be copied, substituted, or subdivided, recorded in a blockchain, and that is used to certify authenticity and custodianship. NFT is the perfect digital twin for whatever kind of physical or digital asset which can be used to track any usage, event, status change, or any other kind of peculiarity which makes sense to be tracked. Blockchain will provide an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the tracking performed on the asset itself.
 
-NFT is the perfect digital twin for whatever kind of asset, it can be used to track any usage, event, status change, or any other kind of property which makes sense to be tracked, and storing its history in Blockchain, it will become an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the physical asset itself.
+Fungible Tokens (FT) are digital currencies designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it. Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
 
-
-Fungible Token (FT): FT is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it
-
-Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
-
-
-
-Oracle Blockchain and specially AppBuilder is where the magic occurs. 
-
-Using Oracle Blockchain you will be able to create in minutes your Hyperledger Fabric network as a founder, or join whatever existing Hyperledger Fabric network as a participant. In the other hand, AppBuilder is a toolset developed by Oracle which will help you to create your Smartcontracts abstracting you from all the intrinsic technical complexities, even more when you need to create NFT or FT tokens. So, leveraging Oracle Blockchain and AppBuilder you will reduce considerably the time to market for any idea in which NFTs and FTs would be the perfect fit.
+Using Oracle Blockchain you will be able to create in minutes an Hyperledger Fabric network as a founder, or join whatever existing Hyperledger Fabric network as a participant. In the other hand, App Builder is a toolset developed by Oracle which will help you to create your Smartcontracts abstracting you from all the intrinsic technical complexities, even more when you need to create NFT or FT tokens. So, leveraging Oracle Blockchain and AppBuilder you will reduce considerably the time to market for any idea in which NFTs and FTs would be the perfect fit.
 
 AppBuilder will help you to reduce considerably the complexity of the development, packaging, testing, and deployment of Hyperledger Fabric chaincodes, giving you the option to create them in different languages (TypeScript or Go).
 
-This repo is focused in the development of solutions where FTs and/or NFTs were needed, so we assume you know how to use Oracle Blockchain and AppBuilder. If it is not the case, you should start with a great HoL created by Ivan Delic:
-- https://github.com/ivandelic/how-to-smplify-hyperledger-development-with-oracle-blockchain-app-builder
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
+This HoL has been created to demonstrate how easily you can develop a solutions where FTs and/or NFTs were needed thanks to App Builder.
+******************************************************************
 
 This toolset is known as AppBuilder, and has been created in two interfaces, as a command line tool, and as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer. You can see all the details in howto install both of them at:
  - command line tool:
