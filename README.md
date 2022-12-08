@@ -90,8 +90,8 @@ rental of assets represented as NFT asking to pay using a digital coin represent
 
 [1. Create an Oracle Blockchain Network](../../blob/main/01-Create-The-Network/README.md)
 [2. Preparation of Oracle App Builder development environment](../../blob/main/02-Prepare-Dev-Environment/README.md)
-3. Creation and Deployment of the SmartContracts
-3. Test the services using Postman 
+[3. Creation and Deployment of the SmartContracts](../../blob/main/03-Creation-and-Deployment-of-the-SmartContracts/README.md)
+[4. Test the services using Postman](../../blob/main/04-Test-Smartcontract-Using-Postman/README.md)
 
 
 
