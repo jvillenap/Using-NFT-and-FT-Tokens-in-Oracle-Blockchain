@@ -10,7 +10,7 @@
 [Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)  
 [Set Anchor Peers](#setAnchorPeers)  
 [Create Participant Accounts](#createAcconts)  
-[Create Enrollments in Oracle Blockchain](#createEnrollments)  
+[Create Enrollments - Perform on All REST Proxy nodes](#createEnrollments)  
 
 <a name="Introduction"/>
 
@@ -190,7 +190,7 @@ You're almost done setting up your blockchain network! Simply use the participan
 
 Each member using a channel (whether founder or participant) must designate at least one anchor peer. Anchor peers are primary network contact points, and are used to discover and communicate with other network peers on the channel.
 
-1. Go to the founder ('rentalshop') console and select the Channels tab. Click 'rentalshop' under the channel table.
+1. Go to the founder ***eshop*** console and select the Channels tab. Click ***rentalshop*** under the channel table.
 <p align="center">
 <img width="786" height="309" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-27.png"/>
 </p>
@@ -221,9 +221,9 @@ Repeat for all these steps for the participant organization ***lessee1***.
 ## Create Participant Accounts
 We are going to use Oracle Identity Cloud (IDCS) to create at least one user in each organization to have the ownership of the FT and NFT tokens. To each of those users an account will be created to hold in it the tokens they own.
 
-We are going to create the users ***eshop_manager*** and ***lessee1_manager***, and then assign them roles to control usage of their own OBP instances: 'rentalshop' for the eshop_manager user, and 'lessee1' for the lessee1_manager user.
+We are going to create the users ***eshop_manager*** and ***lessee1_manager***, and then assign them roles to control usage of their own OBP instances: 'eshop' for the eshop_manager user, and 'lessee1' for the lessee1_manager user.
 
-1. From the OCI console, select the burguer menu icon in the top left-hand corner and click on ***Identity & Security*** menu option, and into this option, select the ***Federation*** option from the ***Identity*** section.
+1. From the OCI console, select the burger menu icon in the top left-hand corner and click on ***Identity & Security*** menu option, and into this option, select the ***Federation*** option from the ***Identity*** section.
 <p align="center">
 <img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-32.png"/>
 </p>
@@ -280,7 +280,19 @@ We are going to create the users ***eshop_manager*** and ***lessee1_manager***, 
 </p>
 
 
-
 <a name="createEnrollments"/>
 
-## Create Enrollments in Oracle Blockchain
+## Create Enrollments - Perform on All REST Proxy nodes
+Oracle Blockchain Platform supports enrollments to the REST proxy. These enrollments are used in chaincodes where FT or NFT tokens exist, to ensure the identities of the user completing a transaction. To do this, when you add enrollments for token use cases, specify a user ID for each enrollment (founder ID in this case), and specify one and only one user for each enrollment.
+
+1. While logged into the eshop founder instance, navigate to ***Nodes*** tab in the Blockchain console.
+
+2. Click on the hamburger menu besides restproxy and select 'View or manage enrollments.'
+<p align="center">
+<img width="658" height="216" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-42.png"/>
+</p>
+
+3. Select ***Create New Enrollment***.
+
+
+
