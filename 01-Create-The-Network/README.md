@@ -285,6 +285,8 @@ We are going to create the users ***eshop_manager*** and ***lessee1_manager***, 
 ## Create Enrollments - Perform on All REST Proxy nodes
 Oracle Blockchain Platform supports enrollments to the REST proxy. These enrollments are used in chaincodes where FT or NFT tokens exist, to ensure the identities of the user completing a transaction. To do this, when you add enrollments for token use cases, specify a user ID for each enrollment (founder ID in this case), and specify one and only one user for each enrollment.
 
+Each enrollment must be created in the instance(s) where the user with such role are allowed to execute transactions trhough the REST Proxy on that instance, so enrollment eshop_manager assigned to the user eshop_manager needs to be created in the REST Proxy node of the eshop (founder) instance, and the enrollment lessee1_manager assigned to the user lessee1_manager needs to be created in the REST Proxy node of the lessee1 (participant) instance.
+
 1. While logged into the eshop founder instance, navigate to ***Nodes*** tab in the Blockchain console.
 
 2. Click on the hamburger menu besides restproxy and select 'View or manage enrollments.'
@@ -293,6 +295,14 @@ Oracle Blockchain Platform supports enrollments to the REST proxy. These enrollm
 </p>
 
 3. Select ***Create New Enrollment***.
+<p align="center">
+<img width="501" height="243" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-43.png"/>
+</p>
+
+4. Set Enrollment ID as ***eshop_manager***, User ID as ***eshop_manager***, and push the ***Enroll*** button.
+<p align="center">
+<img width="502" height="335" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-44.png"/>
+</p>
 
 
 
