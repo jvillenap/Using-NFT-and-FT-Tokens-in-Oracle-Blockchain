@@ -1,8 +1,6 @@
 # Creation and Deployment of the SmartContracts
 
-Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT Following file
-
-is the one created for the "CMS secured by Blockchain" demo:
+Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
 
 ```
 #
@@ -107,7 +105,7 @@ customMethods:
     - "getTokenHistoryByBookingId(tokenId: string, bookingId: number)" #get the token History for a specific device and rental contract
 
 ```
-
+In this sample specification file you can see all the sections defined for a representation of an NFT token. You can see the meaning of all this attributes in the [Input Specification File for Non-Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-non-fungible-tokens.html).
 
 
 
