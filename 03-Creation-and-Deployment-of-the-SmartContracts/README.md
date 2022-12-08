@@ -12,6 +12,7 @@ In this chapter we are going to create the smartcontract packages, and we are go
 
 <a name=#CreationNFTchaincode/>
 
+## Creation of the Smartcontract to handle the NFT
 First of all we are going to create the smartcontract used to handle the NFT token which will be the digital representation in Blockchain of the asset to be rented by the ***eshop organization*** to the ***lessee1 organization***.
 
 NFT tokens most of the times are created as digital twins of physical or digital assets, so NFT must reflect what is occurring to the physical or digital asset and be tracked accordingly to its reality. In this sense the NFT gives an extra value to the physical/digital asset, as the information provided by the NFT representing the asset is information which can not be refused as per the contribution of the blockchain technology to it.
@@ -137,7 +138,8 @@ You can see how to configure any kind of entity (NFT, FT, or standard entities) 
 
 You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
 
-
+Once the Specification file has been created we can mandate AppBuilder to create the scaffold of the project by following the next steps:
+1. If the Specification File has been created outside of App Builder, first of all we will need to import the Specification file into AppBuilder: 
 
 
 
