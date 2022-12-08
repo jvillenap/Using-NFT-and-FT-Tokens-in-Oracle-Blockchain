@@ -88,9 +88,9 @@ Explain the use case:
 rental of assets represented as NFT asking to pay using a digital coin represented as FT both tokens managed in the same blockchjain network!
 
 
-1. Blockchain Network creation
-2. Preparation of the AppBuilder Dev environment
-2. Creation and Deployment of the SmartContracts
+[1. Blockchain Network creation]
+[2. Preparation of Oracle App Builder development environment]
+3. Creation and Deployment of the SmartContracts
 3. Test the services using Postman 
 
 
