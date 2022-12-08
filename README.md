@@ -11,20 +11,6 @@ AppBuilder will help you to reduce considerably the complexity of the developmen
 
 
 ******************************************************************
-
-This toolset is known as AppBuilder, and has been created in two interfaces, as a command line tool, and as a Microsoft Visual Code Pluging. Both versions will allow to execute exactly the same functionality, just select the one you prefer depending on what is you preference as a developer. You can see all the details in howto install both of them at:
- - command line tool:
-	https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-cli.html
- - Visual Studio Code extension:
-	https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/install-and-configure-dev-tools-vs-code-extension.html
-
-To help to understand the benefit of AppBuilder, we can highlight the following features:
-<<<image: /data/publicaciones/NFT_tokens/images/0_appbuilderworkflow.png>>>
-- In development phase: AppBuilder will create the whole chaincode project just creating what is known as an specification file. The project will include all the coded entities, all their accessors together with all the CRUD methods to manage those entities, and also the signature of any custom method required for any non-standard or complex busines logic required by your application, which will become the only code needed to be manually implemented.
-- Deployment of the chaincode: Once the chaincode project is ready to be tested you can deploy it locally into the included pre-configured Hyperledger Fabric Network, or remotely to any existing Oracle Blockchain Platform instance, no matter if it is in cloud or onPremises. Another option is to package the project to be deployed manually through the Oracle Blockchain console.  
-- In testing phase: Once the project has been deploye you can test any of the auto-generated methods or the custom methods of the chaincode project.
-- Debug the chaincode: In case you were using the Visual Studio Code extension, you will be able to perform line-by-line debugging of the chaincode.
-  
 Once any of the AppBuilder extensions gets installed you only need to create the specification file. Following file is the one created for the "CMS secured by Blockchain" demo:
 <<<file: /data/publicaciones/NFT_tokens/specificationFile/SpecBC_securedCMS.yml>>>
 
