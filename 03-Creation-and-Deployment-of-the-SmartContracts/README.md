@@ -1,7 +1,16 @@
 # Creation and Deployment of the SmartContracts
 
-Once any of the AppBuilder extensions gets installed you only need to create the specification file. Following file is the one created for the "CMS secured by Blockchain" demo:
-<<<file: /data/publicaciones/NFT_tokens/specificationFile/SpecBC_securedCMS.yml>>>
+Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT Following file
+
+is the one created for the "CMS secured by Blockchain" demo:
+
+'''
+ssdsd
+
+'''
+
+You can combine different entities in the same smartcontract, but nowadays not NFT and FT tokens in the same smartcontract. It is going to be a feature will is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
+
 
 The sort of entities used for this use case can be seen in the below image. There is only one NFT entity, which is the envelopeNFT entity. Other entities are dependent entities which can be easily understand.
 
