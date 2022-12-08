@@ -306,5 +306,5 @@ Each enrollment must be created in the instance(s) where the user with such role
 
 All this four steps must be repited to create the enrollment ***lessee1_manager*** for the user ***lessee1_manager*** but in the REST Proxy of the participant Blockchain instance (lessee1), so accessing to the Blockchain console of such instance. 
 <p align="center">
-<img width="821" height="433" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-45.png"/>
+<img width="1150" height="620" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-45.png"/>
 </p>
