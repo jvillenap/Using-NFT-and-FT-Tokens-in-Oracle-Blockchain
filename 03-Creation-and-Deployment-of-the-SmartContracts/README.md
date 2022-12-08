@@ -80,8 +80,6 @@ assets:
 
           - name: latitude # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
             type: string
-
-
       
       metadata: # To maintain the metadata on-chain, this tag will be used. 
           
