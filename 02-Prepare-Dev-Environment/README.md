@@ -50,7 +50,7 @@ If you prefer to go for this last option, in Oracle LiveLabs you have a Lab in w
 
 All this work does not have too much relation with the objective of the HoL, but is something needed to be able to get an environment ready to use the low code tooling needed to begin to develope your smartcontracts.
 
-Once you have executed one of the three methods exposed you should be able to access Oracle AppBuilder through Visual Studio...
+Once you have executed one of the three methods exposed before, you should be able to access Oracle AppBuilder through Visual Studio...
 <p align="center"  alt="App Builder in VSCode">
 <img width="840" height="525" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/02-Prepare-Dev-Environment/images/2-dev-2-6.png"/>
 </p>
