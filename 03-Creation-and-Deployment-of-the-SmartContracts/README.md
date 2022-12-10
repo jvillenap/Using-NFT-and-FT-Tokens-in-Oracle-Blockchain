@@ -19,7 +19,7 @@ NFT tokens most of the times are created as digital twins of physical or digital
 
 Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
 
-```
+```yaml
 #
 # Token asset to manage the complete lifecycle of a non-fungible token representing rentable devices. 
 # This specification file will generate non-fungible token for rentable devices.
@@ -168,10 +168,10 @@ Once the Specification file has been created we can mandate AppBuilder to create
 </p>
 
 4. In the ***Create Chaincode*** wizard you must specify the following details, and after specifying the details push the ***Create*** button:
- - Name: name for the project.
- - Language: In which language you want AppBuilder creates the scaffold of the project. Nowadays you can only select between Typescript and GoLang. As we are providing in Typescript the implementation of the custom methods, we recomend here to select the same language (Typescript).
- - Specification: You must select the specification file we just created in the previous steps.
- - Location/Domain: Depending on the selected language you will be prompted to define the location where the project will be placed for the Typescript language, or the domain for the GoLang language.  
+ - **Name**: name for the project.
+ - **Language**: In which language you want AppBuilder creates the scaffold of the project. Nowadays you can only select between Typescript and GoLang. As we are providing in Typescript the implementation of the custom methods, we recomend here to select the same language (Typescript).
+ - **Specification**: You must select the specification file we just created in the previous steps.
+ - **Location/Domain**: Depending on the selected language you will be prompted to define the location where the project will be placed for the Typescript language, or the domain for the GoLang language.  
 
 <p align="center">
 <img width="601" height="408" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-4.png"/>
