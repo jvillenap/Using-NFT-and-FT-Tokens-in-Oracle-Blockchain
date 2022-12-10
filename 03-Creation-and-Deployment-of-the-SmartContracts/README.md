@@ -141,7 +141,7 @@ You can see how to configure any kind of entity (NFT, FT, or standard entities) 
 
 You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. One example is a diposit charge done to the lessee in the moment in which the booking of the asset is requested. In the custom method where the booking is done, a charge of eCrypto tokens is done to the lessee by executing the following call from the NFT Smartcontract against the FT Smartcontract:
 
-```
+```javascript
 // Charge a Deposit to the lessee
 //                               ChaincodeName   ChaincodeMethod    args                                                                          Channel
 await oChainUtil.invokeChaincode("eShopCriptoFT", "transferECoins", [ftTokenId, fromOrgId, fromUserId, toOrgId, toUserId, String(depositAmount)], "rentalshop");
