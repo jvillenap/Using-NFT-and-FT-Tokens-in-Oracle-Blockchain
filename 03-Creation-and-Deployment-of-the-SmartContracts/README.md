@@ -139,7 +139,16 @@ You can see how to configure any kind of entity (NFT, FT, or standard entities) 
 - If you want to create an entity represented as a Non-Fungible Token you can see in [Input Specification File for Non-Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-non-fungible-tokens.html) how to define it. 
 - If what you want to create is an entity represented as a Fungible Token you can see [Input Specification File for Fungible Tokens](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/input-specification-file-fungible-tokens.html) how to define it.
 
-You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. ***We will see this feature in one of the custom methods of one of our smartcontracts!!!***
+You can combine different entities in the same smartcontract, but nowadays NFT and FT tokens cannot coexist in the same smartcontract. This is a feature which is in the roadmap, but still not there. So, if we have a use case like the sample we are developing in this HoL, we will need to create two differente smartcontracts, one for the NFT token, and another one for the FT token. It does not mean we are not going to be able to execute transactions affecting tokens from both smartcontracts, thanks to the possibility to execute methods from one smartcontract through the other, we can execute for example in a single transaction a transfer of FT tokens based on a property change on one NFT token. One example is a diposit charge done to the lessee in the moment in which the booking of the asset is requested. In the custom method where the booking is done, a charge of eCrypto tokens is done to the lessee by executing the following call from the NFT Smartcontract against the FT Smartcontract:
+
+```
+// Charge a Deposit to the lessee
+//                               ChaincodeName   ChaincodeMethod    args                                                                          Channel
+await oChainUtil.invokeChaincode("eShopCriptoFT", "transferECoins", [ftTokenId, fromOrgId, fromUserId, toOrgId, toUserId, String(depositAmount)], "rentalshop");
+
+```
+
+
 
 Once the Specification file has been created we can mandate AppBuilder to create the scaffold of the project by following the next steps:
 
