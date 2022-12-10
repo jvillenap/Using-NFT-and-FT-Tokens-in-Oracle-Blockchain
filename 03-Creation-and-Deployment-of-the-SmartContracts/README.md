@@ -143,12 +143,15 @@ You can combine different entities in the same smartcontract, but nowadays NFT a
 
 ```javascript
 // Charge a Deposit to the lessee
-//                               ChaincodeName   ChaincodeMethod    args                                                                          Channel
+//                               ChaincodeName    ChaincodeMethod   args                                                                          Channel
 await oChainUtil.invokeChaincode("eShopCriptoFT", "transferECoins", [ftTokenId, fromOrgId, fromUserId, toOrgId, toUserId, String(depositAmount)], "rentalshop");
 
 ```
 
-
+To be able to use this method, first of all you must import a supporting lib already included in the scaffold of the project:
+```javascript
+import { OChainUtils } from '../../lib/utils';
+```
 
 Once the Specification file has been created we can mandate AppBuilder to create the scaffold of the project by following the next steps:
 
