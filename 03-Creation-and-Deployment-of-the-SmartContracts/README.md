@@ -123,7 +123,7 @@ customMethods:
 
 ```
 
-You can download this specification file from [WEDOeShopDeviceNFT.yml](./src/WEDOeShopDeviceNFT.yml).
+You can download this specification file from [WEDOeShopDeviceNFT.yml](./src/WEDOeShopDeviceNFT.yml).  
 In this sample specification file you can see all the sections and attributes for a representation of an NFT token. Just as a first overview of the sections defined in the file: 
 - ***Assets***: Place where the different assets (standard entities, FTs, NFTs) are defined. Inside each of the assets we can distingish different sections which can vary depending on the kind of represented asset. For NFTs and FTs these are the different subsections:
   - ***Type/Symbol/Standard***: You must indicate in these properties that this token is based in the ERC-721 Standard, and give to it a unic symbol indentifier.
