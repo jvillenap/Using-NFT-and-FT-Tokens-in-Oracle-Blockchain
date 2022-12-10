@@ -19,7 +19,7 @@ NFT tokens most of the times are created as digital twins of physical or digital
 
 Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
 
-```yaml
+```
 #
 # Token asset to manage the complete lifecycle of a non-fungible token representing rentable devices. 
 # This specification file will generate non-fungible token for rentable devices.
