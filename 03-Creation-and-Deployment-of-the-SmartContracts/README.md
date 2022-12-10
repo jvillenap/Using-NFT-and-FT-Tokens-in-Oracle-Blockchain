@@ -148,7 +148,7 @@ await oChainUtil.invokeChaincode("eShopCriptoFT", "transferECoins", [ftTokenId, 
 
 ```
 
-To be able to use this method, first of all you must import a supporting lib already included in the scaffold of the project:
+To be able to use this method, first of all you must import a supporting library already included in the scaffold of the project:
 ```javascript
 import { OChainUtils } from '../../lib/utils';
 ```
