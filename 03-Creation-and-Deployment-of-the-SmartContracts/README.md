@@ -260,7 +260,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 <img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-12.png"/>
 </p>
 
-6. If the installation succeed we will see the below success message. Then, next step is deployment in the selected channel, so you must set all the values related with the deployment phase and push the ***Next*** button:
+6. If the installation succeed we will see the below success message. Then, next step is the deployment of the chaincode in the selected channel, so you must set all the values related with the deployment phase and push the ***Next*** button:
    - **Channel**: Select the channel in which you want to deploy the smartcontract. 
    - **Chaincode Name**: Set the name with which the smartcontract will be deployed on the channel. 
    - **Version**: Asign a number to this deployment, which is aligned with the installed package installed before. In this way you will be able to correlate packages installed with chaincodes deployed in the different channels.
