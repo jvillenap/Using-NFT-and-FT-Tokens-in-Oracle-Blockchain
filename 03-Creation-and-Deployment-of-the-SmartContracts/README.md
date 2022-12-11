@@ -235,6 +235,27 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
         - Ensure that the right Compartment is selected and click on the founder instance.
         - Click the ***Service Console*** console button.
 
+3. Navigate to the ***Chaincode*** tab, and push the ***Deploy a New Chaincode*** button:
+<p align="center">
+<img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-10.png"/>
+</p>
+
+4. Select the ***Advanced Deployment*** option:
+<p align="center">
+<img width="614" height="311" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-11.png"/>
+</p>
+
+5. Set all the values to Install the chaincode package into the Founder instance:
+   - **Package Label**: Give a name which can help you identify which package is installed in the different existing channels. As you can have more than one version of the same smartcontract deployed in different channels, it is a good practice to set a label like: <smartContractName>_<channel>_<version>
+   - **Chaincode Language**: Select among the different languages, based in the language in which you have developed the chaincode.
+   - **Target Peers**: Select the peers in which you want to install the chaincode package.
+   - **Is Packaged Chaincode**: Leave this box unselected if what you are going to upload is a zip file. Select the combobox for tar.gz files.
+   - **Chaincode Source**: Push the ***Upload Chaincode File*** to be able to navigate in your file system to select the chaincode zip file.  
+<p align="center">
+<img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-12.png"/>
+</p>
+
+
 
 
 
