@@ -245,7 +245,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 <img width="614" height="311" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-11.png"/>
 </p>
 
-5. Set all the values to Install the chaincode package into the Founder instance:
+5. Set all the values to Install the chaincode package into the Founder instance and push the ***:
    - **Package Label**: Give a name which can help you identify which package is installed in the different existing channels. As you can have more than one version of the same smartcontract deployed in different channels, it is a good practice to set a label like: 
 
    ```
@@ -258,6 +258,17 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
    - **Chaincode Source**: Push the ***Upload Chaincode File*** to be able to navigate in your file system to select the chaincode zip file.  
 <p align="center">
 <img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-12.png"/>
+</p>
+
+6. If the installation succeed we will see the below success message. Then, next step is deployment in the selected channel, so you must set all the values related with the deployment phase and push the ***Next*** button:
+   - **Channel**: Select the channel in which you want to deploy the smartcontract. 
+   - **Chaincode Name**: Set the name with which the smartcontract will be deployed on the channel. 
+   - **Version**: Asign a number to this deployment, which is aligned with the installed package installed before. In this way you will be able to correlate packages installed with chaincodes deployed in the different channels.
+   - **Init-required**: Select this checkbox if the init method of the chaincode needs to be invoked before allow user transactions.
+   - **Endorsement Policy**: You can specify Endorsment policies during deployment, but for the purpose of this HoL we do not need them.
+   - **Private Data Collection**: You can set Private Data Collections, but for the purpose of this HoL we do not need them.
+<p align="center">
+<img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-13.png"/>
 </p>
 
 
