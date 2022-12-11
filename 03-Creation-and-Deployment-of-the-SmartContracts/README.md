@@ -307,7 +307,7 @@ The chaincode is ready to be used from the Founder instance, but still not from 
    - ***IMPORTANT***: All the participants which will share the same smartcontract deployed in a specific channel, must set the same name for the ***Package Label***. So, if in the founder instance we set the the value ***eShopDeviceNFT_rentalshop_v1***, here for lessee1 participant we will be exactly the same package name.
 
 <p align="center">
-<img width="764" height="280" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-20.png"/>
+<img width="991" height="377" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-20.png"/>
 </p>
 
    - Set ***Node*** as ***Chaincode Language***.
