@@ -216,7 +216,7 @@ At this point the chaincode is ready to be used, so we can deploy and test the c
 
 <a name=#DeploymentNFTchaincode/>
 
-## Deployment of the NFT Smartcontract
+## Deployment of the NFT Smartcontract into the Founder Instance
 
 Once you have tested locally the chaincode, we can proceed by deploying it in the real network we previously created using the Oracle Blockchain Service Console. The summarize of the actions to be executed are:
  - Package the chaincode project.
@@ -269,6 +269,38 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
    - **Private Data Collection**: You can set Private Data Collections, but for the purpose of this HoL we do not need them.
 <p align="center">
 <img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-13.png"/>
+</p>
+
+7. If the deployment succeed, after closing the installation and deployment, you should see how the package has been installed in the two peers of the instance, and also has been deployed in one of the channels:
+<p align="center">
+<img width="761" height="285" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-14.png"/>
+</p>
+
+The chaincode is ready to be used from the Founder instance, but still not from the Participant instance. Now, we are goin go to install and accept, rather than deploy, the chaincode package into the Participant instance:
+
+1. Access the ***Blockchain Service Console*** for the ***lessee1*** instance:
+<p align="center">
+<img width="770" height="312" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-15.png"/>
+</p>
+
+2. Click the ***Channels*** tab and then the ***rentalshop*** channel:
+<p align="center">
+<img width="762" height="290" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-16.png"/>
+</p>
+
+3. Select on ***Deployed Chaincodes*** on the left-hand navigation pane. You will see that 1 chaincode has been ***committed*** to the channel, but has not yet been ***approved*** by the participant organization.
+<p align="center">
+<img width="762" height="295" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-17.png"/>
+</p>
+
+4. Now click the ***Chaincodes*** tab and then ***Deploy a New Chaincode*** button.
+<p align="center">
+<img width="762" height="280" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-18.png"/>
+</p>
+
+5. Select ***Advanced Deployment***.
+<p align="center">
+<img width="762" height="280" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-19.png"/>
 </p>
 
 
