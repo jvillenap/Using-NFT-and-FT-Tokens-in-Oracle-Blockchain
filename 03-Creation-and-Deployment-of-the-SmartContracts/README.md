@@ -324,6 +324,20 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 <img width="613" height="368" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-22.png"/>
 </p>
 
+8. Now click ***Channels*** tab, then click on the ***rentalshop*** channel, and navigate to 'Deployed Chaincodes' as you did in steps 3 and 4.
+
+9. Find and click on the hamburger icon on the right of the row containing our chaincode. Select ***Approve***.
+<img width="762" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-23.png"/>
+</p>
+
+10. In the Approve wizard you only need to specify the chaincode package you want to use, which obviously is the one we have just installed. 
+<img width="981" height="483" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-24.png"/>
+</p>
+
+   - Additionaly you could specify ***Endorsement Policies***, or ***Private Data Collections***, but for the purpose of this HoL, we are not going to set them. 
+     - You can see more information about ***Endorsement Policies*** at [Specify an Endorsement Policy](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/specify-endorsement-policy1.html)
+     - You can see more information about ***Private Data Collections*** at [What Are Private Data Collections?](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/what-are-private-data-collections.html)
+
 
 
 
