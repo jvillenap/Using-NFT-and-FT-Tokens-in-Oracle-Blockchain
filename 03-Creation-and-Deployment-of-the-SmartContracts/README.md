@@ -11,7 +11,7 @@
 In this chapter we are going to create the smartcontract packages, and we are going to deploy them in the different instances which compound the Blockchain Network created in the first chapter.
 
 
-<a name=#CreationNFTchaincode/>
+<a name=CreationNFTchaincode/>
 
 ## Creation of the Smartcontract to handle the assets to be rented (NFTs)
 First of all we are going to create the smartcontract used to handle the NFT token which will be the digital representation in Blockchain of the asset to be rented by the ***eshop organization*** to the ***lessee1 organization***.
@@ -214,7 +214,7 @@ The Controller class, before the custom methods, includes all the auto-generated
 
 At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. 
 
-<a name=#DeploymentNFTchaincode/>
+<a name=DeploymentNFTchaincode/>
 
 ## Deployment of the NFT Smartcontract into the Founder Instance
 
