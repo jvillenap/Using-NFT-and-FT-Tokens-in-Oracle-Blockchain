@@ -2,7 +2,8 @@
 
 #### Table of Contents  
 [Introduction](#Introduction)  
-[Creation of the Smartcontract to handle the NFT](#CreationNFTchaincode)  
+[Creation of the Smartcontract to handle the assets to be rented (NFTs)](#CreationNFTchaincode)  
+[Deployment of the Smartcontract to handle the assets to be rented (NFTs)](#DeploymentNFTchaincode)  
 
 <a name="Introduction"/>
 
@@ -12,7 +13,7 @@ In this chapter we are going to create the smartcontract packages, and we are go
 
 <a name=#CreationNFTchaincode/>
 
-## Creation of the Smartcontract to handle the NFT
+## Creation of the Smartcontract to handle the assets to be rented (NFTs)
 First of all we are going to create the smartcontract used to handle the NFT token which will be the digital representation in Blockchain of the asset to be rented by the ***eshop organization*** to the ***lessee1 organization***.
 
 NFT tokens most of the times are created as digital twins of physical or digital assets, so NFT must reflect what is occurring to the physical or digital asset and be tracked accordingly to its reality. In this sense the NFT gives an extra value to the physical/digital asset, as the information provided by the NFT representing the asset is information which can not be refused as per the contribution of the blockchain technology to it.
@@ -206,21 +207,34 @@ Remember to include the following import at the begining of the class to be able
 import { OChainUtils } from '../../lib/utils';
 ```
 
-The Controller class, before the custom methods, includes all the autgenerated methods to manage the lifecycle of the NFT tokens. The following picture depicts the different areas covered by such methods:
+The Controller class, before the custom methods, includes all the auto-generated methods to manage the lifecycle of the NFT tokens. The following picture depicts the different areas covered by such methods:
 <p align="center">
 <img width="960" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-8.png"/>
 </p>
 
-At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. Once you has tested locally the chaincode, we can proceed by deploying it in the real network we previously created using the Oracle Blockchain Service Console:
+At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. 
+
+<a name=#DeploymentNFTchaincode/>
+
+## Deployment of the Smartcontract to handle the assets to be rented (NFTs)
+
+Once you have tested locally the chaincode, we can proceed by deploying it in the real network we previously created using the Oracle Blockchain Service Console. The summarize of the actions to be executed are:
+ - Package the chaincode project.
+ - Install and Deploy the chaincode package into the founder instance.
+ - Install and Deploy the chaincode package into the participant instance.
+
 1. First of all we must create the deployable package from the chaincode project. From Visual Studio, push the right button on top of the name of the chaincode project, from the popup menu select the ***Package*** option, and select the directory to save the chaincode package file:
 <p align="center">
 <img width="989" height="566" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-9.png"/>
 </p>
 
-2. Now we: 
-<p align="center">
-<img width="989" height="566" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-10.png"/>
-</p>
+2. Now we are going to access to the ***Oracle Blockchain Service Console*** to install and deploy the chaincode package into the Founder instance:
+- https://eshop-<Tenancy-Name>-<Region>.blockchain.ocp.oraclecloud.com:7443/
+note: Remember how you can get the Oracle Blockchain Services Console URL:
+    - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***
+    - Ensure that the right Compartment is selected and click on the founder instance.
+    - Click the ***Service Console*** console button.
+
 
 
 
