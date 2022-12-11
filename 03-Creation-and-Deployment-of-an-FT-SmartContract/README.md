@@ -47,7 +47,7 @@ customMethods:
 
 ```
 
-You can download this specification file from [WEDOeCryptoFT.yml](./src/WEDOeShopDeviceNFT.yml). 
+You can download this specification file from [WEDOeCryptoFT.yml](./src/WEDOeCryptoFT.yml). 
 
 In this sample specification file you can see all the sections and attributes for a representation of an NFT token. Just as a first overview of the sections defined in the file: 
 - ***Assets***: Place where the different assets (standard entities, FTs, NFTs) are defined. Inside each of the assets we can distingish different sections which can vary depending on the kind of represented asset. For NFTs and FTs these are the different subsections:
