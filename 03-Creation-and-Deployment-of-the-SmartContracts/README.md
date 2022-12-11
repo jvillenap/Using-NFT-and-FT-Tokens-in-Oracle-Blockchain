@@ -247,9 +247,11 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 
 5. Set all the values to Install the chaincode package into the Founder instance:
    - **Package Label**: Give a name which can help you identify which package is installed in the different existing channels. As you can have more than one version of the same smartcontract deployed in different channels, it is a good practice to set a label like: 
-```
-<smartContractName>_<channel>_<version>
-```
+
+   ```
+   <smartContractName>_<channel>_<version>
+   ```
+
    - **Chaincode Language**: Select among the different languages, based in the language in which you have developed the chaincode.
    - **Target Peers**: Select the peers in which you want to install the chaincode package.
    - **Is Packaged Chaincode**: Leave this box unselected if what you are going to upload is a zip file. Select the combobox for tar.gz files.
