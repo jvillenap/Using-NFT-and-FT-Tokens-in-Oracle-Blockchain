@@ -8,16 +8,17 @@
 <a name="Introduction"/>
 
 ## Introduction
-In this chapter we are going to create the smartcontract packages, and we are going to deploy them in the different instances which compound the Blockchain Network created in the first chapter.
+In this chapter we are going to create a smartcontract package representing a FT entity, and we are going to deploy it into the different instances which compound the Blockchain Network created in the first chapter.
 
+First of all we are going to create the smartcontract used to handle a cryptocurrency which will be represented as a Fungible Token (FT), and will be used to pay for the rents. Lessee will need to aquire tokens of this crypto to be able to rent the assets from the eshop.
+
+FT is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
+
+Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
 
 <a name=CreationNFTchaincode/>
 
-## Creation of the Smartcontract to handle the assets to be rented (NFTs)
-First of all we are going to create the smartcontract used to handle the NFT token which will be the digital representation in Blockchain of the asset to be rented by the ***eshop organization*** to the ***lessee1 organization***.
-
-NFT tokens most of the times are created as digital twins of physical or digital assets, so NFT must reflect what is occurring to the physical or digital asset and be tracked accordingly to its reality. In this sense the NFT gives an extra value to the physical/digital asset, as the information provided by the NFT representing the asset is information which can not be refused as per the contribution of the blockchain technology to it.
-
+## Creation of the Smartcontract to handle the cryptocurrency (FT) used to pay for the rents
 Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
 
 ```yaml
