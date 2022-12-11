@@ -206,6 +206,11 @@ Remember to include the following import at the begining of the class to be able
 import { OChainUtils } from '../../lib/utils';
 ```
 
+The Controller class, before the custom methods, includes all the autgenerated methods to manage the lifecycle of the NFT tokens. The following picture depicts the different areas covered by such methods:
+<p align="center">
+<img width="960" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-8.png"/>
+</p>
+
 
 
 
