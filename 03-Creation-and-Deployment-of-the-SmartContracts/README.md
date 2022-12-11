@@ -304,15 +304,25 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 </p>
 
 6. Fill out the form as follows:
-   - ***IMPORTANT***: All the participants which will share the same smartcontract deployed in a specific channel, must set the same name for the ***Package Label***. So, if in the founder instance we set the the value ***eShopDeviceNFT_rentalshop_v1***, here for lessee1 participant we will ue exactly the same package name.
+   - ***IMPORTANT***: All the participants which will share the same smartcontract deployed in a specific channel, must set the same name for the ***Package Label***. So, if in the founder instance we set the the value ***eShopDeviceNFT_rentalshop_v1***, here for lessee1 participant we will be exactly the same package name.
 
 <p align="center">
-<img width="614" height="311" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-19.png"/>
+<img width="764" height="280" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-20.png"/>
 </p>
 
+   - Set ***Node*** as ***Chaincode Language***.
+   - Select both available peers as the ***Target Peers***.
+   - Upload the package .zip file you exported from the App Builder VS Code extension.
+   - Click ***Next***
 
+<p align="center">
+<img width="613" height="368" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-21.png"/>
+</p>
 
-
+7. Click ***Close***. We will only be installing (not deploying) the chaincode onto the participant instance.
+<p align="center">
+<img width="613" height="368" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-22.png"/>
+</p>
 
 
 
