@@ -211,13 +211,17 @@ The Controller class, before the custom methods, includes all the autgenerated m
 <img width="960" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-8.png"/>
 </p>
 
+At this point the chaincode is ready to be used, and we can perform three different procedures for this testing:
+1. Deploy the chaincode locally to execute unitary testing in our laptop.
+2. Deploy the chaincode remotely into a real Oracle Blockchain network using Apbuilder.
+3. Package the chaincode project into a zip file, and deploy the chaincode manually into an Oracle Blochain network.
+
+We are going to proceed with the third option because in this way we can showcase all the deployment process into a real Blockchain network, but you can review the other options into the following labs:
+1. [Deploy, Test Smart Contracts using Blockchain App Builder & Oracle Blockchain Admin Console](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=3352&p210_wec=&session=113892237152191):
+    1. [Task 1: Deploy the chaincode locally to execute unitary testing in our laptop.](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=3352&p210_wec=&session=113892237152191)
+    2. [Task 2: Deploy Car Marketplace Smart Contract (Chaincode) to Founder Instance (Marketplace) from Blockchain App Builder](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=3352&p210_wec=&session=113892237152191)
 
 
-
-
-
-
-Now our chaincode project is ready to be deployed locally or remotely and tested locally with the VS Code extension, or remotely using Postman or any other REST/JSON tool, but if you need to add any custom logic ....
 
 
 
