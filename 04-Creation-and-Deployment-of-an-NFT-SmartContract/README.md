@@ -10,14 +10,13 @@
 ## Introduction
 In this chapter we are going to create a smartcontract package representing an NFT entity, and we are going to deploy it into the different instances which compound the Blockchain Network created in the first chapter.
 
-
-<a name=CreationNFTchaincode/>
-
-## Creation of the Smartcontract to handle the assets to be rented (NFTs)
 In this chapter we are going to create the smartcontract used to handle the NFT token which will be the digital representation in Blockchain of the asset to be rented by the ***eshop organization*** to the ***lessee1 organization***.
 
 NFT tokens most of the times are created as digital twins of physical or digital assets, so NFT must reflect what is occurring to the physical or digital asset and be tracked accordingly to its reality. In this sense the NFT gives an extra value to the physical/digital asset, as the information provided by the NFT representing the asset is information which can not be refused as per the contribution of the blockchain technology to it.
 
+<a name=CreationNFTchaincode/>
+
+## Creation of the Smartcontract to handle the assets to be rented (NFTs)
 Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
 
 ```yaml
