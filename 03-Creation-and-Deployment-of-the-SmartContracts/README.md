@@ -268,7 +268,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
    - **Endorsement Policy**: You can specify Endorsment policies during deployment, but for the purpose of this HoL we do not need them.
    - **Private Data Collection**: You can set Private Data Collections, but for the purpose of this HoL we do not need them.
 <p align="center">
-<img width="773" height="402" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-13.png"/>
+<img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-13.png"/>
 </p>
 
 
