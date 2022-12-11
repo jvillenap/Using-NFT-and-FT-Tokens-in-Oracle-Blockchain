@@ -1,4 +1,4 @@
-# Creation and Deployment of a SmartContracts managing NFTs
+# Creation and Deployment of a SmartContract handling NFTs
 
 #### Table of Contents  
 [Introduction](#Introduction)  
