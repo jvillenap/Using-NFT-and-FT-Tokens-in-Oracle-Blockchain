@@ -1,0 +1,24 @@
+assets:
+    - name: ecrypto # Asset name
+      type: token  # Asset type
+
+      anatomy: 
+          type: fungible # Token type
+          unit: fractional # Token unit
+
+      behavior: # Token behaviors
+          - divisible: 
+                decimal: 0  
+          - mintable:
+          - transferable
+          - burnable 
+          - roles: 
+                minter_role_name: minter 
+
+      properties:
+          - name: description
+            type: string
+
+customMethods:
+    - executeQuery
+    - "transferECoins(token_id: string, from_org_id: string, from_user_id: string,  to_org_id: string, to_user_id: string, quantity: number)" # Transfer tokens between accounts. 
