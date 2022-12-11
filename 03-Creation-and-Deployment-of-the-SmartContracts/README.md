@@ -334,7 +334,7 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 <img width="981" height="483" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-24.png"/>
 </p>
 
-   - Additionaly you could specify ***Endorsement Policies***, or ***Private Data Collections***, but for the purpose of this HoL, we are not going to set them. 
+   - Additionaly you could specify ***Endorsement Policies***, or ***Private Data Collections***, but for the purpose of this HoL we are not going to set any of them: 
      - You can see more information about ***Endorsement Policies*** at [Specify an Endorsement Policy](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/specify-endorsement-policy1.html)
      - You can see more information about ***Private Data Collections*** at [What Are Private Data Collections?](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/what-are-private-data-collections.html)
 
