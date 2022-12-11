@@ -340,10 +340,12 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 8. Now click ***Channels*** tab, then click on the ***rentalshop*** channel, and navigate to 'Deployed Chaincodes' as you did in steps 3 and 4.
 
 9. Find and click on the hamburger icon on the right of the row containing our chaincode. Select ***Approve***.
+<p align="center">
 <img width="762" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-23.png"/>
 </p>
 
 10. In the Approve wizard you only need to specify the chaincode package you want to use, which obviously is the one we have just installed. 
+<p align="center">
 <img width="981" height="483" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-24.png"/>
 </p>
 
@@ -352,5 +354,6 @@ The chaincode is ready to be used from the Founder instance, but still not from 
      - You can see more information about ***Private Data Collections*** at [What Are Private Data Collections?](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/what-are-private-data-collections.html)
 
 11. Check that the chaincode has now been approved by the lessee participant.
+<p align="center">
 <img width="984" height="65" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-25.png"/>
 </p>
