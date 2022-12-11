@@ -338,6 +338,11 @@ The chaincode is ready to be used from the Founder instance, but still not from 
      - You can see more information about ***Endorsement Policies*** at [Specify an Endorsement Policy](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/specify-endorsement-policy1.html)
      - You can see more information about ***Private Data Collections*** at [What Are Private Data Collections?](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/what-are-private-data-collections.html)
 
+11. Check that the chaincode has now been approved by the lessee participant.
+<img width="984" height="65" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-25.png"/>
+</p>
+
+
 
 
 
