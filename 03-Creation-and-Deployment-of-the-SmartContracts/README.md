@@ -229,11 +229,11 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 </p>
 
 2. Now we are going to access to the ***Oracle Blockchain Service Console*** to install and deploy the chaincode package into the Founder instance:
-- https://eshop-TenancyName-RegionName.blockchain.ocp.oraclecloud.com:7443/
-    note: Remember how you can get the Oracle Blockchain Services Console URL:
-        - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***
-        - Ensure that the right Compartment is selected and click on the founder instance.
-        - Click the ***Service Console*** console button.
+ - https://eshop-TenancyName-RegionName.blockchain.ocp.oraclecloud.com:7443/
+   -  note: Remember how you can get the Oracle Blockchain Services Console URL:
+      - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***
+      - Ensure that the right Compartment is selected and click on the founder instance.
+      - Click the ***Service Console*** console button.
 
 
 
