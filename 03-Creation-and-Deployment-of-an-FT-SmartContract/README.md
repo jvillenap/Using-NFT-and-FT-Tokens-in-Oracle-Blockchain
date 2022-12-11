@@ -8,124 +8,46 @@
 <a name="Introduction"/>
 
 ## Introduction
-In this chapter we are going to create a smartcontract package representing a FT entity, and we are going to deploy it into the different instances which compound the Blockchain Network created in the first chapter.
-
-First of all we are going to create the smartcontract used to handle a cryptocurrency which will be represented as a Fungible Token (FT), and will be used to pay for the rents. Lessee will need to aquire tokens of this crypto to be able to rent the assets from the eshop.
+First of all we are going to create the smartcontract used to handle a cryptocurrency which will be represented as a Fungible Token (FT), and will be used to pay for the rents. Lessee will need to aquire tokens of this crypto to be able to rent the assets from the eshop. This smartcontract will be deployed into the different instances which compound the Blockchain Network created in the first chapter.
 
 FT is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
 
 Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
 
-<a name=CreationNFTchaincode/>
+<a name=CreationFTchaincode/>
 
 ## Creation of the Smartcontract to handle the cryptocurrency (FT) used to pay for the rents
-Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
+Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file we are going to use for the FT smartcontract:
 
 ```yaml
-#
-# Token asset to manage the complete lifecycle of a non-fungible token representing rentable devices. 
-# This specification file will generate non-fungible token for rentable devices.
-#
 assets:
-    - name: rentableDeviceNFT #Asset name
-      type: token #Asset type
-      symbol: rentdev         # Token symbol
-      standard: erc721+   # Token standard
-      
-      anatomy:
-          type: nonfungible # Token type
-          unit: whole  #Token unit
-      
-      behavior:
-        - indivisible                
-        - singleton                   
-        - mintable:                   
-        - transferable                
-        - burnable
-        - roles:
-            minter_role_name: minter
-      
-      properties:  # Custom asset attributes for non-fungible token 
+    - name: ecrypto # Asset name
+      type: token  # Asset type
 
-          - name: contractStartTime  # Custom asset attribute to register the contract start time
-            type: date
+      anatomy: 
+          type: fungible # Token type
+          unit: fractional # Token unit
 
-          - name: contractEndTime # Custom asset attribute to register the contract end time
-            type: date
+      behavior: # Token behaviors
+          - divisible: 
+                decimal: 0  
+          - mintable:
+          - transferable
+          - burnable 
+          - roles: 
+                minter_role_name: minter 
 
-          - name: bookingStartTime # Custom asset attribute to set the booking start time
-            type: date
-
-          - name: actualEndTime # Custom asset attribute to set the actual end time 
-            type: date
-
-          - name: contractViolationFlag # Custom asset attribute maintains non-fungible token contract violation flag. 1 means contract was violated.
-            type: boolean
-
-          - name: lockingFlag # Custom asset attribute maintains non-fungible token locking flag. 1 means NFT is locked.
-            type: boolean
-
-          - name: bookingFlag # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: boolean
-
-          - name: bookingAmount # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: number
-
-          - name: bookingId # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: number
-
-          - name: deductionAmount # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: number
-
-          - name: rentalAmount # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: number
-
-          - name: returnedAmount # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: number
-
-          - name: vibration # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: string
-
-          - name: humidity # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: string
-
-          - name: speed # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: string
-
-          - name: longitude # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: string
-
-          - name: latitude # Custom asset attribute maintains non-fungible token booking flag. 1 means NFT is booked.
-            type: string
-      
-      metadata: # To maintain the metadata on-chain, this tag will be used. 
-          
-          - name: deviceId
-            type: string
-          
+      properties:
           - name: description
             type: string
-          
-          - name: manufacturer
-            type: string
-
-          - name: manufacturingDate
-            type: date
 
 customMethods:
     - executeQuery
-    - "receiveDevice(tokenId: string, fromOrgId: string, fromUserId: string, toOrgId: string, toUserId: string, contractStartTime: Date, contractEndTime: Date)" # Receiving of rented device NFT from the eshop company. 
-    - "returnDevice(nftTokenId: string, ftTokenId: string, fromOrgId: string, fromUserId: string, toOrgId: string, toUserId: string, returnTime: Date, deductAmount: boolean, deductionOrChargeAmount: number)" # Returning of device NFT to the rental company. eCurrency is charged/deducted based in difference of deposit done and total cost of the rental. 
-    - "lockDevice(tokenId: string)"  # Locking the device NFT
-    - "unlockDevice(tokenId: string)" # Unlock the device NFT
-    - "bookDevice(tokenId: string, bookingDate: Date, bookingAmount: number, bookingId: number, depositAmount: number)" #booking the rented device, and eCurrency charged is done as deposit of the rental.
-    - "setIoTParameters(tokenId: string, vibration?: string, humidity?: string, speed?: string, longitude?: string, latitude?: string)" #Setting IoT parameters
-    - "resetCustomParameters(tokenId: string)" # Reset custom parameters
-    - "getTokenHistoryByBookingId(tokenId: string, bookingId: number)" #get the token History for a specific device and rental contract
+    - "transferECoins(token_id: string, from_org_id: string, from_user_id: string,  to_org_id: string, to_user_id: string, quantity: number)" # Transfer tokens between accounts. 
 
 ```
 
-You can download this specification file from [WEDOeShopDeviceNFT.yml](./src/WEDOeShopDeviceNFT.yml). 
+You can download this specification file from [WEDOeCryptoFT.yml](./src/WEDOeShopDeviceNFT.yml). 
 
 In this sample specification file you can see all the sections and attributes for a representation of an NFT token. Just as a first overview of the sections defined in the file: 
 - ***Assets***: Place where the different assets (standard entities, FTs, NFTs) are defined. Inside each of the assets we can distingish different sections which can vary depending on the kind of represented asset. For NFTs and FTs these are the different subsections:
