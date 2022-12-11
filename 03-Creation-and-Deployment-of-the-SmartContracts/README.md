@@ -3,7 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of the Smartcontract to handle the assets to be rented (NFTs)](#CreationNFTchaincode)  
-[Deployment of the Smartcontract to handle the assets to be rented (NFTs)](#DeploymentNFTchaincode)  
+[Deployment of the NFT Smartcontract](#DeploymentNFTchaincode)  
 
 <a name="Introduction"/>
 
@@ -216,7 +216,7 @@ At this point the chaincode is ready to be used, so we can deploy and test the c
 
 <a name=#DeploymentNFTchaincode/>
 
-## Deployment of the Smartcontract to handle the assets to be rented (NFTs)
+## Deployment of the NFT Smartcontract
 
 Once you have tested locally the chaincode, we can proceed by deploying it in the real network we previously created using the Oracle Blockchain Service Console. The summarize of the actions to be executed are:
  - Package the chaincode project.
