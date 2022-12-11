@@ -207,6 +207,19 @@ Remember to include the following import at the begining of the class to be able
 import { OChainUtils } from '../../lib/utils';
 ```
 
+There is also important to bare in mind there is a couple of traverse calls from a couple of the custom methods of this Smartcontract to one of the methods of the FT Smartcontract. Those calls can be identified in the controller class because it is executing a ***oChainUtil.invokeChaincode*** method. In this calls the parameters of the call includes the following information:
+ - ChaincodeName: String
+ - ChaincodeMethod: String
+ - args: String[]
+ - Channel: String
+
+Some of the values of these parameters has been set at source code, so if they are changed we should be carefull to also change the code:
+ - ChaincodeName set to ***eShopCriptoFT***. If the FT chaincode is deployed with a different name, this parameter must be changed consequently.
+ - ChaincodeMethod: set to ***transferECoins***.
+ - args: Are populated based on the accounts created in the network, so no worries about them.
+ - Channel: set to ***rentalshop***. If you change the name of the channel where smartcontracts are deployed, also this parameter must be changed.
+
+
 The Controller class, before the custom methods, includes all the auto-generated methods to manage the lifecycle of the NFT tokens. The following picture depicts the different areas covered by such methods:
 <p align="center">
 <img width="960" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-8.png"/>
