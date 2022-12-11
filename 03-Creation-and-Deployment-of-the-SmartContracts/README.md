@@ -211,15 +211,16 @@ The Controller class, before the custom methods, includes all the autgenerated m
 <img width="960" height="390" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-8.png"/>
 </p>
 
-At this point the chaincode is ready to be used, and we can proceed in any of the following three different ways to have our chaincode ready to be tested:
-1. Deploy the chaincode locally to execute unitary testing in our laptop.
-2. Deploy the chaincode remotely into a real Oracle Blockchain network using Apbuilder.
-3. Package the chaincode project into a zip file, and deploy the chaincode manually into an Oracle Blochain network.
+At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. Once you has tested locally the chaincode, we can proceed by deploying it in the real network we previously created using the Oracle Blockchain Service Console:
+1. First of all we must create the deployable package from the chaincode project. From Visual Studio, push the right button on top of the name of the chaincode project, from the popup menu select the ***Package*** option, and select the directory to save the chaincode package file:
+<p align="center">
+<img width="989" height="566" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-9.png"/>
+</p>
 
-We are going to proceed with the third option because in this way we can showcase all the deployment process into a real Blockchain network:
-1. Package
-2. Deploy....
-
+2. Now we: 
+<p align="center">
+<img width="989" height="566" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-the-SmartContracts/images/3-nft-2-10.png"/>
+</p>
 
 
 
