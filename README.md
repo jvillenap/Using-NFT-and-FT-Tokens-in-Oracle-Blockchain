@@ -38,17 +38,14 @@ AppBuilder will help you to reduce considerably the complexity of the developmen
 <img width="814" height="392" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-5.png"/>
 </p>
 
-
-
-
-******************************************************************
+Once all the tasks has been done, as Oracle Blockchain publishes all the smartcontract methods as REST APIs, we can execute a whole sample simulating the rental of an asset, just using Postman.
 
 
 
 
 
 
-Explain the use case:
+
 rental of assets represented as NFT asking to pay using a digital coin represented as FT both tokens managed in the same blockchjain network!
 
 
