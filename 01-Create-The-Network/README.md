@@ -22,7 +22,7 @@ For the creation of an Hyperledger Fabric network based in Oracle Blockchain, yo
 
 For simplicity in this HoL we are going to use the first option, the Cloud Version. 
 
-We are going to create two instances, the first instance will be the founder of a new Hyperledger Fabric network, acting as the owner of the assets which will be represented as NFTs and will be available to be rented, and the second one which will be a new participant attached participant of the network, who will represent the lessee of the assets.
+We are going to create two instances, the first instance will be the founder of a new Hyperledger Fabric network, acting as the owner of the assets which will be represented as NFTs and will be available to be rented. And we will also create a second instance which will be a new participant attached to the network, who will represent one of the lessees of the assets.
 
 As a preassembled PaaS, Oracle Blockchain Platform includes all the dependencies required to provision and manage a blockchain network: compute, storage, containers, identity services, event services, and management services. Oracle Blockchain Platform also includes the blockchain network console to support integrated operations. This helps you start developing applications within minutes.
 
