@@ -258,7 +258,7 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 </p>
 
 10. In the Approve wizard you only need to specify the chaincode package you want to use, which obviously is the one we have just installed. 
-<img width="981" height="483" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-24.png"/>
+<img width="998" height="530" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-24.png"/>
 </p>
 
    - Additionaly you could specify ***Endorsement Policies***, or ***Private Data Collections***, but for the purpose of this HoL we are not going to set any of them: 
@@ -266,5 +266,5 @@ The chaincode is ready to be used from the Founder instance, but still not from 
      - You can see more information about ***Private Data Collections*** at [What Are Private Data Collections?](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/what-are-private-data-collections.html)
 
 11. Check that the chaincode has now been approved by the lessee participant.
-<img width="984" height="65" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-25.png"/>
+<img width="1002" height="120" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-25.png"/>
 </p>
