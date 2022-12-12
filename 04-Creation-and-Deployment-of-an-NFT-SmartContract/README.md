@@ -3,7 +3,8 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of the Smartcontract to handle the assets to be rented (NFTs)](#CreationNFTchaincode)  
-[Deployment of the NFT Smartcontract](#DeploymentNFTchaincode)  
+[Deployment of the NFT Smartcontract into the Founder instance](#DeploymentNFTchaincodeFounder)
+[Deployment of the NFT Smartcontract into the Participant instance](#DeploymentNFTchaincodeParticipant)
 
 <a name="Introduction"/>
 
@@ -224,7 +225,7 @@ The Controller class, before the custom methods, includes all the auto-generated
 
 At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. 
 
-<a name="DeploymentNFTchaincode"/>
+<a name="DeploymentNFTchaincodeFounder"/>
 
 ## Deployment of the NFT Smartcontract into the Founder Instance
 
@@ -285,6 +286,10 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 <p align="center">
 <img width="761" height="285" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-14.png"/>
 </p>
+
+<a name="DeploymentNFTchaincodeParticipant"/>
+
+## Deployment of the NFT Smartcontract into the Participant Instance
 
 The chaincode is ready to be used from the Founder instance, but still not from the Participant instance. Now, we are goin go to install and accept, rather than deploy, the chaincode package into the Participant instance:
 
