@@ -18,7 +18,7 @@ When you are dealing with Tokens, there is a bunch of administrative actions to 
 
 Before the execution of any of the below steps we must create the enrollmentIDs into the REST Proxies for those users granted to access to the smartcontract methods. The enrollment is a mapping between the username who invoke the REST API, and the accounts managed internally by blockchain to which tokens will be assigned.
 
-The required enrollments for the two users existing in the network have already been created as the last step of the first chapter, [Create Enrollments - Perform on All REST Proxy nodes](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments).
+The required enrollments for the two users existing in the network have already been created as the last step of the first chapter, [Create an Oracle Blockchain Network - Create Enrollments](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments).
 
 To reduce the complexity, enrollmentID can be named with the same value as the own user name.
 
