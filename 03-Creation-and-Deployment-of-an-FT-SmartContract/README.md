@@ -3,7 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of the Smartcontract to handle the cryptocurrency (FT) used to pay for the rents](#CreationFTchaincode)  
-[Deployment of the FT Smartcontract into the Founder instance](#DeploymentFTchaincodeFounder)
+[Deployment of the FT Smartcontract into the Founder instance](#DeploymentFTchaincodeFounder)  
 [Deployment of the FT Smartcontract into the Participant instance](#DeploymentFTchaincodeParticipant)
 
 
