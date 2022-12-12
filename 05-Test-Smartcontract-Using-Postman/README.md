@@ -73,7 +73,9 @@ These variables are set in the ***Variables*** tab of the Postman collection. Yo
 
 There is a set of administrative actions which are required before being able to execute the business methods.
 
-1. The first action is the initialization of the chaincode indicating which user accounts will be allowed to execute administrative actions:
+1. The first action is the initialization of the chaincode indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
+   - ***args***: Scaped array of user_id with their org_id:
+     - "[{\"org_id\":\"eshop\",\"user_id\":\"eshop_manager\"},{\"org_id\":\"lessee1\",\"user_id\":\"lessee1_manager\"}]"
 <p align="center">
 <img width="982" height="577" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
 </p>
