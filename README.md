@@ -46,10 +46,11 @@ Once each of the smartcontracts get created, we will install and deploy them int
 Once all the tasks has been done, as Oracle Blockchain publishes all the smartcontract methods as REST APIs, we can execute a whole sample simulating the rental of an asset, just using Postman.
 
 Here you have the links to each of the labs to fulfill this HoL:  
+
 [1. Create an Oracle Blockchain Network](../../blob/main/01-Create-The-Network/README.md)  
 [2. Preparation of Oracle App Builder development environment](../../blob/main/02-Prepare-Dev-Environment/README.md)  
 [3. Creation, Installation and Deployment of a SmartContract handling FTs](../../blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/README.md)  
-[4. Creation, Installation and Deployment of a SmartContract handling NFTs](../../blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/README.md) 
+[4. Creation, Installation and Deployment of a SmartContract handling NFTs](../../blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/README.md)   
 [5. Test the SmartContracts using Postman](../../blob/main/05-Test-Smartcontract-Using-Postman/README.md)  
 
 
