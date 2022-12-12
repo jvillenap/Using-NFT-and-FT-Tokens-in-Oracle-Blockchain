@@ -12,16 +12,17 @@
 
 ## Introduction
 
-In this last chapter we are going to demonstrate how easily we can do a full test of a use case using a REST Client like Postman.
+In this last chapter we are going to demonstrate how easily we can do a full test of our Smartcontracts using a REST Client like Postman.
 
-When you are dealing with Tokens, there is a bunch of administrative actions to be executed before being able to execute your business methods. 
+When you are dealing with Tokens, there is a bunch of administrative actions to be executed before being able to execute your business methods. Thanks to Oracle Blockchain, all the administrative actions can be executed as API REST calls, so it simplify considerably the effort needed for the initialization. We are going to perform a "dummy" initialization just with the minimum requirements to do a basic test.
 
-Thanks to Oracle Blockchain, all the administrative actions ca be executed as API REST calls, so it simplify considerably the effort needed for the initialization.
+Before the execution of any of the below steps we must create the enrollmentIDs into the REST Proxies for those users granted to access to the smartcontract methods. The enrollment is a mapping between the username who invoke the REST API, and the accounts managed internally by blockchain to which tokens will be assigned.
 
-We are going to perform a "dummy" initialization just with the minimum requirements to do a basic test.
+The required enrollments for the two users existing in the network have already been created as the last step of chapter 1 [Create Enrollments - Perform on All REST Proxy nodes] https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments.
+
+To reduce the complexity, enrollmentID can be named with the same value as the own user name.
 
 
-https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments
 
 
 
@@ -29,11 +30,6 @@ https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/m
 
 ## Prerequisites
 - Postman or any other API REST client tool.
-- Before the execution of any of the below steps we must create the enrollmentIDs into the REST Proxies for those users granted to access to the smartcontract methods. The enrollment is a mapping between the username who executes the REST API, and the accounts managed internally by blockchain to which Tokens will be assigned.
-
-  These enrollmentIDs have been already created as the last step of chapter 1.
-
-  To make it more easy, enrollmentID can be set with the same value as the own user name.
 
 
 
