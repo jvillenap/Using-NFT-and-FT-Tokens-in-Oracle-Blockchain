@@ -3,7 +3,9 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of the Smartcontract to handle the cryptocurrency (FT) used to pay for the rents](#CreationFTchaincode)  
-[Deployment of the FT Smartcontract](#DeploymentFTchaincode)  
+[Deployment of the FT Smartcontract into the Founder instance](#DeploymentFTchaincodeFounder)
+[Deployment of the FT Smartcontract into the Participant instance](#DeploymentFTchaincodeParticipant)
+
 
 <a name="Introduction"/>
 
@@ -130,7 +132,7 @@ Once the Specification file has been created we can mandate AppBuilder to create
 
 At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. 
 
-<a name="DeploymentFTchaincode"/>
+<a name="DeploymentFTchaincodeFounder"/>
 
 ## Deployment of the FT Smartcontract into the Founder Instance
 
@@ -191,6 +193,8 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 <p align="center">
 <img width="761" height="285" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-14.png"/>
 </p>
+
+<a name="DeploymentFTchaincodeParticipant"/>
 
 ## Deployment of the FT Smartcontract into the Participant Instance
 
