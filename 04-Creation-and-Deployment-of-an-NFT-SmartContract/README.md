@@ -256,7 +256,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 <img width="614" height="311" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-11.png"/>
 </p>
 
-5. Set all the values to Install the chaincode package into the Founder instance and push the ***:
+5. Set all the values to Install the chaincode package into the Founder instance and push the ***Next*** button:
    - **Package Label**: Give a name which can help you identify which package is installed in the different existing channels. As you can have more than one version of the same smartcontract deployed in different channels, it is a good practice to set a label like: 
 
    ```
