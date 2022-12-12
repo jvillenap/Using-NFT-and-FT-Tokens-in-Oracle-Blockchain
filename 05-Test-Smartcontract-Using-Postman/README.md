@@ -3,14 +3,10 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Prerequisites](#Prerequisites)  
-[Creation of the Founder instance](#createFounder)  
-[Creation of the Participant instance](#createParticipant)  
-[Add The Participant Organizations to the Blockchain Network](#partJoinNwk)  
-[Create a Channel](#channelCreate)  
-[Join Participant Organization - Peer Nodes to Channel](#joinPeersChannel)  
-[Set Anchor Peers](#setAnchorPeers)  
-[Create Participant Accounts](#createAcconts)  
-[Create Enrollments - Perform on All REST Proxy nodes](#createEnrollments)  
+[Initialization of the eCrypto token (FT)](#initFT)  
+[Initialization of the eShopDevice token (NFT)](#initNFT)  
+[Use case simulation - Successful renting](#usecase1)  
+[Validation & Conclusions](#validation)  
 
 <a name="Introduction"/>
 
@@ -18,13 +14,46 @@
 
 In this last chapter we are going to demonstrate how easily we can do a full test of a use case using a REST Client like Postman.
 
-When you are dealing with Tokens, there is a bunch of administrative actions to be executed before being able to execute business methods. 
+When you are dealing with Tokens, there is a bunch of administrative actions to be executed before being able to execute your business methods. 
 
 Thanks to Oracle Blockchain, all the administrative actions ca be executed as API REST calls, so it simplify considerably the effort needed for the initialization.
 
+We are going to perform a "dummy" initialization just with the minimum requirements to do a basic test.
 
-, we need to prepare the chaincode... REST calls needed to prepare the chaincodes to be used, so, 
 
-For the creation of an Hyperledger Fabric network based in Oracle Blockchain, you can use two different kinds of Oracle Blockchain instances:
-- [Oracle Blockchain Cloud Service](https://www.google.com "Oracle Blockchain Cloud Service")
-- [Oracle Blockchain Platform Enterprise Edition](https://www.oracle.com/blockchain/blockchain-platform-enterprise-edition/ "Oracle Blockchain Platform Enterprise Edition")
+<a name="Prerequisites"/>
+
+## Prerequisites
+- Postman or any other API REST client tool.
+
+
+<a name="initFT"/>
+
+## Initialization of the eCrypto token (FT)
+
+
+<a name="initNFT"/>
+
+## Initialization of the eShopDevice token (NFT)
+
+
+<a name="usecase1"/>
+
+## Use case simulation - Successful renting
+
+
+<a name="validation"/>
+
+## Validation & Conclusions
+
+
+
+
+
+## Creation of the Founder instance
+1. In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
+![Select Blockchain Service from the OCI console](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-1.png "Select Blockchain Service from the OCI console")
+
+
+
+
