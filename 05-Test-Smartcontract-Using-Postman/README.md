@@ -21,6 +21,8 @@ Before the execution of any of the below steps we must create the enrollmentIDs 
 
 To reduce the complexity, enrollmentID can be named with the same value as the own user name.
 
+Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the lessee1 participant instance.
+
 
 <a name="Prerequisites"/>
 
@@ -32,7 +34,11 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 
 ## Obtain Required information to execute REST APIs
 For all the request you will need to know which is the endpoint of the REST Proxy against you want to execute the API calls. You can get this URL from the Blockchain Service Console:
-1. Inside the Blockchain Ser
+1. Access to the Blockchain Service Console:
+   - In the OCI services menu, select Developer Services and click on Blockchain Platform
+   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access).
+   - Click the Service Console console button.
+2- Once inside the ***Service Console*** go to the ***Nodes*** tab.It will show you all the nodes which composes this instance: 
 
 
 <a name="initFT"/>
