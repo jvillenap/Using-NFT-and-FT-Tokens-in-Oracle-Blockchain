@@ -3,6 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Prerequisites](#Prerequisites)  
+[Obtain Required information to execute REST APIs](#restInfo)  
 [Initialization of the eCrypto token (FT)](#initFT)  
 [Initialization of the eShopDevice token (NFT)](#initNFT)  
 [Use case simulation - Successful renting](#usecase1)  
@@ -27,6 +28,11 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 - Postman or any other API REST client tool.
 - The required enrollments for the two existing users in the network (eshop_manager and lessee1_manager) have already been created as the last step of the first chapter, [Create an Oracle Blockchain Network - Create Enrollments](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments). If not already done, you must do it.
 
+<a name="restInfo"/>
+
+## Obtain Required information to execute REST APIs
+For all the request you will need to know which is the endpoint of the REST Proxy against you want to execute the API calls. You can get this URL from the Blockchain Service Console:
+1. Inside the Blockchain Ser
 
 
 <a name="initFT"/>
@@ -35,6 +41,9 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 
 There is a set of administrative actions which are required before being able to execute the business methods.
 
+The first action is initilize the chaincode indicating which user accounts will be allowed to execute administrative actions. To execute this action follow the below steps:
+1. Retrieve the REST Proxy URL
+2. 
 
 
 
