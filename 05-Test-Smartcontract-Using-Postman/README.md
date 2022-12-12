@@ -65,9 +65,7 @@ The following table shows all the varibles we are using in Postman to make more 
 | bc_nft_token_id             | NFT-E1                |
 | bc_nft_chaincode_name       | eShopDeviceNFT        |
 
-
-
-
+These variables are set in the ****Variables*** tab of the collection. You can change any of the values accordingly with any change you have done during the execution of the labs.
 
 <a name="initFT"/>
 
@@ -75,13 +73,12 @@ The following table shows all the varibles we are using in Postman to make more 
 
 There is a set of administrative actions which are required before being able to execute the business methods.
 
-The first action is initilize the chaincode indicating which user accounts will be allowed to execute administrative actions. To execute this action follow the below steps:
-1. Retrieve the REST Proxy URL
-2. 
+1. The first action is the initialization of the chaincode indicating which user accounts will be allowed to execute administrative actions:
+<p align="center">
+<img width="982" height="577" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
+</p>
 
-
-
-We must create user accounts for all those users elegible to own eCrypto Tokens. In this simple use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
+2. We must also create user accounts for all those users elegible to own eCrypto Tokens. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
 
 
 
