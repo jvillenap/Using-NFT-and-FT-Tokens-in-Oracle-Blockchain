@@ -1,4 +1,4 @@
-# Using-NFT-and-FT-Tokens-in-Oracle-Blockchain
+# Using NFT and FT Tokens in Oracle Blockchain
 This HoL has been created to demonstrate how easily we can develop a solution without to much efford where FTs and/or NFTs were needed, thanks to Oracle Blockchain and the Oracle AppBuilder tool.
 
 Non-Fungible Tokens (NFT) are unique digital identifiers that cannot be copied, substituted, or subdivided, recorded in a blockchain, and that is used to certify authenticity and custodianship. NFT is the perfect digital twin for whatever kind of physical or digital asset which can be used to track any usage, event, status change, or any other kind of peculiarity which makes sense to be tracked. Blockchain will provide an easily accesible inmutable history of the asset, which will be really valuable for whatever entity or person interested in the tracking performed on the asset itself.
