@@ -47,6 +47,27 @@ Remmember that enrollments are created at instance level, so the enrollment for 
 | eshop_manager   | https://eshop-....    |
 | lessee1_manager | https://lessee1-....  |
 
+The following table shows all the varibles we are using in Postman to make more easy the management of the requests we are going to execute. Validate you are the same values before the execution of the different invocations:
+| Variable Name               | Variable value        |
+| --------------------------- |-----------------------|
+| bc_founder_provider_url     | https://eshop-....    |
+| bc_participant_provider_url | https://lessee1-....  |
+| bc_channel_name             | rentalshop            |
+| bc_ft_chaincode_name        | eShopCriptoFT         |
+| bc_ft_token_id              | eCrypto1              |
+| bc_founder_orgid            | eshop                 |
+| bc_founder_userid           | eshop_manager         |
+| bc_founder_password         | ************          |
+| bc_participant_orgid        | lessee1               |
+| bc_participant_userid       | lessee1_manager       |
+| bc_participant_password     | ************          |
+| bc_timeout                  | 60000                 |
+| bc_nft_token_id             | NFT-E1                |
+| bc_nft_chaincode_name       | eShopDeviceNFT        |
+
+
+
+
 
 <a name="initFT"/>
 
