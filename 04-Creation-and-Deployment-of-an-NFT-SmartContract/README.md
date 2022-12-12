@@ -3,7 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of the Smartcontract to handle the assets to be rented (NFTs)](#CreationNFTchaincode)  
-[Deployment of the NFT Smartcontract into the Founder instance](#DeploymentNFTchaincodeFounder)
+[Deployment of the NFT Smartcontract into the Founder instance](#DeploymentNFTchaincodeFounder)  
 [Deployment of the NFT Smartcontract into the Participant instance](#DeploymentNFTchaincodeParticipant)
 
 <a name="Introduction"/>
