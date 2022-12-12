@@ -43,7 +43,7 @@ First of all we need to know which is the endpoint in which the REST API is acce
 
 Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the restproy URL of the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the restproxy URL from the lessee1 participant instance. Following table shows the user to be used depending on the instance you are going to access:
 | username        | Instance URL          |
-| --------------- |:---------------------:|
+| --------------- |-----------------------|
 | eshop_manager   | https://eshop-....    |
 | lessee1_manager | https://lessee1-....  |
 
