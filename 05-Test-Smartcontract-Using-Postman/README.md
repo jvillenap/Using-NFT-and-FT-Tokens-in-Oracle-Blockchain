@@ -21,6 +21,10 @@ Thanks to Oracle Blockchain, all the administrative actions ca be executed as AP
 We are going to perform a "dummy" initialization just with the minimum requirements to do a basic test.
 
 
+https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/tree/main/01-Create-The-Network#createEnrollments
+
+
+
 <a name="Prerequisites"/>
 
 ## Prerequisites
