@@ -29,13 +29,13 @@ All the administrative actions will be easily executed thanks to the Service Con
 In the other hand, App Builder is a toolset developed by Oracle which will help you to create your Smartcontracts abstracting you from all the intrinsic technical complexities, even more when you need to create NFT or FT tokens. So, leveraging Oracle Blockchain and AppBuilder you will reduce considerably the time to market for any idea in which NFTs and FTs would be the perfect fit.
 
 <p align="center">
-<img width="989" height="618" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-4.png"/>
+<img width="791" height="494" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-4.png"/>
 </p>
 
 AppBuilder will help you to reduce considerably the complexity of the development, packaging, testing, and deployment of Hyperledger Fabric chaincodes, giving you the option to create them in different languages (TypeScript or Go).
 
 <p align="center">
-<img width="989" height="618" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-5.png"/>
+<img width="791" height="494" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-5.png"/>
 </p>
 
 
