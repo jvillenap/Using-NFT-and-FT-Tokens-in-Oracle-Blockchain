@@ -33,12 +33,12 @@ Remmember that enrollments are created at instance level, so the enrollment for 
 <a name="restInfo"/>
 
 ## Obtain Required information to execute REST APIs
-For all the request you will need to know which is the endpoint of the REST Proxy against you want to execute the API calls. You can get this URL from the Blockchain Service Console:
+First of all we need to know which is the endpoint in which the REST API is accesible. You can get this URL from the Blockchain Service Console:
 1. Access to the Blockchain Service Console:
    - In the OCI services menu, select Developer Services and click on Blockchain Platform
-   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access).
+   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
    - Click the Service Console console button.
-2- Once inside the ***Service Console*** go to the ***Nodes*** tab.It will show you all the nodes which composes this instance: 
+2- Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance: 
 
 
 <a name="initFT"/>
