@@ -175,7 +175,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
    - **Is Packaged Chaincode**: Leave this box unselected if what you are going to upload is a zip file. Select the combobox for tar.gz files.
    - **Chaincode Source**: Push the ***Upload Chaincode File*** to be able to navigate in your file system to select the chaincode zip file.  
 <p align="center">
-<img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-12.png"/>
+<img width="994" height="515" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-12.png"/>
 </p>
 
 6. If the installation succeed we will see the below success message. Then, next step is the deployment of the chaincode in the selected channel, so you must set all the values related with the deployment phase and push the ***Next*** button:
@@ -186,19 +186,24 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
    - **Endorsement Policy**: You can specify Endorsment policies during deployment, but for the purpose of this HoL we do not need them.
    - **Private Data Collection**: You can set Private Data Collections, but for the purpose of this HoL we do not need them.
 <p align="center">
-<img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-13.png"/>
+<img width="978" height="507" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-13.png"/>
 </p>
 
-7. If the deployment succeed, after closing the installation and deployment, you should see how the package has been installed in the two peers of the instance, and also has been deployed in one of the channels:
+7. If the deployment succeed, yo should see the following screen: 
 <p align="center">
-<img width="761" height="285" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-14.png"/>
+<img width="917" height="437" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-13b.png"/>
+</p>
+
+8. Sometimes can occur, the wizard indicates that the deployment is taking to much time, so the wizard will ask you to close the wizard without verifying if the chaincode has been deployed successfully. So, after closing the installation and deployment wizard, you should check if the package has been installed in the two peers of the instance, and also has been deployed in one of the channels:
+<p align="center">
+<img width="998" height="479" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-14.png"/>
 </p>
 
 <a name="DeploymentFTchaincodeParticipant"/>
 
 ## Deployment of the FT Smartcontract into the Participant Instance
 
-The chaincode is ready to be used from the Founder instance, but still not from the Participant instance. Now, we are goin go to install and accept, rather than deploy, the chaincode package into the Participant instance:
+The chaincode is ready to be used from the Founder instance, but still not from the Participant instance. Now, we are going to install and accept, rather than deploy, the chaincode package into the Participant instance:
 
 1. Access the ***Blockchain Service Console*** for the ***lessee1*** instance:
 <p align="center">
