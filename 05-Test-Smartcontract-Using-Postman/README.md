@@ -65,7 +65,7 @@ The following table shows all the varibles we are using in Postman to make more 
 | bc_nft_token_id             | NFT-E1                |
 | bc_nft_chaincode_name       | eShopDeviceNFT        |
 
-These variables are set in the ****Variables*** tab of the collection. You can change any of the values accordingly with any change you have done during the execution of the labs.
+These variables are set in the ***Variables*** tab of the Postman collection. You can change any of the values accordingly with any change you have done during the execution of the previous labs.
 
 <a name="initFT"/>
 
