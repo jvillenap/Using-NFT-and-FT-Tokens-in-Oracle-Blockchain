@@ -217,7 +217,7 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 
 3. Select on ***Deployed Chaincodes*** on the left-hand navigation pane. You will see that 1 chaincode has been ***committed*** to the channel, but has not yet been ***approved*** by the participant organization.
 <p align="center">
-<img width="762" height="295" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-17.png"/>
+<img width="1001" height="585" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-17.png"/>
 </p>
 
 4. Now click the ***Chaincodes*** tab and then ***Deploy a New Chaincode*** button.
