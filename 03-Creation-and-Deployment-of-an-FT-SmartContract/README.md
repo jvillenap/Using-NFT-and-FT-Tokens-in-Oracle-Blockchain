@@ -251,10 +251,10 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 <img width="1002" height="583" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-22.png"/>
 </p>
 
-8. Now click ***Channels*** tab, then click on the ***rentalshop*** channel, and navigate to 'Deployed Chaincodes' as you did in steps 3 and 4.
+8. Now click ***Channels*** tab, then click on the ***rentalshop*** channel, and navigate to ***Deployed Chaincodes*** as you did in steps 3 and 4.
 
-9. Find and click on the hamburger icon on the right of the row containing our chaincode. Select ***Approve***.
-<img width="762" height="330" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-23.png"/>
+9. Find and click on the hamburger icon on the right of the row containing your chaincode. Select ***Approve***.
+<img width="989" height="503" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-23.png"/>
 </p>
 
 10. In the Approve wizard you only need to specify the chaincode package you want to use, which obviously is the one we have just installed. 
