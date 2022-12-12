@@ -10,7 +10,7 @@ Using Oracle Blockchain we can create in minutes an Hyperledger Fabric network a
 - One Participant: ***lessee1***, a lessee who rents assets from the eshop organization.
 
 <p align="center">
-<img width="617" height="653" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-1.png"/>
+<img width="371" height="392" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-1.png"/>
 </p>
 
 
