@@ -12,7 +12,7 @@ In this chapter we are going to create the smartcontract used to handle the NFT 
 
 NFT tokens most of the times are created as digital twins of physical or digital assets, so NFT must reflect what is occurring to the physical or digital asset and be tracked accordingly to its reality. In this sense the NFT gives an extra value to the physical/digital asset, as the information provided by the NFT representing the asset is information which can not be refused as per the contribution of the blockchain technology to it.
 
-<a name=CreationNFTchaincode/>
+<a name="CreationNFTchaincode"/>
 
 ## Creation of the Smartcontract to handle the assets to be rented (NFTs)
 Once you have AppBuilder ready to be used, you can begin to create what is named the ***specification file***. The specification file can be created as a simple YAML file. Here below you can see the specification file for the NFT smartcontract:
@@ -224,7 +224,7 @@ The Controller class, before the custom methods, includes all the auto-generated
 
 At this point the chaincode is ready to be used, so we can deploy and test the chaincode locally by following the instructions from [Test Your Chaincode on a Local Hyperledger Fabric Network](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/test-your-chaincode-using-visual-studio-code.html) link. 
 
-<a name=DeploymentNFTchaincode/>
+<a name="DeploymentNFTchaincode"/>
 
 ## Deployment of the NFT Smartcontract into the Founder Instance
 
