@@ -39,7 +39,9 @@ First of all we need to know which is the endpoint in which the REST API is acce
    - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
    - Click the Service Console console button.
 2- Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance: 
-
+<p align="center">
+<img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
+</p>
 
 <a name="initFT"/>
 
