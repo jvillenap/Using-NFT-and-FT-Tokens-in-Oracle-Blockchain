@@ -47,13 +47,3 @@ We are going to perform a "dummy" initialization just with the minimum requireme
 ## Validation & Conclusions
 
 
-
-
-
-## Creation of the Founder instance
-1. In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
-![Select Blockchain Service from the OCI console](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/01-Create-The-Network/images/1-obp-2-1.png "Select Blockchain Service from the OCI console")
-
-
-
-
