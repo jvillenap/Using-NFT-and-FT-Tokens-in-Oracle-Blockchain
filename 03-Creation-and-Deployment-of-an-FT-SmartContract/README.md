@@ -231,10 +231,10 @@ The chaincode is ready to be used from the Founder instance, but still not from 
 </p>
 
 6. Fill out the form as follows:
-   - ***IMPORTANT***: All the participants which will share the same smartcontract deployed in a specific channel, must set the same name for the ***Package Label***. So, if in the founder instance we set the the value ***eShopDeviceNFT_rentalshop_v1***, here for lessee1 participant we will be exactly the same package name.
+   - ***IMPORTANT***: All the participants which will share the same smartcontract deployed in a specific channel, must set the same name for the ***Package Label***. So, if in the founder instance we set the the value ***eShopCriptoFT_rentalshop_v1***, here for lessee1 participant we will be exactly the same package name.
 
 <p align="center">
-<img width="991" height="377" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-20.png"/>
+<img width="988" height="428" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-20.png"/>
 </p>
 
    - Set ***Node*** as ***Chaincode Language***.
@@ -243,12 +243,12 @@ The chaincode is ready to be used from the Founder instance, but still not from 
    - Click ***Next***
 
 <p align="center">
-<img width="613" height="368" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-21.png"/>
+<img width="1000" height="580" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-21.png"/>
 </p>
 
 7. Click ***Close***. We will only be installing (not deploying) the chaincode onto the participant instance.
 <p align="center">
-<img width="613" height="368" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-22.png"/>
+<img width="1002" height="583" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-22.png"/>
 </p>
 
 8. Now click ***Channels*** tab, then click on the ***rentalshop*** channel, and navigate to 'Deployed Chaincodes' as you did in steps 3 and 4.
