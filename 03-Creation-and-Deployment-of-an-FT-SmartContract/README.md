@@ -143,7 +143,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 
 1. First of all we must create the deployable package from the chaincode project. From Visual Studio, push the right button on top of the name of the chaincode project, from the popup menu select the ***Package*** option, and select the directory to save the chaincode package file:
 <p align="center">
-<img width="989" height="566" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-9.png"/>
+<img width="911" height="688" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/images/3-ft-2-9.png"/>
 </p>
 
 2. Now we are going to access to the ***Oracle Blockchain Service Console*** to install and deploy the chaincode package into the Founder instance:
