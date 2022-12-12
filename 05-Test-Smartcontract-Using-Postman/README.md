@@ -21,8 +21,6 @@ Before the execution of any of the below steps we must create the enrollmentIDs 
 
 To reduce the complexity, enrollmentID can be named with the same value as the own user name.
 
-Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the lessee1 participant instance.
-
 
 <a name="Prerequisites"/>
 
@@ -35,13 +33,16 @@ Remmember that enrollments are created at instance level, so the enrollment for 
 ## Obtain Required information to execute REST APIs
 First of all we need to know which is the endpoint in which the REST API is accesible. You can get this URL from the Blockchain Service Console:
 1. Access to the Blockchain Service Console:
-   - In the OCI services menu, select Developer Services and click on Blockchain Platform
+   - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
    - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
-   - Click the Service Console console button.  
-2- Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance, and in the ***restproxy*** node you will see the endpoint URL at the ***Route*** column: 
+   - Click the ***Service Console*** button.  
+2. Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance, and in the ***restproxy*** node you will see the endpoint URL at the ***Route*** column: 
 <p align="center">
 <img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
 </p>
+
+Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the restproy URL of the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the restproxy URL from the lessee1 participant instance. Following table shows the user to be used depending on the instance you are going to access:
+
 
 <a name="initFT"/>
 
