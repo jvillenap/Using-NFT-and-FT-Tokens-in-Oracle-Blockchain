@@ -166,11 +166,11 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 2. Having the oaccount of the lessee1 user, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
-
+</p>
 3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-6 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection: 
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
-
+</p>
  - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
    - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
    
@@ -201,8 +201,21 @@ We have executed a complex operation in three separated steps, but obviously it 
 In the Postman collation you can see a lot of operations you can invoke to validate status of the accounts, users, tokens, and perform different transactions to simulate other operations. You can execute any of them test different operations, and to validate impact in the tokens and records.
 
 Additionally, this transactions will be saved into the ledger, and you can validate its execution by checking them through the ***Service Console*** by checking the transactions saved into the new blocks created in the ledger.
-1. Access the Service Console of whatever of the instances (eshop or lessee1).
-2. navigate to the ***channels*** tab.
-3. ...
-...
+1. Access to the Blockchain Service Console from whatever of the instances (eshop or lessee1).
+   - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
+   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
+   - Click the ***Service Console*** button.
+2. Once in the Service Console, navigate to the ***channels*** tab and select the ***rentalshop*** channel:
+<p align="center">
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-15.png"/> 
+</p>
+3. Default option opened entering in this page is the ***Ledger*** option. Wait a few seconds until the main frame load the lasts blocks written to the ledger:
+<p align="center">
+<img width="973" height="591" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-16.png"/> 
+</p>
+4. Selecet one of the blocks and selecting and click on the left arrow beside the transaction identifier (TxID) of the selected block:
+<p align="center">
+<img width="978" height="727" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-17.png"/> 
+</p>
+   - You can see all the details of the transaction(s) recorded in the block, Invoked Method, Parameters sent to the method, Response received from OBP, invoker of the transaction, and endorser.  
 
