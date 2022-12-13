@@ -198,6 +198,11 @@ We have executed a complex operation in three separated steps, but obviously it 
 <a name="validation"/>
 
 ## Validation
-In the Postman collation you can see a lot of operations you can invoke to validate status of the accounts, users, tokens, and perform different transactions to simulate other operations. All this transactions will be saved into the ledger, and you can validate its execution by checking them through the ***Service Console***
+In the Postman collation you can see a lot of operations you can invoke to validate status of the accounts, users, tokens, and perform different transactions to simulate other operations. You can execute any of them test different operations, and to validate impact in the tokens and records.
+
+Additionally, this transactions will be saved into the ledger, and you can validate its execution by checking them through the ***Service Console*** by checking the transactions saved into the new blocks created in the ledger.
+1. Access the Service Console of whatever of the instances (eshop or lessee1).
+2. navigate to the ***channels*** tab.
+3. ...
 ...
 
