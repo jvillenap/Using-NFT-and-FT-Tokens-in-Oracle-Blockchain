@@ -111,6 +111,7 @@ With the oaccount we can execute the ***Step-3 : Associate Account to Token for 
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
 </p>
+
  - Checking the response message we can see how the minted tokens have been assigned to the invoker of the API call:
    - Successfully minted 50000 tokens to Account Id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager)
 
