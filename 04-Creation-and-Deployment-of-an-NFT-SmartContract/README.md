@@ -265,7 +265,7 @@ Once you have tested locally the chaincode, we can proceed by deploying it in th
 
    - **Chaincode Language**: Select among the different languages, based in the language in which you have developed the chaincode.
    - **Target Peers**: Select the peers in which you want to install the chaincode package.
-   - **Is Packaged Chaincode**: Leave this box unselected if what you are going to upload is a zip file. Select the combobox for tar.gz files.
+   - **Is Packaged Chaincode**: Leave this box unselected if what you are going to upload is a zip file. Select the checkbox for tar.gz files.
    - **Chaincode Source**: Push the ***Upload Chaincode File*** to be able to navigate in your file system to select the chaincode zip file.  
 <p align="center">
 <img width="982" height="510" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/images/4-nft-2-12.png"/>
