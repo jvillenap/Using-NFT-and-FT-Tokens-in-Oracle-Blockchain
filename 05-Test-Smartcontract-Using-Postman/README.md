@@ -6,7 +6,8 @@
 [Obtain Required information to execute REST APIs](#restInfo)  
 [Initialization of the eCrypto token (FT)](#initFT)  
 [Initialization of the eShopDevice token (NFT)](#initNFT)  
-[Use case simulation - Successful renting](#usecase1)  
+[Use case simulation 1 - Adquisition of eCrypto tokens by lessee1](#usecase1)  
+[Use case simulation 2 - Successful renting](#usecase2)  
 [Validation](#validation)  
 
 <a name="Introduction"/>
@@ -149,27 +150,54 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <a name="usecase1"/>
 
-## Use case simulation - Successful renting
+## Use case simulation 1 - Adquisition of eCrypto tokens by lessee1
+
+At this point both smartcontracts has been initialized, and are ready to be used in a real case. So, we are going to simulate some expected operations related with our use case. First simulation is the acquisition of eCrypto tokens by the lessee1 organization.
+
+Lessee1 wants to rent an asset from eShop organization and for this rental operation needs to acquire eCryptos, so first operation is a transfer of eCrypto tokens from eshop::eshop_manager to lesse1::lessee1_manaer, assuming this transfer is because lessee1 has paid the equivalent value of eCrytpo tokens with another kind of currency or service:
+
+1. Get the oaccount of the lessee1 user. It can be done executing the ***Step-11: Get Accounts by OrgId:UserId*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:
+<p align="center">
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-12.png"/>
+</p>
+
+2. Having the oaccount of the lessee1 user, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
+<p align="center">
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
+
+3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-6 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection: 
+<p align="center">
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
+
+ - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
+   - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
+   
+We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically. This is quite the same we have done in the only custom method we have implemented in the FT Smartcontract:
+
+```javascript
+    @Validator(yup.string(), yup.string(), yup.string(), yup.string(), yup.string(), yup.number())
+    public async transferECoins(token_id: string, from_org_id: string, from_user_id: string,  to_org_id: string, to_user_id: string, quantity: number) {
+        const token_asset = await this.getTokenObject(token_id);
+        const to_account_id = await this.Ctx.Account.generateAccountId(token_id, to_org_id, to_user_id);
+        const from_account_id = await this.Ctx.Account.generateAccountId(token_id, from_org_id, from_user_id);
+        return await this.Ctx.Token.transferFrom(from_account_id, to_account_id, quantity, token_asset);
+    }
+```
+
+
+
+
+<a name="usecase2"/>
+
+## Use case simulation 2 - Successful renting
+
 
 
 <a name="validation"/>
 
 ## Validation
+In the Postman collation you can see a lot of operations you can invoke to validate status of the accounts, users, tokens, and perform different transactions to simulate other operations. All this transactions will be saved into the ledger, and you can validate its execution by checking them through the ***Service Console***
+...
 
