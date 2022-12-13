@@ -93,12 +93,13 @@ There is a set of administrative actions which are required before being able to
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
 
-4. eCrypto token must be associated to an account. We are going to associate the token to the eshop_manager user. Before being able to do this association, we need to obtain the oaccount of the eshop_manager. We can get the oaccount of the eshop user with the ***Step-11:get Accounts by OrgId:UserId*** request:
+4. the FT eCrypto token must be associated to an user account. We are going to associate the token to the eshop_manager user. Before being able to do this association, we need to obtain the oaccount of the eshop_manager. We can get the oaccount of the eshop user with the ***Step-11:get Accounts by OrgId:UserId*** request:
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
 </p>
-With the oaccount we can execute the ***Step-3...***
-
+With the oaccount we can execute the ***Step-3 : Associate Account to Token for Token User*** from the Postman Collection:
+<p align="center">
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
 
 
 <a name="initNFT"/>
