@@ -207,14 +207,14 @@ Additionally, this transactions will be saved into the ledger, and you can valid
    - Click the ***Service Console*** button.
 2. Once in the Service Console, navigate to the ***channels*** tab and select the ***rentalshop*** channel:
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-15.png"/> 
+<img width="982" height="571" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-15.png"/> 
 </p>
 3. Default option opened entering in this page is the ***Ledger*** option. Wait a few seconds until the main frame load the lasts blocks written to the ledger:
 <p align="center">
 <img width="973" height="591" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-16.png"/> 
 </p>
 4. Selecet one of the blocks and selecting and click on the left arrow beside the transaction identifier (TxID) of the selected block:
-   - You can see all the details of the transaction(s) recorded in the block, Invoked Method, Parameters sent to the method, Response received from OBP, invoker of the transaction, and endorser.  
+   - You can see all the details of the transaction(s) recorded in the block, Invoked Method, Parameters sent to the method, Response received from OBP, invoker of the transaction, and endorser.
 <p align="center">
 <img width="978" height="727" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-17.png"/> 
 </p>
