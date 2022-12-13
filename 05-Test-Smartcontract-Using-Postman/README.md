@@ -174,7 +174,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
  - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
    - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
    
-We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically. This is quite the same we have done in the only custom method we have implemented in the FT Smartcontract:
+We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically. This is quite the same we have done in the single custom method we have implemented in the FT Smartcontract:
 
 ```javascript
     @Validator(yup.string(), yup.string(), yup.string(), yup.string(), yup.string(), yup.number())
