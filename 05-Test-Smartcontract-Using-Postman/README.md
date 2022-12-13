@@ -7,7 +7,7 @@
 [Initialization of the eCrypto token (FT)](#initFT)  
 [Initialization of the eShopDevice token (NFT)](#initNFT)  
 [Use case simulation - Successful renting](#usecase1)  
-[Validation & Conclusions](#validation)  
+[Validation](#validation)  
 
 <a name="Introduction"/>
 
@@ -73,14 +73,16 @@ These variables are set in the ***Variables*** tab of the Postman collection. Yo
 
 There is a set of administrative actions which are required before being able to execute the business methods.
 
-1. The first action is the initialization of the chaincode indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
+The following API REST calls correspond to the calls into the ***AdminSteps (FT chaincde)*** folder from the provided Postman collection.
+
+1. The first action is the initialization of the chaincode (***Step-0: Init User Account***) indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
    - ***args***: Scaped array of user_ids with their org_ids:
      - "[{\"org_id\":\"eshop\",\"user_id\":\"eshop_manager\"},{\"org_id\":\"lessee1\",\"user_id\":\"lessee1_manager\"}]"
 <p align="center">
 <img width="982" height="577" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
 </p>
 
-2. We must also create user accounts for all those users elegible to own eCrypto Tokens. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
+2. We must also create user accounts for all those users elegible to own eCrypto Tokens by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
    - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
      - "createAccount", "eshop", "eshop_manager", "fungible"
      - "createAccount", "lessee1", "lessee1_manager", "fungible"
@@ -88,7 +90,7 @@ There is a set of administrative actions which are required before being able to
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
 </p>
 
-3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-3: Initialize Token*** from the postman collection:
+3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-2: Initialize Token*** from the postman collection:
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
@@ -102,12 +104,12 @@ With the oaccount we can execute the ***Step-3 : Associate Account to Token for 
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
 
-5. We can set which user is allowed to mint tokens by executing the ***Step4: Add Minter Role*** from the Postman collection:
+5. We can set which user is allowed to mint tokens by executing the ***Step-4: Add Minter Role*** from the Postman collection:
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-7.png"/>
 </p>
 
-6. And finally, we can issue tokens which will be assigned to the user who executes the operation:
+6. And finally, we can issue tokens which will be assigned to the user who executes the operation by executing the ***Step-5:Issue Tokens*** request:
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
 </p>
@@ -121,13 +123,43 @@ With the oaccount we can execute the ***Step-3 : Associate Account to Token for 
 
 ## Initialization of the eShopDevice token (NFT)
 
+The initialization of an NFT token is quite simpler than the initialization of FTs, we just need to execute the following 3 steps:
+
+The following API REST calls correspond to the calls into the ***AdminSteps (NFT chaincde)*** folder from the provided Postman collection.
+
+1. The first action is the initialization of the chaincode (***Step-0: Init User Account***) indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
+   - ***args***: Scaped array of user_ids with their org_ids:
+     - "[{\"orgId\":\"eshop\",\"userId\":\"eshop_manager\"},{\"orgId\":\"lessee1\",\"userId\":\"lessee1_manager\"}]"
+<p align="center">
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-9.png"/>
+</p>
+
+2. We must create user accounts for all the users who can be custodians of the NFT assets representing the physical assets. It can be done by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
+   - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
+     - "createAccount", "eshop", "eshop_manager", "nonfungible"
+     - "createAccount", "lessee1", "lessee1_manager", "nonfungible"
+<p align="center">
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-10.png"/>
+</p>
+
+3. We can set which user is allowed to mint tokens by executing the ***Step-2: AddRole*** from the Postman collection:
+<p align="center">
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-11.png"/>
+</p>
 
 
-First administrative action is assign administrative users to the chaincode. Until this request  
-Init admin accounts
 
 
-We must create user accounts for all the users who can be custodians of the NFT assets representing the physical assets. In our use case there is only the eshop_manager user and the lessee1_manager user, each of them belonging to one of the organizations.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -139,6 +171,5 @@ We must create user accounts for all the users who can be custodians of the NFT 
 
 <a name="validation"/>
 
-## Validation & Conclusions
-
+## Validation
 
