@@ -88,12 +88,9 @@ There is a set of administrative actions which are required before being able to
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
 </p>
 
-3. We must also create user accounts for all those users elegible to own eCrypto Tokens. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
-   - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
-     - "createAccount", "eshop", "eshop_manager", "fungible"
-     - "createAccount", "lessee1", "lessee1_manager", "fungible"
+3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-3: Initialize Token*** from the postman collection:
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
 
 
