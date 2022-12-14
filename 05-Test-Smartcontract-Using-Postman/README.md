@@ -193,7 +193,12 @@ We have executed a complex operation in three separated steps, but obviously it 
 
 ## Use case simulation 2 - Successful renting
 
-
+This second use case is a bit more complex. Before being able to rent a device, we must follow next steps:
+1. We must mint the NFT token which represents the asset to be rented. This can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a user&org representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** :  
+<p align="center">
+<img width="953" height="1078" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-18.png"/> 
+</p>
+...
 
 <a name="validation"/>
 
