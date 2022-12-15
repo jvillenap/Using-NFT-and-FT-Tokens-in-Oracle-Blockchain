@@ -232,7 +232,7 @@ You can execute the GetTokenHistory method to get all the snapshots taken to the
         "getTokenHistory",
         "NFT-E1"
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
@@ -247,7 +247,7 @@ You can execute the GetTokenHistory method to get all the snapshots taken to the
         "NFT-E1",
         "2"
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
