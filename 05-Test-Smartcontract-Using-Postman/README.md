@@ -78,9 +78,20 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 
 1. The first action is the initialization of the chaincode (***Step-0: Init User Account***) indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
    - ***args***: Scaped array of user_ids with their org_ids:
-     - "[{\"org_id\":\"eshop\",\"user_id\":\"eshop_manager\"},{\"org_id\":\"lessee1\",\"user_id\":\"lessee1_manager\"}]"
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",
+    "args": [
+        "init",
+        "[{\"orgId\":\"eshop\",\"userId\":\"eshop_manager\"},{\"orgId\":\"lessee1\",\"userId\":\"lessee1_manager\"}]"
+    ],
+    "timeout": {{bc_timeout}},
+    "isInit": true,
+    "sync": true
+}
+```
 <p align="center">
-<img width="982" height="577" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
+<img width="953" height="545" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
 </p>
 
 2. We must also create user accounts for all those users elegible to own eCrypto Tokens by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
