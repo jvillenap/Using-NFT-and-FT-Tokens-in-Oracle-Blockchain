@@ -275,12 +275,12 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 
 ```JSON
 {
-    "chaincode": "{{bc_nft_chaincode_name}}",
+    "chaincode": "{{bc_nft_chaincode_name}}",            //Smartcontract name
     "args": [
-        "addRole",
-        "minter","eshop","eshop_manager"
+        "addRole",                                       //Method name
+        "minter","eshop","eshop_manager"                 //Role, OrgId, UserID
         ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
