@@ -91,7 +91,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 }
 ```
 <p align="center">
-<img width="953" height="545" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2.png"/>
+<img width="953" height="545" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2b.png"/>
 </p>
 
 2. We must also create user accounts for all those users elegible to own eCrypto Tokens by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
