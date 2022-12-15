@@ -226,7 +226,9 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
 </p>
-  - Request Payload:
+
+  - Sample Request Payload:
+
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
@@ -239,8 +241,11 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
     "sync": true
 }
 ```
+
 3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-0 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection: 
-  - Request Payload:
+
+  - Sample Request Payload:
+
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
@@ -255,11 +260,13 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
     "sync": true
 }
 ```
+
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
 </p>
- - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
-   - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
+
+  - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
+    - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
    
 We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically, which already exist in the smartcontract. This is quite the same we have done in the single custom method we have implemented in the FT Smartcontract:
 
