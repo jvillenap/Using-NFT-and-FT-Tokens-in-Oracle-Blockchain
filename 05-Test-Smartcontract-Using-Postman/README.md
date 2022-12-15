@@ -174,7 +174,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
  - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
    - Successfully transferred 10000 tokens from account id: oaccount~df41ed4c21da79cd7958f96f3b41fac9d9a184f5b6a08e1c4c3c7f50dddd3363 (Org-Id: eshop, User-Id: eshop_manager) to account id: oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8 (Org-Id: lessee1, User-Id: lessee1_manager)
    
-We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically. This is quite the same we have done in the single custom method we have implemented in the FT Smartcontract:
+We have executed a complex operation in three separated steps, but obviously it can be done in one single operation, just creating a custom method in the chaincode to do it atomically, which already exist in the smartcontract. This is quite the same we have done in the single custom method we have implemented in the FT Smartcontract:
 
 ```javascript
     @Validator(yup.string(), yup.string(), yup.string(), yup.string(), yup.string(), yup.number())
@@ -185,20 +185,50 @@ We have executed a complex operation in three separated steps, but obviously it 
         return await this.Ctx.Token.transferFrom(from_account_id, to_account_id, quantity, token_asset);
     }
 ```
+So, we can execute this action in one single step as we can see below:
 
-
+**************EJECUTAR TRANSFER DE TOKENS!!!!
 
 
 <a name="usecase2"/>
 
 ## Use case simulation 2 - Successful renting
 
-This second use case is a bit more complex. Before being able to rent a device, we must follow next steps:
-1. We must mint the NFT token which represents the asset to be rented. This can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a user&org representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** :  
+This second use case is a bit more complex. Before being able to rent a device, we must be sure the asset has is digital twin token representing it in blockchain. If not, we must mint the NFT representing the asset. It can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a org::user representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** :  
 <p align="center">
 <img width="953" height="1078" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-18.png"/> 
 </p>
-...
+
+At this point, as the current custodian of the NFT is the same org::user who is going to rent the asset, we can proceed by starting the rental process between shop renter and the lessee1 by making a booking of the asset, which can be considered as a reservation of the asset to be lesseed:
+<p align="center">
+<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-19.png"/> 
+</p>
+
+Once done the booking we can check if a deposit have been charged to the lessee1 user, executing the ***Step-1 : Get Account Balance for Token User*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection:
+<p align="center">
+<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-20.png"/> 
+</p>
+Checking the current balance of eCrypto tokens from the lessee1 user, we can see how it has been decresade in 300 units as per the reservation done. Lessee1 did an initial acquisition of 10000 eCrypto tokens, and after a charge of 300 tokens, he only has 9700. 
+
+At this point we can continue by executing the steps of receiving the rented asset by lessee1. Is in this step where the custody of the NFT representing the asset is transferrer from the renter to the lessee. So any bad usage of the asset during this period will be tracked as been done during the period in which lessee1 was the custodian of the asset. This action can be executed with the ***Step-3: Receive Device*** from the ***Simuation2:Mining & Rental Process*** from the Postman collection :
+<p align="center">
+<img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-21.png"/> 
+</p>
+
+And finally, when the rental period finalize, we can proceed by executing the return asset action. It can be done by executing the ***Step-3:Receive Device*** from the folder ***Simuation2: Mining & Rental Process*** from the Postman collection:
+<p align="center">
+<img width="953" height="608" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-XX.png"/> 
+</p>
+
+
+
+You can execute the GetTokenHistory method to get all the snapshots taken to the NFT, so every expected or unexpected event occurred to the asset will be persisted in blockchain, and will be accessible by any participant of the network.
+
+
+
+
+
+We Have shown here the most basic path, let's say the happy path, but obviously there is a lot more events can occur, which can led us to unexpected or unwanted situations, so it is here where IoT, chatbots, AI, or any other technology can be easily integrated to give more value to the solution. 
 
 <a name="validation"/>
 
