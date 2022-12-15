@@ -195,7 +195,7 @@ So, we can execute this action in one single step as we can see below:
 ## Use case simulation 2 - Successful renting
 
 This second use case is a bit more complex. Before being able to rent a device, we must be sure the asset has is digital twin token representing it in blockchain. If not, we must mint the NFT representing the asset. It can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a org::user representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** : 
-  - Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the NFT token. To be able to do as tests as you want you can give to this attribute a sequencial value: First will be NFT-E1, next one NFT-E2, ...):
+  - Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the NFT token. To be able to do as much tests as you want you can give to this attribute a sequencial value: First will be NFT-E1, next one NFT-E2, ...):
 ```JSON
 {
     "chaincode": "{{bc_nft_chaincode_name}}",
