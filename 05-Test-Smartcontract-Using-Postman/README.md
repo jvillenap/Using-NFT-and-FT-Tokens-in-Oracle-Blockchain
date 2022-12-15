@@ -223,9 +223,35 @@ And finally, when the rental period finalize, we can proceed by executing the re
 ***Important:*** Unlike the other REST calls, this one must be executed through the participant lessee1 REST Proxy, and obviously with the credentials allowed (lessee1_manager) for this REST Proxy. All the previous REST calls were executed using the REST Proxy from the founder instance (eshop). It is because the current custodian belongs to the lessee1 organization, so users in that organization are the only allowed to transfer the custody to other users.
 
 
-You can execute the GetTokenHistory method to get all the snapshots taken to the NFT, so every expected or unexpected event occurred to the asset will be persisted in blockchain, and will be accessible by any participant of the network.
-
-
+You can execute the GetTokenHistory method to get all the snapshots taken to the NFT, so every expected or unexpected event occurred to the asset will be persisted in blockchain, and will be accessible by any participant of the network. It can be done by executing whatever of the two getTokenHistory methods:
+1. ***Step-6a: Get Device Token History*** from the folder ***simulation2: Mining & Rental Process*** with the following request payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",
+    "args": [
+        "getTokenHistory",
+        "NFT-E1"
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
+  - Where "NFT-E1" is the the tokenId for the NFT.
+ 
+2. ***Step-6b: Get Device Token History by BookingId*** from the folder ***simulation2: Mining & Rental Process*** with the following request payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",
+    "args": [
+        "getTokenHistoryByBookingId",
+        "NFT-E1",
+        "2"
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
+  - Where "NFT-E1" is the the tokenId for the NFT, and "2" is the bookingId. 
 
 
 
