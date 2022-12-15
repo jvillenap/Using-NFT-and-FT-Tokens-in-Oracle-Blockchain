@@ -271,6 +271,20 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 </p>
 
 3. We can set which user is allowed to mint tokens by executing the ***Step-2: AddRole*** from the Postman collection:
+  - Sample Request Payload
+
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",
+    "args": [
+        "addRole",
+        "minter","eshop","eshop_manager"
+        ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-11.png"/>
 </p>
