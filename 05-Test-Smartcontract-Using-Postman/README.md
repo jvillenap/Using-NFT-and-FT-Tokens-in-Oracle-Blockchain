@@ -85,7 +85,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
         "init",
         "[{\"orgId\":\"eshop\",\"userId\":\"eshop_manager\"},{\"orgId\":\"lessee1\",\"userId\":\"lessee1_manager\"}]"
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "isInit": true,
     "sync": true
 }
@@ -98,22 +98,25 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
    - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
      - "createAccount", "eshop", "eshop_manager", "fungible"
      - "createAccount", "lessee1", "lessee1_manager", "fungible"
+
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",                         //Smartcontract name
     "args": [
         "createAccount", "lessee1","lessee1_manager","fungible"      //Method, OrgID, UserID, fungible for FT / nonfungible for NFT
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
+
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
 </p>
 
 3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-2: Initialize Token*** from the postman collection:
   - Sample Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the FT token:
+
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",                         //Smartcontract name
@@ -125,12 +128,14 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
     "sync": true
 }
 ```
+
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
 
 4. the FT eCrypto token must be associated to an user account. We are going to associate the token to the eshop_manager user. Before being able to do this association, we need to obtain the oaccount of the eshop_manager. We can get the oaccount of the eshop user with the ***Step-11:get Accounts by OrgId:UserId*** request:
   - Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the FT token:
+
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",                     //Smartcontract name
@@ -143,6 +148,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
     "sync": true
 }
 ```
+
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
 </p>
@@ -167,12 +173,46 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
 
-6. We can set which user is allowed to mint tokens by executing the ***Step-4: Add Minter Role*** from the Postman collection:
+6. We can set which user is allowed to mint tokens by adding the minter role to such user. It can be done by executing the ***Step-4: Add Minter Role*** from the Postman collection:
+
+  - Sample Request Payload:
+
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",    //Smartcontract name
+    "args": [
+        "addRole",                              //Method name
+        "{{bc_ft_token_id}}"                    //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "minter",                               //Role to be assigned
+        "eshop",                                //Organization to which the user to get the role belongs
+        "eshop_manager"                         //User to which the role will be assigned
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-7.png"/>
 </p>
 
 7. And finally, we can issue tokens which will be assigned to the user who executes the operation by executing the ***Step-5:Issue Tokens*** request:
+
+  - Sample Request Payload:
+
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",    //Smarcontract name
+    "args": [
+        "issueTokens",                          //Method name
+        "{{bc_ft_token_id}}"                    //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "50000"                                 //Number of tokens to be issued
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
 </p>
@@ -192,7 +232,20 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 
 1. The first action is the initialization of the chaincode (***Step-0: Init User Account***) indicating which user accounts will be allowed to execute administrative actions. It is important to set correctly the args of the init method:
    - ***args***: Scaped array of user_ids with their org_ids:
-     - "[{\"orgId\":\"eshop\",\"userId\":\"eshop_manager\"},{\"orgId\":\"lessee1\",\"userId\":\"lessee1_manager\"}]"
+
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",      //Smartcontract name
+    "args": [
+        "init",                                    //Method name
+        "[{\"orgId\":\"eshop\",\"userId\":\"eshop_manager\"},{\"orgId\":\"lessee1\",\"userId\":\"lessee1_manager\"}]"
+    ],
+    "timeout": 60000,
+    "isInit": true,
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-9.png"/>
 </p>
@@ -201,6 +254,18 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
    - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
      - "createAccount", "eshop", "eshop_manager", "nonfungible"
      - "createAccount", "lessee1", "lessee1_manager", "nonfungible"
+
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",                        //Smartcontract name
+    "args": [
+        "createAccount", "lessee1","lessee1_manager","fungible"      //Method, OrgID, UserID, fungible for FT / nonfungible for NFT
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-10.png"/>
 </p>
@@ -230,7 +295,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
         "lessee1",                                      //Organization to which the user belongs
         "lessee1_manager"                               //User for which we want to know its account id
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
@@ -396,7 +461,7 @@ At this point we can continue by executing the steps of receiving the rented ass
         "2022-12-16T13:52:45.000Z",             //Rental start date
         "2022-12-18T13:52:45.000Z"              //Rental end date
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
@@ -421,7 +486,7 @@ And finally, when the rental period finalize, we can proceed by executing the re
         "true",                                 //true for deduct in case of total rental amount < deposit, false in the oposite case 
         "300"                                   //charge to be done or to be deducted depending on previous boolean value
     ],
-    "timeout": {{bc_timeout}},
+    "timeout": 60000,
     "sync": true
 }
 ```
