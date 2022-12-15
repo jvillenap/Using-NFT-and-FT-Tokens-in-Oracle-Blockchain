@@ -35,8 +35,8 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 Here it is a <a id="raw-url" href="https://raw.githubusercontent.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/main/05-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json">Postman collection</a> prepared to be used agains the two prepared smartcontract. 
 
 This Postman Collection includes a sort of request against the OBP Instances to execute all the initialization of the smartcontracts, the two use cases to be simulated using Postman:
-  - ***AdminSteps (NFT chaincode)***: REST calls to perform the initialization of the NFT Token to be used as a Digital Twin of the asset to be rent.
-  - ***AdminSteps (FT chaincode)***: REST calls to perform the initialization of the FT Token to be used as eCrypto echangable currency.
+  - ***AdminSteps (NFT chaincode)***: REST calls to initialize of the NFT Token to be used as a Digital Twin of the asset to be rent.
+  - ***AdminSteps (FT chaincode)***: REST calls to initialize of the FT Token to be used as eCrypto echangable currency.
   - ***Simulation1: eCryptoTransfer***: Simulation the acquisition of tokens by the manager user of the lessee1 org.
   - ***Simulation2: Mining & Rental Process***: Simulation of a complete rental process
 
