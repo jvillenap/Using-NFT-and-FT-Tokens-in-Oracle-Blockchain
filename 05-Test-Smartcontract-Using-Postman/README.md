@@ -3,7 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Prerequisites](#Prerequisites)  
-[Obtain Required information to execute REST APIs](#restInfo)  
+[Prepare Postman Collection to execute REST APIs](#restInfo)  
 [Initialization of the eCrypto token (FT)](#initFT)  
 [Initialization of the eShopDevice token (NFT)](#initNFT)  
 [Use case simulation 1 - Adquisition of eCrypto tokens by lessee1](#usecase1)  
@@ -31,7 +31,9 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 
 <a name="restInfo"/>
 
-## Obtain Required information to execute REST APIs
+## Prepare Postman Collection to execute REST APIs
+Here it is a Postman collection prepared to be used agains the two prepared smartcontract 
+
 First of all we need to know which is the endpoint in which the REST API is accesible. You can get this URL from the Blockchain Service Console:
 1. Access to the Blockchain Service Console:
    - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
