@@ -32,7 +32,7 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 <a name="restInfo"/>
 
 ## Prepare Postman Collection to execute REST APIs
-Here it is a [Postman collection](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json) prepared to be used agains the two prepared smartcontract. 
+Here it is a <a id="raw-url" href="https://raw.githubusercontent.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/main/05-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json">Postman collection</a> prepared to be used agains the two prepared smartcontract. 
 
 This Postman Collection includes a sort of request against the OBP Instances to execute all the initialization of the smartcontracts, the two use cases to be simulated using Postman:
   - ***AdminSteps (NFT chaincode)***: REST calls to perform the initialization of the NFT Token to be used as a Digital Twin of the asset to be rent.
