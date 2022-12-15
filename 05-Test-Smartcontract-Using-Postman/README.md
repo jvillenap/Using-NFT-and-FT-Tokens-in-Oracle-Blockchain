@@ -226,7 +226,7 @@ We have executed a complex operation in three separated steps, but obviously it 
         return await this.Ctx.Token.transferFrom(from_account_id, to_account_id, quantity, token_asset);
     }
 ```
-So, we can execute this action in one single step using the following Request Payload:
+So, we can execute this action in one single step executing the request ***Step-2 : transferECoins*** from the folder ***simulation1: eCryptoTransfer*** using the following Request Payload:
 ```JSON
 {
     "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
@@ -243,6 +243,7 @@ So, we can execute this action in one single step using the following Request Pa
     "sync": true
 }
 ```
+
 <a name="usecase2"/>
 
 ## Use case simulation 2 - Successful renting
