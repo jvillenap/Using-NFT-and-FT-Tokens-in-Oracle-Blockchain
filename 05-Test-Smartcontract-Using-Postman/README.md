@@ -158,7 +158,20 @@ At this point both smartcontracts has been initialized, and are ready to be used
 
 Lessee1 wants to rent an asset from eShop organization and for this rental operation needs to acquire eCryptos, so first operation is a transfer of eCrypto tokens from eshop::eshop_manager to lesse1::lessee1_manaer, assuming this transfer is because lessee1 has paid the equivalent value of eCrytpo tokens with another kind of currency or service:
 
-1. Get the oaccount of the lessee1 user. It can be done executing the ***Step-11: Get Accounts by OrgId:UserId*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:
+1. Get the oaccount of the lessee1 user. It can be done executing the ***Step-11: Get Accounts by OrgId:UserId*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection. It will give us the account identifier of the user for which we want to acquire tokens:
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
+    "args": [
+        "getAccountsByUser",                            //Method from the smartcontract
+        "lessee1",                                      //Organization to which the user belongs
+        "lessee1_manager"                               //User for which we want to know its account id
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-12.png"/>
 </p>
@@ -167,7 +180,35 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
 </p>
-3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-6 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection: 
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
+    "args": [
+        "associateTokenToAccount",                      //Method from the smartcontract
+        "oaccount~edd0445ae8efb419a78cbdcb0e728...",    //oaccount obtained in previous request
+        "{{bc_ft_token_id}}"                            //FT token ID (based in variable value during minting of FT: eCrypto1)
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
+3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-0 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection: 
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
+    "args": [
+        "transferTokens",                               //Method from the smartcontract
+        "{{bc_ft_token_id}}",                           //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "lessee1",                                      //Organization to which user for which we are acquiring tokens belongs
+        "lessee1_manager",                              //User for who we are acquiring the tokens
+        "600"                                           //Amount of tokens to be acquired
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
 </p>
@@ -185,11 +226,23 @@ We have executed a complex operation in three separated steps, but obviously it 
         return await this.Ctx.Token.transferFrom(from_account_id, to_account_id, quantity, token_asset);
     }
 ```
-So, we can execute this action in one single step as we can see below:
-
-**************EJECUTAR TRANSFER DE TOKENS!!!!
-
-
+So, we can execute this action in one single step using the following Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
+    "args": [
+        "transferECoins",                               //Method from the smartcontract
+        "{{bc_ft_token_id}}",                           //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "eshop",                                        //Organization of the user from which we are going to deduct the tokens
+        "eshop_manager",                                //User from which we are going to deduct the tokens
+        "lessee1",                                      //Organization to which user for which we are acquiring tokens belongs
+        "lessee1_manager",                              //User for who we are acquiring the tokens
+        "600"                                           //Amount of tokens to be acquired
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <a name="usecase2"/>
 
 ## Use case simulation 2 - Successful renting
