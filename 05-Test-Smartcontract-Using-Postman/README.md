@@ -224,9 +224,9 @@ At this point, as the current custodian of the NFT is the same org::user who is 
         "2",                                    //Booking ID
         "{{bc_ft_token_id}}",                   //FT token ID (based in variable value during minting of FT: eCrypto1)
         "lessee1",                              //lesseer organization
-        "lessee1_manager",                      //user inside the lesseer organization
+        "lessee1_manager",                      //user inside the lesseer organization to be charged for the deposit
         "eshop",                                //renter organization
-        "eshop_manager",                        //user inside the renter organization
+        "eshop_manager",                        //user inside the renter organization which will receive the Deposit tokens
         "300"                                   //Deposit amount in eCryptos to be charged to the lessee account
     ],
     "timeout": 60000,
@@ -238,24 +238,90 @@ At this point, as the current custodian of the NFT is the same org::user who is 
 </p>
 
 Once done the booking we can check if a deposit have been charged to the lessee1 user, executing the ***Step-1 : Get Account Balance for Token User*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection:
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",   //Smartcontract name
+    "args": [
+        "getAccountBalance",                   //Method from the smartcontract
+        "{{bc_ft_token_id}}",                  //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "lessee1",                             //Organization to which user belongs
+        "lessee1_manager"                      //User for which we want to know the balance of eCrypto1 tokens
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-20.png"/> 
 </p>
 Checking the current balance of eCrypto tokens from the lessee1 user, we can see how it has been decresade in 300 units as per the reservation done. Lessee1 did an initial acquisition of 10000 eCrypto tokens, and after a charge of 300 tokens, he only has 9700. 
 
 At this point we can continue by executing the steps of receiving the rented asset by lessee1. Is in this step where the custody of the NFT representing the asset is transferrer from the renter to the lessee. So any bad usage of the asset during this period will be tracked as been done during the period in which lessee1 was the custodian of the asset. This action can be executed with the ***Step-3: Receive Device*** from the ***Simuation2:Mining & Rental Process*** from the Postman collection :
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",   //Smartcontract name
+    "args": [
+        "receiveDevice",                        //Method from the smartcontract
+        "NFT-E5",                               //NFT token ID (the one minted in the first step)
+        "eshop",                                //Renter organization
+        "eshop_manager",                        //User from Renter organization which who relinquish custody of the NFT token 
+        "lessee1",                              //lesseer organization
+        "lessee1_manager",                      //User from lesseer organization to which NFT will be transferred
+        "2022-12-16T13:52:45.000Z",             //Rental start date
+        "2022-12-18T13:52:45.000Z"              //Rental end date
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-21.png"/> 
 </p>
 
 And finally, when the rental period finalize, we can proceed by executing the return asset action. It can be done by executing the ***Step-4:Return Device*** from the folder ***Simuation2: Mining & Rental Process*** from the Postman collection:
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",   //Smartcontract name
+    "args": [
+        "returnDevice",                         //Method from the smartcontract
+        "NFT-E5",                               //NFT token ID (the one minted in the firts step)
+        "{{bc_ft_token_id}}",                   //FT token ID (based in variable value during minting of FT: eCrypto1)    
+        "lessee1",                              //lesseer organization      
+        "lessee1_manager",                      //User from lessee organization which will relinquish custody of the NFT token, and which will be charge for the total cost of the rental, deducting the diposit paid at booking step
+        "eshop",                                //renter organization
+        "eshop_manager",                        //User from renter organization will be receive again the custody of the NFT
+        "2022-12-17T13:52:45.000Z",             //Return date
+        "true",                                 //true for deduct in case of total rental amount < deposit, false in the oposite case 
+        "300"                                   //charge to be done or to be deducted depending on previous boolean value
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="608" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-22.png"/> 
 </p>
 
 ***Important:*** Unlike the other REST calls, this one must be executed through the participant lessee1 REST Proxy, and obviously with the credentials allowed (lessee1_manager) for this REST Proxy. All the previous REST calls were executed using the REST Proxy from the founder instance (eshop). It is because the current custodian belongs to the lessee1 organization, so users in that organization are the only allowed to transfer the custody to other users.
 
-After the execution of the returnDevice method, as the rental has been finished, you can check the balance of eCrypto tokens from lessee1_manager and lessee1_manager. Lessee1 should have been charged with the amount of eCrypto token corresponding with the rental cost, deducting from it the deposite charged during the booking. It can be done again by executing the ***Step-8: Get eCrypto Token Balance*** from the folder ***simulation2: Mining & Rental Process***:
+After the execution of the returnDevice method, as the rental has been finished, you can check the balance of eCrypto tokens from lessee1_manager and lessee1_manager. Lessee1 should have been charged with the amount of eCrypto token corresponding with the rental cost, deducting from it the deposite charged during the booking. It can be done again by executing the ***Step-1 : Get Account Balance for Token User*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection:
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",   //Smartcontract name
+    "args": [
+        "getAccountBalance",                   //Method from the smartcontract
+        "{{bc_ft_token_id}}",                  //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "lessee1",                             //Organization to which user belongs
+        "lessee1_manager"                      //User for which we want to know the balance of eCrypto1 tokens
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-23.png"/> 
 </p>
