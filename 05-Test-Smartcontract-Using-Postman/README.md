@@ -545,33 +545,30 @@ Once a NFT has been minted, you can execute the GetTokenHistory method to get al
 1. ***Step-6a: Get Device Token History*** from the folder ***simulation2: Mining & Rental Process*** with the following request payload:
 ```JSON
 {
-    "chaincode": "{{bc_nft_chaincode_name}}",
+    "chaincode": "{{bc_nft_chaincode_name}}",     //Smartcontract name
     "args": [
-        "getTokenHistory",
-        "NFT-E1"
+        "getTokenHistory",                        //Method name
+        "NFT-E1"                                  //NFT Token ID
     ],
     "timeout": 60000,
     "sync": true
 }
 ```
-  - Where "NFT-E1" is the the tokenId for the NFT.
  
 2. ***Step-6b: Get Device Token History by BookingId*** from the folder ***simulation2: Mining & Rental Process***, to filter by bookingId with the following request payload:
+
 ```JSON
 {
-    "chaincode": "{{bc_nft_chaincode_name}}",
+    "chaincode": "{{bc_nft_chaincode_name}}",       //Smartcontract name
     "args": [
-        "getTokenHistoryByBookingId",
-        "NFT-E1",
-        "2"
+        "getTokenHistoryByBookingId",               //Method name
+        "NFT-E1",                                   //NFT Token ID
+        "2"                                         //Booking ID
     ],
     "timeout": 60000,
     "sync": true
 }
 ```
-  - Where "NFT-E1" is the the tokenId for the NFT, and "2" is the bookingId. 
-
-
 
 We Have shown here the most basic path, let's say the happy path, but obviously there is a lot more events can occur, which can led us to unexpected or unwanted situations, so it is here where IoT, chatbots, AI, or any other technology can be easily integrated to give more value to the solution. 
 
