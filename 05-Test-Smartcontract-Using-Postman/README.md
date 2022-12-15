@@ -98,16 +98,51 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
    - This call must be executed as many times as users for which we want to create an account. In our case 2 times, each with following params:
      - "createAccount", "eshop", "eshop_manager", "fungible"
      - "createAccount", "lessee1", "lessee1_manager", "fungible"
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",                         //Smartcontract name
+    "args": [
+        "createAccount", "lessee1","lessee1_manager","fungible"      //Method, OrgID, UserID, fungible for FT / nonfungible for NFT
+    ],
+    "timeout": {{bc_timeout}},
+    "sync": true
+}
+```
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
 </p>
 
 3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-2: Initialize Token*** from the postman collection:
+  - Sample Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the FT token:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",                         //Smartcontract name
+    "args": [
+        "initializeEcryptoToken",                                    //Method name
+        "{\"token_id\":\"{{bc_ft_token_id}}\", \"Token_desc\":\"Fractional Fungible Token\", \"Description\":\"eCrypty Token for eShop rentalCo\"}"
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
 
 4. the FT eCrypto token must be associated to an user account. We are going to associate the token to the eshop_manager user. Before being able to do this association, we need to obtain the oaccount of the eshop_manager. We can get the oaccount of the eshop user with the ***Step-11:get Accounts by OrgId:UserId*** request:
+  - Request Payload. The args in this payload are self-described because for each property it is incuded the name of it. You only need to be careful with the tokenId, which is the identifier of the FT token:
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",                     //Smartcontract name
+    "args": [
+        "getAccountsByUser",                                     //Method name
+        "lessee1",                                               //Org ID from the user
+        "lessee1_manager"                                        //User for which we want to obtain its accounts
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
 </p>
