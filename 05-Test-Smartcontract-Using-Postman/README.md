@@ -194,12 +194,45 @@ So, we can execute this action in one single step as we can see below:
 
 ## Use case simulation 2 - Successful renting
 
-This second use case is a bit more complex. Before being able to rent a device, we must be sure the asset has is digital twin token representing it in blockchain. If not, we must mint the NFT representing the asset. It can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a org::user representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** :  
+This second use case is a bit more complex. Before being able to rent a device, we must be sure the asset has is digital twin token representing it in blockchain. If not, we must mint the NFT representing the asset. It can be done by the current owner of the asset, but ideally it could be done by the own manufacturer of the asset. For simplicity, as we have no created a org::user representing the manufacture, the action is going to be performed by the eshop organization, executing the ***Step-1 : Mint Device NFT*** from the folder ***simulation2: Mining & Rental Process*** : 
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",
+    "args": [
+        "createRentableDeviceNFTToken",
+        "{\"tokenId\":\"NFT-E2\",\"tokenDesc\":\"EBike\",\"tokenUri\":\"test\",\"metadata\":{\"eBikeId\":\"E2\",\"description\":\"Mountain Ebike\",\"eBikeManufacturer\":\"WEDOeBikes\",\"eBikeManufacturingDate\":\"2021-01-01\"}, \"contractViolationFlag\":\"false\", \"lockingFlag\":\"false\", \"bookingFlag\":\"false\", \"bookingId\":0, \"vibration\":\"NULL\", \"humidity\":\"NULL\", \"speed\":\"NULL\", \"latitude\":\"NULL\", \"longitude\":\"NULL\"}"
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="1078" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-18.png"/> 
 </p>
 
-At this point, as the current custodian of the NFT is the same org::user who is going to rent the asset, we can proceed by starting the rental process between shop renter and the lessee1 by making a booking of the asset, which can be considered as a reservation of the asset to be lesseed:
+At this point, as the current custodian of the NFT is the same org::user who is going to rent the asset, we can proceed by starting the rental process between shop renter and the lessee1 by making a booking of the asset, which can be considered as a reservation of the asset to be lesseed. It is done by executing the ***Step-2: Book Device*** from the folder ***simulation2: Mining & Rental Process*** ::
+  - Request Payload:
+```JSON
+{
+    "chaincode": "{{bc_nft_chaincode_name}}",   //Chaincode name
+    "args": [
+        "bookDevice",                           //Method from the smartcontract
+        "NFT-E2",                               //NFT token ID (the one minted in the previous step)
+        "2022-12-26T03:52:45.000Z",             //Bookind date
+        "600",                                  //Rental cost
+        "2",                                    //Booking ID
+        "{{bc_ft_token_id}}",                   //FT token ID (based in variable value during minting of FT: eCrypto1)
+        "lessee1",                              //lesseer organization
+        "lessee1_manager",                      //user inside the lesseer organization
+        "eshop",                                //renter organization
+        "eshop_manager",                        //user inside the renter organization
+        "300"                                   //Deposit amount in eCryptos to be charged to the lessee account
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
 <p align="center">
 <img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-19.png"/> 
 </p>
@@ -243,7 +276,7 @@ Once a NFT has been minted, you can execute the GetTokenHistory method to get al
 ```
   - Where "NFT-E1" is the the tokenId for the NFT.
  
-2. ***Step-6b: Get Device Token History by BookingId*** from the folder ***simulation2: Mining & Rental Process*** with the following request payload:
+2. ***Step-6b: Get Device Token History by BookingId*** from the folder ***simulation2: Mining & Rental Process***, to filter by bookingId with the following request payload:
 ```JSON
 {
     "chaincode": "{{bc_nft_chaincode_name}}",
