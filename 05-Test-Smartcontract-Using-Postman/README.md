@@ -32,25 +32,17 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 <a name="restInfo"/>
 
 ## Prepare Postman Collection to execute REST APIs
-Here it is a Postman collection prepared to be used agains the two prepared smartcontract 
+Here it is a [Postman collection](https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json) prepared to be used agains the two prepared smartcontract. 
 
-First of all we need to know which is the endpoint in which the REST API is accesible. You can get this URL from the Blockchain Service Console:
-1. Access to the Blockchain Service Console:
-   - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
-   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
-   - Click the ***Service Console*** button.  
-2. Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance, and in the ***restproxy*** node you will see the endpoint URL at the ***Route*** column: 
-<p align="center">
-<img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
-</p>
+This Postman Collection includes a sort of request against the OBP Instances to execute all the initialization of the smartcontracts, the two use cases to be simulated using Postman:
+  - ***AdminSteps (NFT chaincode)***: REST calls to perform the initialization of the NFT Token to be used as a Digital Twin of the asset to be rent.
+  - ***AdminSteps (FT chaincode)***: REST calls to perform the initialization of the FT Token to be used as eCrypto echangable currency.
+  - ***Simulation1: eCryptoTransfer***: Simulation the acquisition of tokens by the manager user of the lessee1 org.
+  - ***Simulation2: Mining & Rental Process***: Simulation of a complete rental process
 
-Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the restproy URL of the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the restproxy URL from the lessee1 participant instance. Following table shows the user to be used depending on the instance you are going to access:
-| username        | Instance URL          |
-| --------------- |-----------------------|
-| eshop_manager   | https://eshop-....    |
-| lessee1_manager | https://lessee1-....  |
+Postman collection is ready to be used, but there is a set of variable which needs to be configured adequated to your own environment (passwords, URLs, ...). These variables are set in the ***Variables*** tab of the Postman collection. 
 
-The following table shows all the varibles we are using in Postman to make more easy the management of the requests we are going to execute. Validate you are the same values before the execution of the different invocations:
+The following table shows all the varibles we have defined and needs to be adapted to your environment:
 | Variable Name               | Variable value        |
 | --------------------------- |-----------------------|
 | bc_founder_provider_url     | https://eshop-....    |
@@ -68,7 +60,22 @@ The following table shows all the varibles we are using in Postman to make more 
 | bc_nft_token_id             | NFT-E1                |
 | bc_nft_chaincode_name       | eShopDeviceNFT        |
 
-These variables are set in the ***Variables*** tab of the Postman collection. You can change any of the values accordingly with any change you have done during the execution of the previous labs.
+First of all we need to know which is the endpoint in which the REST API is accesible. You can get this URL from the Blockchain Service Console:
+1. Access to the Blockchain Service Console:
+   - In the OCI services menu, select ***Developer Services*** and click on ***Blockchain Platform***.
+   - Ensure that the right Compartment is selected and click on the founder or participant instance (the one you want to access through).
+   - Click the ***Service Console*** button.  
+2. Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance, and in the ***restproxy*** node you will see the endpoint URL at the ***Route*** column: 
+<p align="center">
+<img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
+</p>
+
+Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the restproy URL of the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the restproxy URL from the lessee1 participant instance. Following table shows the user to be used depending on the instance you are going to access:
+| username        | Instance URL          |
+| --------------- |-----------------------|
+| eshop_manager   | https://eshop-....    |
+| lessee1_manager | https://lessee1-....  |
+
 
 <a name="initFT"/>
 
