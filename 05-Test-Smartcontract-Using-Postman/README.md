@@ -219,7 +219,7 @@ And finally, when the rental period finalize, we can proceed by executing the re
 <p align="center">
 <img width="953" height="608" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-22.png"/> 
 </p>
-As you can see in this REST call, it must be executed through the participant lessee1 REST Proxy, and obviously with the credentials allowed (lessee1_manager) to execute REST actions through this REST Proxy. All the previous REST calls were executed using the REST Proxy from the founder instance (eshop).
+***Important: *** Unlike the other REST call, it must be be executed through the participant lessee1 REST Proxy, and obviously with the credentials allowed (lessee1_manager) for this REST Proxy. All the previous REST calls were executed using the REST Proxy from the founder instance (eshop).
 
 
 You can execute the GetTokenHistory method to get all the snapshots taken to the NFT, so every expected or unexpected event occurred to the asset will be persisted in blockchain, and will be accessible by any participant of the network.
