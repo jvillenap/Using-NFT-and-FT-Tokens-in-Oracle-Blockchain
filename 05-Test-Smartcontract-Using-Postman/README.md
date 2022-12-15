@@ -147,16 +147,32 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
 </p>
 
-With the oaccount we can execute the ***Step-3 : Associate Account to Token for Token User*** from the Postman Collection:  
+5. Having the oaccount, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
+
+  - Sample Request Payload:
+
+```JSON
+{
+    "chaincode": "{{bc_ft_chaincode_name}}",            //Smartcontract name
+    "args": [
+        "associateTokenToAccount",                      //Method from the smartcontract
+        "oaccount~edd0445ae8efb419a78cbdcb0e728...",    //oaccount obtained in previous request
+        "{{bc_ft_token_id}}"                            //FT token ID (based in variable value during minting of FT: eCrypto1)
+    ],
+    "timeout": 60000,
+    "sync": true
+}
+```
+
 <p align="center">
 <img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
 
-5. We can set which user is allowed to mint tokens by executing the ***Step-4: Add Minter Role*** from the Postman collection:
+6. We can set which user is allowed to mint tokens by executing the ***Step-4: Add Minter Role*** from the Postman collection:
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-7.png"/>
 </p>
 
-6. And finally, we can issue tokens which will be assigned to the user who executes the operation by executing the ***Step-5:Issue Tokens*** request:
+7. And finally, we can issue tokens which will be assigned to the user who executes the operation by executing the ***Step-5:Issue Tokens*** request:
 <p align="center">
 <img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
 </p>
@@ -223,9 +239,6 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 </p>
 
 2. Having the oaccount of the lessee1 user, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
-<p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
-</p>
 
   - Sample Request Payload:
 
@@ -241,6 +254,10 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
     "sync": true
 }
 ```
+
+<p align="center">
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
+</p>
 
 3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-0 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection: 
 
