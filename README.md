@@ -43,7 +43,7 @@ There will be a second smartcontract used to handle the Non-fungible token (NFT)
 
 Once both smartcontracts gets created, we will install and deploy them into the different instances which composes the Blockchain Network created during the first lab.
 
-Once the smartcontracts gets deployed into the network, all their business methods will be available as REST APIs thanks to the API Gateway provided by the platform, so we will be able to execute a whole sample simulating the rental of an asset, just using Postman.
+Once the smartcontracts gets deployed into the network, all their business methods will be available as REST APIs thanks to the API Gateway provided by the platform, so we will be able to execute a whole simulation of the rental of an asset, just using Postman.
 
 Here you have the links to each of the labs to fulfill this HoL:  
 
