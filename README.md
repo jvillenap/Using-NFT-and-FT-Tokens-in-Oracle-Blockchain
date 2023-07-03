@@ -39,11 +39,11 @@ AppBuilder will help you to reduce considerably the complexity of the developmen
 
 First of all we are going to create the smartcontract used to handle a cryptocurrency which will be represented as a Fungible Token (FT), and will be used to pay for the rented assets. Lessee will need to aquire tokens of this crypto to be able to rent the assets from the eshop. 
 
-There will be a second smartcontract used to handle the Non-fungible token (NFT) which will be the digital representation in Blockchain of the real assets to be rented by the eShop company to the different lessees. 
+There will be a second smartcontract used to handle the Non-fungible token (NFT) representating in blockchain the real assets to be rented by the eShop company. 
 
-Once each of the smartcontracts get created, we will install and deploy them into the different instances which compound the Blockchain Network created during the first lab.
+Once both smartcontracts gets created, we will install and deploy them into the different instances which composes the Blockchain Network created during the first lab.
 
-Once all the tasks has been done, as Oracle Blockchain publishes all the smartcontract methods as REST APIs, we can execute a whole sample simulating the rental of an asset, just using Postman.
+Once the smartcontracts gets deployed into the network, all their business methods will be available as REST APIs thanks to the API Gateway provided by the platform, so we will be able to execute a whole sample simulating the rental of an asset, just using Postman.
 
 Here you have the links to each of the labs to fulfill this HoL:  
 
