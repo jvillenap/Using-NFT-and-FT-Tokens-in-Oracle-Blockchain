@@ -5,7 +5,7 @@ Non-Fungible Tokens (NFT) are unique digital identifiers that cannot be copied, 
 
 Fungible Tokens (FT) are used for example, to represent digital currencies, which can be used as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it. Using FTs you will be able to create whatever kind of echangable currency, controlling easily the accounting assinged to the users, and the privileges assigned to each participant to ensure a proper ussage of the network, obviously depending on the role of each user. 
 
-Using Oracle Blockchain we can create in minutes an Hyperledger Fabric network as a founder, or join whatever existing Hyperledger Fabric network as a participant. For the purpose of this HoL, we are going to create a new network in which there will be two participants:
+Using Oracle Blockchain we can create in minutes an Hyperledger Fabric network as a founder of it, or join whatever existing Hyperledger Fabric network as a new participant. For the purpose of this HoL, we are going to create a new network in which there will be two participants:
 - *Founder of the network*: ***eshop***, a shop which rent assets.
 - *One Participant*: ***lessee1***, a lessee who rents assets from the eshop organization.
 
