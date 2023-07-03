@@ -13,7 +13,7 @@ Using Oracle Blockchain we can create in minutes an Hyperledger Fabric network a
 <img width="371" height="392" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-1.png"/>
 </p>
 
-In this Hyperledger Fabric network we will create a dedicated channel to be used only for the smartcontracts related with our use case. This channel will be named ***rentalshop***, and obviously both existing participants of the network will join this channel:
+In this Hyperledger Fabric network we will create a dedicated channel to be used only for the smartcontracts related with our use case. A channel can be considered as a subnetwork within the main network, in which a group of participants transact one to each other. This channel will be named ***rentalshop***, and obviously both existing participants of the network will join this channel:
 
 <p align="center">
 <img width="719" height="114" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-2.png"/>
