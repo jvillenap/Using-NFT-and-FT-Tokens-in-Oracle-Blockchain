@@ -32,7 +32,7 @@ To reduce the complexity, enrollmentID can be named with the same value as the o
 <a name="restInfo"/>
 
 ## Prepare Postman Collection to execute REST APIs
-Here it is a <a id="raw-url" href="https://raw.githubusercontent.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/main/05-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json">Postman collection</a> prepared to be used agains the two prepared smartcontract. 
+Here it is a <a id="raw-url" href="https://raw.githubusercontent.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/main/06-Test-Smartcontract-Using-Postman/src/RentalShop.postman_collection.json">Postman collection</a> prepared to be used agains the two prepared smartcontract. 
 
 This Postman Collection includes a sort of request against the OBP Instances to execute all the initialization of the smartcontracts, the two use cases to be simulated using Postman:
   - ***AdminSteps (NFT chaincode)***: REST calls to initialize of the NFT Token to be used as a Digital Twin of the asset to be rent.
@@ -67,7 +67,7 @@ First of all we need to know which is the endpoint in which the REST API is acce
    - Click the ***Service Console*** button.  
 2. Once inside the ***Service Console*** go to the ***Nodes*** tab. It will show you all the nodes which composes this instance, and in the ***restproxy*** node you will see the endpoint URL at the ***Route*** column: 
 <p align="center">
-<img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
+<img width="988" height="615" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-1.png"/>
 </p>
 
 Remmember that enrollments are created at instance level, so the enrollment for eshop_manager user will be only available through the restproy URL of the eshop founder instance, and the enrollment for the lessee1_manager user will be only available through the restproxy URL from the lessee1 participant instance. Following table shows the user to be used depending on the instance you are going to access:
@@ -100,7 +100,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 }
 ```
 <p align="center">
-<img width="953" height="545" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-2b.png"/>
+<img width="953" height="545" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-2b.png"/>
 </p>
 
 2. We must also create user accounts for all those users elegible to own eCrypto Tokens by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
@@ -120,7 +120,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-3.png"/>
 </p>
 
 3. The interchangeable fungible token needs to be initialized. It is basically set the identifier of the token (its name), its description, so the token will be initialized based in the anatomy defined in the specification file. This action can be executed through the ***Step-2: Initialize Token*** from the postman collection:
@@ -139,7 +139,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-4.png"/>
 </p>
 
 4. the FT eCrypto token must be associated to an user account. We are going to associate the token to the eshop_manager user. Before being able to do this association, we need to obtain the oaccount of the eshop_manager. We can get the oaccount of the eshop user with the ***Step-11:get Accounts by OrgId:UserId*** request:
@@ -159,7 +159,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-5.png"/>
 </p>
 
 5. Having the oaccount, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
@@ -180,7 +180,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-6.png"/>
 
 6. We can set which user is allowed to mint tokens by adding the minter role to such user. It can be done by executing the ***Step-4: Add Minter Role*** from the Postman collection:
 
@@ -202,7 +202,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-7.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-7.png"/>
 </p>
 
 7. And finally, we can issue tokens which will be assigned to the user who executes the operation by executing the ***Step-5:Issue Tokens*** request:
@@ -223,7 +223,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (FT 
 ```
 
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-8.png"/>
 </p>
 
  - Checking the response message we can see how the minted tokens have been assigned to the invoker of the API call:
@@ -256,7 +256,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 ```
 
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-9.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-9.png"/>
 </p>
 
 2. We must create user accounts for all the users who can be custodians of the NFT assets representing the physical assets. It can be done by executing the ***Step-1: Create account***. For the specifics of our use case there is only two users, eshop_manager and lessee1_manager, each of them belonging to one of the existing organizations of the network.
@@ -276,7 +276,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 ```
 
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-10.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-10.png"/>
 </p>
 
 3. We can set which user is allowed to mint tokens by executing the ***Step-2: AddRole*** from the Postman collection:
@@ -295,7 +295,7 @@ The following API REST calls correspond to the calls into the ***AdminSteps (NFT
 ```
 
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-11.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-11.png"/>
 </p>
 
 
@@ -323,7 +323,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 }
 ```
 <p align="center">
-<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-12.png"/>
+<img width="982" height="612" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-12.png"/>
 </p>
 
 2. Having the oaccount of the lessee1 user, we can proceed by the association of the user account to the eCrypto token. It can be done executing the ***Step-3 : Associate Account to Token for Token User*** from the folder ***AdminSteps (FT chaincode)*** of the Postman Collection:  
@@ -344,7 +344,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-13.png"/> 
 </p>
 
 3. Once the eCrypto token has been associated with the oaccount of the lessee1 user, we can ask for a token transfer from eshop::eshop_manager to lessee1::lessee1_manager by executing the ***Step-0 : Transfer the initialized Tokens from eshop_manager to lessee1_manager*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection: 
@@ -367,7 +367,7 @@ Lessee1 wants to rent an asset from eShop organization and for this rental opera
 ```
 
 <p align="center">
-<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
+<img width="982" height="671" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-14.png"/> 
 </p>
 
   - Checking the response message we can see how the tokens has been transferred to the user indicated in the request:
@@ -422,7 +422,7 @@ This second use case is a bit more complex. Before being able to rent a device, 
 }
 ```
 <p align="center">
-<img width="953" height="1078" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-18.png"/> 
+<img width="953" height="1078" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-18.png"/> 
 </p>
 
 At this point, as the current custodian of the NFT is the same org::user who is going to rent the asset, we can proceed by starting the rental process between shop renter and the lessee1 by making a booking of the asset, which can be considered as a reservation of the asset to be lesseed. It is done by executing the ***Step-2: Book Device*** from the folder ***simulation2: Mining & Rental Process*** ::
@@ -448,7 +448,7 @@ At this point, as the current custodian of the NFT is the same org::user who is 
 }
 ```
 <p align="center">
-<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-19.png"/> 
+<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-19.png"/> 
 </p>
 
 Once done the booking we can check if a deposit have been charged to the lessee1 user, executing the ***Step-1 : Get Account Balance for Token User*** from the folder ***simulation1: eCryptoTransfer*** of the Postman Collection:
@@ -467,7 +467,7 @@ Once done the booking we can check if a deposit have been charged to the lessee1
 }
 ```
 <p align="center">
-<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-20.png"/> 
+<img width="953" height="648" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-20.png"/> 
 </p>
 Checking the current balance of eCrypto tokens from the lessee1 user, we can see how it has been decresade in 300 units as per the reservation done. Lessee1 did an initial acquisition of 10000 eCrypto tokens, and after a charge of 300 tokens, he only has 9700. 
 
@@ -491,7 +491,7 @@ At this point we can continue by executing the steps of receiving the rented ass
 }
 ```
 <p align="center">
-<img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-21.png"/> 
+<img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-21.png"/> 
 </p>
 
 And finally, when the rental period finalize, we can proceed by executing the return asset action. It can be done by executing the ***Step-4:Return Device*** from the folder ***Simuation2: Mining & Rental Process*** from the Postman collection:
@@ -516,7 +516,7 @@ And finally, when the rental period finalize, we can proceed by executing the re
 }
 ```
 <p align="center">
-<img width="953" height="608" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-22.png"/> 
+<img width="953" height="608" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-22.png"/> 
 </p>
 
 ***Important:*** Unlike the other REST calls, this one must be executed through the participant lessee1 REST Proxy, and obviously with the credentials allowed (lessee1_manager) for this REST Proxy. All the previous REST calls were executed using the REST Proxy from the founder instance (eshop). It is because the current custodian belongs to the lessee1 organization, so users in that organization are the only allowed to transfer the custody to other users.
@@ -537,7 +537,7 @@ After the execution of the returnDevice method, as the rental has been finished,
 }
 ```
 <p align="center">
-<img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-23.png"/> 
+<img width="953" height="604" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-23.png"/> 
 </p>
 
 
@@ -585,17 +585,17 @@ Additionally, this transactions will be saved into the ledger, and you can valid
 
 2. Once in the Service Console, navigate to the ***channels*** tab and select the ***rentalshop*** channel:
 <p align="center">
-<img width="982" height="471" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-15.png"/> 
+<img width="982" height="471" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-15.png"/> 
 </p>  
 
 3. Default option opened entering in this page is the ***Ledger*** option. Wait a few seconds until the main frame load the lasts blocks written to the ledger:
 <p align="center">
-<img width="973" height="591" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-16.png"/> 
+<img width="973" height="591" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-16.png"/> 
 </p>
 
 4. Selecet one of the blocks and selecting and click on the left arrow beside the transaction identifier (TxID) of the selected block:
    - You can see all the details of the transaction(s) recorded in the block, Invoked Method, Parameters sent to the method, Response received from OBP, invoker of the transaction, and endorser.
 <p align="center">
-<img width="978" height="727" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-Test-Smartcontract-Using-Postman/images/5-test-2-17.png"/> 
+<img width="978" height="727" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/06-Test-Smartcontract-Using-Postman/images/5-test-2-17.png"/> 
 </p>
 
