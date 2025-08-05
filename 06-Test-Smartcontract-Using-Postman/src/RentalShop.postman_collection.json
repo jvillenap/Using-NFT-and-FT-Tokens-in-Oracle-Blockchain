@@ -1,0 +1,1291 @@
+{
+	"info": {
+		"_postman_id": "16e4bbc8-d493-464f-8476-569866d1ed2b",
+		"name": "RentalShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AdminSteps(NFT chaincode)",
+			"item": [
+				{
+					"name": "Step-0: Init User Account",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"init\",\n        \"[{\\\"orgId\\\":\\\"eshop\\\",\\\"userId\\\":\\\"eshop_manager\\\"},{\\\"orgId\\\":\\\"lessee1\\\",\\\"userId\\\":\\\"lessee1_manager\\\"}]\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"isInit\": true,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-1: Create Account",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"createAccount\",\n        \"lessee1\", \"lessee1_manager\", \"nonfungible\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-2: AddRole",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"addRole\",\n        \"minter\",\"eshop\",\"eshop_manager\"\n        ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-3: Transfer deviceNFT to lessee Company",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_nft_platform_provider_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_nft_platform_provider_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"WEDOeBikeNFT2\",\n    \"args\": [\n        \"safeTransferFrom\",\n        \"{{bc_nft_platform_provider_orgid}}\",\n        \"{{bc_nft_platform_provider_userid}}\",\n        \"{{bc_rentalco_orgid}}\",\n        \"{{bc_rentalco_manager}}\",\n        \"NFT-E1\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_nft_platform_provider_url}}/api/v2/channels/wedoebike/transactions",
+							"host": [
+								"{{bc_nft_platform_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"wedoebike",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AdminSteps (FT chaincode)",
+			"item": [
+				{
+					"name": "Step-0: Init User Account",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"init\",\n        \"[{\\\"orgId\\\":\\\"eshop\\\",\\\"userId\\\":\\\"eshop_manager\\\"},{\\\"orgId\\\":\\\"lessee1\\\",\\\"userId\\\":\\\"lessee1_manager\\\"}]\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"isInit\": true,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-1: Create Account",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"createAccount\", \"lessee1\",\"lessee1_manager\",\"fungible\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-2 : Initialize Token",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"initializeEcryptoToken\",\n        \"{\\\"token_id\\\":\\\"{{bc_ft_token_id}}\\\", \\\"Token_desc\\\":\\\"Fractional Fungible Token\\\", \\\"Description\\\":\\\"eCrypty Token for eShop rentalCo\\\"}\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-3 : Associate Account to Token for Token User",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"associateTokenToAccount\",\n        \"oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8\", \n        \"{{bc_ft_token_id}}\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-4 : Add Minter Role",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"addRole\",\n        \"{{bc_ft_token_id}}\",\n        \"minter\",\n        \"eshop\",\n        \"eshop_manager\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-5 : Issue Tokens",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"issueTokens\",\n        \"{{bc_ft_token_id}}\",\n        \"50000\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-10a: Get FT User Details By Account ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"getUserByAccountId\",\n        \"oaccount~edd0445ae8efb419a78cbdcb0e7288caed9b9e4f59e5683fe8ff0c56827449c8\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-10b: Get NFT User Details By Account ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"getUserByAccountId\",\n        \"oaccount~8c99d95b5bdf8be84b9627f453e33a37f2e02951c5254208b16255d53c912f60\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-11: Get Accounts by OrgId:UserId",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"getAccountsByUser\", \"lessee1\", \"lessee1_manager\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-12: Get Account Tx History",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"getAccountTransactionHistory\",\n        \"{{bc_ft_token_id}}\",\n        \"eshop\",\n        \"eshop_manager\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-13: Burn Tokens of the caller!!!",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"burnTokens\",\n        \"{{bc_ft_token_id}}\",\n        \"100\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "simulation1: eCryptoTransfer",
+			"item": [
+				{
+					"name": "Step-0 : Transfer the initialized Tokens from eshop_manager to lessee1_manager",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"transferTokens\",\n        \"{{bc_ft_token_id}}\",\n        \"lessee1\",\n        \"lessee1_manager\",\n        \"600\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-1 : Get Account Balance for Token User",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"getAccountBalance\",\n        \"{{bc_ft_token_id}}\",\n        \"lessee1\",\n        \"lessee1_manager\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-2 : transferECoins",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_ft_chaincode_name}}\",\n    \"args\": [\n        \"transferECoins\",\n        \"{{bc_ft_token_id}}\",\n        \"lessee1\",\n        \"lessee1_manager\",\n        \"eshop\",\n        \"eshop_manager\",\n        \"100\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "simulation2: Mining & Rental Process",
+			"item": [
+				{
+					"name": "Step-1: Mint deviceNFT",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"createRentableDeviceNFTToken\",\n        \"{\\\"tokenId\\\":\\\"NFT-E1\\\",\\\"tokenDesc\\\":\\\"EBike\\\",\\\"tokenUri\\\":\\\"test\\\",\\\"metadata\\\":{\\\"eBikeId\\\":\\\"E1\\\",\\\"description\\\":\\\"Mountain Ebike\\\",\\\"eBikeManufacturer\\\":\\\"WEDOeBikes\\\",\\\"eBikeManufacturingDate\\\":\\\"2021-01-01\\\"}, \\\"contractViolationFlag\\\":\\\"false\\\", \\\"lockingFlag\\\":\\\"false\\\", \\\"bookingFlag\\\":\\\"false\\\", \\\"bookingId\\\":0, \\\"vibration\\\":\\\"NULL\\\", \\\"humidity\\\":\\\"NULL\\\", \\\"speed\\\":\\\"NULL\\\", \\\"latitude\\\":\\\"NULL\\\", \\\"longitude\\\":\\\"NULL\\\"}\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-2: Book Device",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"bookDevice\",\n        \"NFT-E1\",\n        \"2022-12-26T03:52:45.000Z\",\n        \"600\",\n        \"1\",\n        \"{{bc_ft_token_id}}\",\n        \"lessee1\",\n        \"lessee1_manager\",\n        \"eshop\",\n        \"eshop_manager\",\n        \"300\"\n    ],\n    \"timeout\": 60000,\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-3: Receive Device",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"receiveDevice\",\n        \"NFT-E1\",\n        \"eshop\",\n        \"eshop_manager\",\n        \"lessee1\",\n        \"lessee1_manager\",\n        \"2022-12-16T13:52:45.000Z\",\n        \"2022-12-18T13:52:45.000Z\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-4: Return Device",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_participant_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_participant_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"returnDevice\",\n        \"NFT-E1\",\n        \"{{bc_ft_token_id}}\",    \n        \"lessee1\",\n        \"lessee1_manager\",\n        \"eshop\",\n        \"eshop_manager\",\n        \"2022-12-17T13:52:45.000Z\",\n        \"true\",\n        \"300\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_participant_provider_url}}/api/v2/channels/{{bc_channel_name}}/transactions",
+							"host": [
+								"{{bc_participant_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-5: Get NFT Account Balance",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"balanceOf\",\n        \"eshop\",\n        \"eshop_manager\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-6a: Get Device Token History",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"getTokenHistory\",\n        \"NFT-E1\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-6b: Get Device Token History by BookingId",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"getTokenHistoryByBookingId\",\n        \"NFT-E1\",\n        \"1\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Step-7: Get NFT User Details By Account ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{bc_founder_password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{bc_founder_userid}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"chaincode\": \"{{bc_nft_chaincode_name}}\",\n    \"args\": [\n        \"getUserByAccountId\",\n        \"oaccount~2a08f614e94c25c9048d40c30f3a83633fdbae1f564fe82eb0fd4d316cdf1356\"\n    ],\n    \"timeout\": {{bc_timeout}},\n    \"sync\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{bc_founder_provider_url}}/api/v2/channels/{{bc_channel_name}}/chaincode-queries",
+							"host": [
+								"{{bc_founder_provider_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"channels",
+								"{{bc_channel_name}}",
+								"chaincode-queries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "bc_founder_provider_url",
+			"value": "https://eshop-wedoinfra-fra.blockchain.ocp.oraclecloud.com:7443/restproxy",
+			"type": "string"
+		},
+		{
+			"key": "bc_participant_provider_url",
+			"value": "https://lessee1-wedoinfra-fra.blockchain.ocp.oraclecloud.com:7443/restproxy",
+			"type": "string"
+		},
+		{
+			"key": "bc_channel_name",
+			"value": "rentalshop",
+			"type": "string"
+		},
+		{
+			"key": "bc_ft_chaincode_name",
+			"value": "eShopCriptoFT",
+			"type": "string"
+		},
+		{
+			"key": "bc_ft_token_id",
+			"value": "eCrypto1",
+			"type": "string"
+		},
+		{
+			"key": "bc_founder_orgid",
+			"value": "eshop",
+			"type": "string"
+		},
+		{
+			"key": "bc_founder_userid",
+			"value": "eshop_manager",
+			"type": "string"
+		},
+		{
+			"key": "bc_founder_password",
+			"value": "WEDOAdmin123.",
+			"type": "string"
+		},
+		{
+			"key": "bc_participant_orgid",
+			"value": "lessee1",
+			"type": "string"
+		},
+		{
+			"key": "bc_participant_userid",
+			"value": "lessee1_manager",
+			"type": "string"
+		},
+		{
+			"key": "bc_participant_password",
+			"value": "WEDOAdmin123.",
+			"type": "string"
+		},
+		{
+			"key": "bc_timeout",
+			"value": "60000",
+			"type": "string"
+		},
+		{
+			"key": "bc_nft_token_id",
+			"value": "NFT-E1",
+			"type": "string"
+		},
+		{
+			"key": "bc_nft_chaincode_name",
+			"value": "eShopDeviceNFT",
+			"type": "string"
+		}
+	]
+}
