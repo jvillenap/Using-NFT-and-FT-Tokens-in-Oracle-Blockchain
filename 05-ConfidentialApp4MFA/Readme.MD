@@ -1,4 +1,4 @@
-# Preparation for consuming the Smartcontract methods through OAuth 2.0
+# Prepare for consuming the Smartcontract methods through OAuth 2.0
 
 #### Table of Contents  
 [Introduction](#Introduction)  
