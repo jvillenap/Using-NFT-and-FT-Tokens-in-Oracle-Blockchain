@@ -1,0 +1,1 @@
+Using OAuth 2.0 Access Token Based Authentication, clientId/clientSecret are used to generate the access tokens. For security reasons the clientSecret for the app which is created by IDCS cannot be got from console/rest API, so we have to manually create a security application in IDCS and use the clientId/clientSecret from the test suites.
