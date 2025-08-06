@@ -66,7 +66,7 @@ In this page we also give the details about how to test the generation of the be
 
 	b. Inside the same section, select ***Resource Owner*** and ***Client Credentials*** for ***Allowed Grant Types***. And then click 'Next' button. 
 
-<img width="544" height="400" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp11_544x400.png"/>
+<img width="554" height="400" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp11_554x400.png"/>
 </p>
 
 	c. Inside the same section there will be a ***Token isuance policy***, in this section you must select the ***Confidential*** combo, then the ***Add resources*** slider, and pushi the ***Add Scope*** button. 
