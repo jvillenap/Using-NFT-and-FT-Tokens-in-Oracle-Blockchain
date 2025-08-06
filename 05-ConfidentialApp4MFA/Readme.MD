@@ -106,11 +106,11 @@ Scope		<OBP-URL>/restproxy
 <img width="791" height="1074" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/Postman1.png"/>
 </p>
 
-First time you try to push the ***Get New Access Token*** button, an error will be raised in the browser opened by Postman. In that error the correct callback URL expected by Postman will be shown, so it will need to be configured in our ***Confidential Application***, so It will also imply some changes into the ***Client Configuration section*** of your ***Confidential Application***, they are:
+First time you try to push the ***Get New Access Token*** button, an error will be raised by the browser opened by Postman. In that error the correct callback URL expected by Postman will be shown, so it will need to be configured in our ***Confidential Application***, so It will also imply some changes into the ***Client Configuration section*** of your ***Confidential Application***, they are:
 
 1.	Among the "Allowed Grant Types", add: ***Authorization Code*** and ***Implicit***.
 
-2.	Set the redirect URL to the one informed in the error raised in the browser as callback URL, it is in my case (for the Postman desktop app version I’m using right now): https://oauth.pstmn.io/v1/callback (it can change depending on the Postman version, or in case other clients were used to test).
+2.	Set the redirect URL to the one informed in the error raised by the browser as callback URL, it is in my case (for the Postman desktop app version I’m using right now): https://oauth.pstmn.io/v1/callback (it can change depending on the Postman version, or in case other clients were used to test).
 
 Postman2.png
 
