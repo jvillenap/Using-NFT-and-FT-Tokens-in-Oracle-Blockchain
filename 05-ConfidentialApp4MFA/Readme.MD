@@ -108,8 +108,8 @@ Easiest way to do the test is using Postam, which allows you to get redirected t
 
 		AuthURL 	<IDCS-URL>/oauth2/v1/authorize  
 		AccessToken	<IDCS-URL>/oauth2/v1/token  
-		ClientID	Can be retrieved from ***ConfidentialApp → OAuth configuration*** page  
-		ClientSecret	29d1ff8b-b95b-481f-bb2a-c7bc905eef7d  
+		ClientID	Can be retrieved from ConfidentialApp → OAuth configuration page  
+		ClientSecret	Can be retrieved from ConfidentialApp → OAuth configuration page  
 		Scope		<OBP-URL>/restproxy
 
 <p align="center">
