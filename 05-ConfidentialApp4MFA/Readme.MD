@@ -3,7 +3,7 @@
 #### Table of Contents  
 [Introduction](#Introduction)  
 [Creation of Confidential Application](#ConfAppCreate)  
-[Test with Postman](#testWPostman)  
+[Testing Bearer Token from Postman](#testWPostman)  
 
 <a name="Introduction"/>
 
@@ -89,7 +89,27 @@ https://docs.oracle.com/en/cloud/paas/blockchain-cloud/rest-api/Authentication.h
 
 <a name="testWPostman"/>
 
-## Test with Postman
+## Testing Bearer Token from Postman
 
-saasasas 
+In case you have to get the Bearer Token in a environment where MFA has been configured, you will need to test it using a method which allows you to provide basic authentication and also the second factor authentication. 
 
+Easiest way to do the test is using Postam, which allows you to get redirected to the IDCS authentication page to perform the MFA Authentication. For it you will need to configure a Postman request setting the following vàlues in the Authentication Tab: 
+
+POST	<IDCS-URL>/ (DomainURL works, no need to be the regional URL)
+AuthURL	<IDCS-URL>/oauth2/v1/authorize
+AccessT	<IDCS-URL>/oauth2/v1/token
+ClientID	014fb463ed864515a18b628653031fa8
+ClientSecret	29d1ff8b-b95b-481f-bb2a-c7bc905eef7d
+Scope		<OBP-URL>/restproxy
+
+Postman1.png
+
+First time you try to push the Get New Access Token button, an error will be raised in the browser opened by Postman. In that error the correct callback URL expected by Postman will be shown, so it will need to be configured in our Confidential Application, so It will also imply some changes into the Client Configuration section of your Confidential Applications, they are:
+
+1.	Among the "Allowed Grant Types", add: Authorization Code and Implicit.
+
+2.	Set the redirect URL to the one informed in the error raised in the browser as callback URL, it is in my case (for the Postman desktop app version I’m usinr right now): https://oauth.pstmn.io/v1/callback (it can change depending on the Postman version, or in case other clients were used to test).
+
+Postman2.png
+
+Once configured properly Postman Request and the Confidential Application, we will be able to get a new Bearer token by pushing the Get New Access Token in the Authorization tab of the Postman request. After pushing that button a login page to our IDCS tenancy should be opened in our default browser, asking to perform the authentication, and once loged in, Postman will provide the corresponding token, which will be usable as a Bearer token by the lifetime of the token.
