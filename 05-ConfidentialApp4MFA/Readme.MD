@@ -21,12 +21,12 @@ In this page we also give the details about how to test the generation of the be
 
 1) Login into the OCI admin console, and from the top-left burguer menu, select Identity & Security --> Domains.
 <p align="center">
-<img width="936" height="764" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp1_936x764.png"/>
+<img width="655" height="534" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp1_936x764.png"/>
 </p>
 
 2) Select the ***OracleIdentityCloudService*** Domain.
 <p align="center">
-<img width="1076" height="629" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp2_1076x629.png"/>
+<img width="753" height="440" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp2_1076x629.png"/>
 </p>
  
 3) Select the ***Integrated Applications*** tab.
@@ -36,7 +36,7 @@ In this page we also give the details about how to test the generation of the be
 
 4) Push the ***Add Application*** button.
 <p align="center">
-<img width="711" height="710" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp4_711x710.png"/>
+<img width="498" height="497" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp4_711x710.png"/>
 </p>
 
 5) Select ***Confidential Application*** and Push the ***Launch Workflow*** button.
