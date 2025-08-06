@@ -86,7 +86,7 @@ Select the ***.../restproxy*** scope, then click 'Add' button
 <img width="528" height="422" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp14_528x422.png"/>
 </p>
 
-9.f) Select the scope ending in ***.../restproxy*** and push the ***Add** button.
+9.f) Select the scope ending in ***.../restproxy*** and push the ***Add*** button.
 
 <img width="1196" height="632" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp15_1196x632.png"/>
 </p>
@@ -98,41 +98,6 @@ Select the ***.../restproxy*** scope, then click 'Add' button
 <img width="1031" height="553" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp16_1031x553.png"/>
 </p>
 
- 
-
-  
-4.	The resource will be listed under the 'Resources' region
- 
-5.	Use the clientId/clientSecret of bcsqarestproxy to generate access token according to the e-doc
-https://docs.oracle.com/en/cloud/paas/blockchain-cloud/rest-api/Authentication.html
- 
-
-	 
-3.	Enter following details: 
-1.	 
-2.	 
-3.	Click "Next" on all other screens.
-4.	Click Finish
-5.	Note down Client ID and Secret
-6.	 
-7.	Click Activate.
-8.	Application is created successfully.
-4.	Search and Edit the Application. Expand Client Configuration: 
-1.	 
-2.	Click "Add Scope"
-3.	 
-4.	Click Arrow against your OBP Instance's Application Name:
-5.	 
-6.	Select the /restproxy endpoint as the scope:
-7.	 
-8.	Click "Add" at the bottom of the screen.
-9.	The scope should reflect like below:
-10.	 
-11.	Click "Save" at top of page, to save the Application.
-5.	The IDCS side of changes are Completed successfully.
-
-
-
 <a name="testWPostman"/>
 
 ## Testing Bearer Token from Postman
@@ -143,7 +108,7 @@ Easiest way to do the test is using Postam, which allows you to get redirected t
 
 		AuthURL 	<IDCS-URL>/oauth2/v1/authorize  
 		AccessToken	<IDCS-URL>/oauth2/v1/token  
-		ClientID	014fb463ed864515a18b628653031fa8  
+		ClientID	Can be retrieved from ***ConfidentialApp → OAuth configuration*** page  
 		ClientSecret	29d1ff8b-b95b-481f-bb2a-c7bc905eef7d  
 		Scope		<OBP-URL>/restproxy
 
