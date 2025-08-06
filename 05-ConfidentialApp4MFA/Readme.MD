@@ -44,12 +44,12 @@ In this page we also give the details about how to test the generation of the be
 <img width="1310" height="618" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp5_1310x618.png"/>
 </p>
 
-6) Fill ***Name*** and ***Description*** of the application and then click ***Submit*** button.
+6) Fill ***Name*** and ***Description*** of the application and then click the ***Submit*** button.
 <p align="center">
 <img width="1309" height="613" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp6_1309x613.png"/>
 </p>
 
-7) Select the ***OAuth configuration***.
+7) Select the ***OAuth configuration*** tab.
 <img width="779" height="570" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp8_779x570.png"/>
 </p>
 
