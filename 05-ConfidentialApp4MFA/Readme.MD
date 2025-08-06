@@ -108,7 +108,7 @@ Scope		<OBP-URL>/restproxy
 </p>
 
 <p align="center">
-<img width="791" height="494" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/05-ConfidentialApp4MFA/images/Postman1.png"/>
+<img width="791" height="494" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/Postman1.png"/>
 </p>
 
 
