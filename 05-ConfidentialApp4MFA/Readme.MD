@@ -44,7 +44,7 @@ In this page we also give the details about how to test the generation of the be
 <img width="1310" height="618" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp5_1310x618.png"/>
 </p>
 
-6) Fill 'Name' and 'Description" of the application and then click ***Submit*** button.
+6) Fill ***Name*** and ***Description*** of the application and then click ***Submit*** button.
 <p align="center">
 <img width="1309" height="613" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp6_1309x613.png"/>
 </p>
@@ -84,9 +84,16 @@ In this page we also give the details about how to test the generation of the be
 <img width="528" height="422" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp14_528x422.png"/>
 </p>
 
-9.f) Select the scope ending in ***.../restproxy***, push the ***Add** button, and the ***Submit*** button from the parent wizzard. 
+9.f) Select the scope ending in ***.../restproxy***, push the ***Add** button.
 
 <img width="1196" height="632" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp15_1196x632.png"/>
+</p>
+
+10) Click the ***Submit*** button to finish the wizzard.
+
+11) Activate the Confidential Application by pushing the ***Activate*** option from the top-right menu ***Actions***.
+
+<img width="1031" height="553" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp16_1031x553.png"/>
 </p>
 
 
