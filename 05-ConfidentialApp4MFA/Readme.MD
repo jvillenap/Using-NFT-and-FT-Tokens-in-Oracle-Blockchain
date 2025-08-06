@@ -19,12 +19,31 @@ In this page we also give the details about how to test the generation of the be
 
 ## Creation of Confidential Application
 
-1) Logon into the OCI admin console, and from the top-left menu, select Identity & Security --> Domains.
-2) Click top-left menu and click 'Applications' item to enter 'Applications' page
+1) Login into the OCI admin console, and from the top-left burguer menu, select Identity & Security --> Domains.
+<p align="center">
+<img width="936" height="764" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp1_936x764.png"/>
+</p>
+
+2) Select the ***OracleIdentityCloudService*** Domain.
+<p align="center">
+<img width="936" height="764" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp2_1076x629.png"/>
+</p>
  
-3) Click 'Add' button and then select 'Confidential Application'. 
- 
-4) Fill 'Name' of application and then click 'Next' button. 
+3) Select the ***Integrated Applications*** tab.
+<p align="center">
+<img width="1487" height="358" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp3_1487x358.png"/>
+</p>
+
+4) Push the ***Add Application*** button.
+<p align="center">
+<img width="936" height="764" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp4_711x710.png"/>
+</p>
+
+5) Fill 'Name' and 'Description" of the application and then click ***Submit*** button.
+<p align="center">
+<img width="936" height="764" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp5_1310x618.png"/>
+</p>
+
  
 5) Select 'Configure this application as a client now' and then select 'Resource Owner' and 'Client Credentials' for 'Allowed Grant Types'. And then click 'Next' button. 
  
@@ -46,20 +65,7 @@ The guide below for how to generate access token is for idcs-e15b8cc3f25a4c3daa6
 https://docs.oracle.com/en/cloud/paas/blockchain-cloud/rest-api/Authentication.html
  
 
-
-
-
-
-
-
-
-
-
-
-
-1.	Login to IDCS Admin Console - https://oraclecloud.com/ui/v1/adminconsole 
-2.	Create a new Confidential Application: 
-1.	 
+	 
 3.	Enter following details: 
 1.	 
 2.	 
@@ -82,8 +88,6 @@ https://docs.oracle.com/en/cloud/paas/blockchain-cloud/rest-api/Authentication.h
 10.	 
 11.	Click "Save" at top of page, to save the Application.
 5.	The IDCS side of changes are Completed successfully.
-
-
 
 
 
