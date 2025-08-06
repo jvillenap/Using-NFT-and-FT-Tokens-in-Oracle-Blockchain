@@ -79,9 +79,14 @@ In this page we also give the details about how to test the generation of the be
 <img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
 </p>
 
-	e. Inside the ***Add Scope*** wizzard, write the name of your OBP instance into the search field, and then push the ***Search*** button. 
+	e. Push the arrow at the left side of the found resource to see the available scopes for the selected resource. 
 
-<img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
+<img width="528" height="422" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp14_528x422.png"/>
+</p>
+
+	f. Select the scope ending in ***.../restproxy***, push the ***Add** button, and the ***Submit*** button from the parent wizzard. 
+
+<img width="1196" height="632" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp15_1196x632.png"/>
 </p>
 
 
