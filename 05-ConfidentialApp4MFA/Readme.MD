@@ -74,6 +74,16 @@ In this page we also give the details about how to test the generation of the be
 <img width="1137" height="489" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp12_1137x489.png"/>
 </p>
 
+	d. Inside the ***Add Scope*** wizzard, write the name of your OBP instance into the search field, and then push the ***Search*** button. 
+
+<img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
+</p>
+
+	e. Inside the ***Add Scope*** wizzard, write the name of your OBP instance into the search field, and then push the ***Search*** button. 
+
+<img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
+</p>
+
 
 
  
