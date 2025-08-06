@@ -59,32 +59,32 @@ In this page we also give the details about how to test the generation of the be
 
 9) In the new appeared wizzard, select the following options:
 
-	a. In the ***Client Configuration*** section, select ***Configure this application as a client now***.
+9.a) In the ***Client Configuration*** section, select ***Configure this application as a client now***.
 
 <img width="404" height="266" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp10_404x266.png"/>
 </p>
 
-	b. Inside the same section, select ***Resource Owner*** and ***Client Credentials*** for ***Allowed Grant Types***. And then click 'Next' button. 
+9.b) Inside the same section, select ***Resource Owner*** and ***Client Credentials*** for ***Allowed Grant Types***. And then click 'Next' button. 
 
 <img width="554" height="400" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp11_554x400.png"/>
 </p>
 
-	c. Inside the same section there will be a ***Token isuance policy***, in this section you must select the ***Confidential*** combo, then the ***Add resources*** slider, and pushi the ***Add Scope*** button. 
+9.c) Inside the same section there will be a ***Token isuance policy***, in this section you must select the ***Confidential*** combo, then the ***Add resources*** slider, and pushi the ***Add Scope*** button. 
 
 <img width="1137" height="489" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp12_1137x489.png"/>
 </p>
 
-	d. Inside the ***Add Scope*** wizzard, write the name of your OBP instance into the search field, and then push the ***Search*** button. 
+9.d) Inside the ***Add Scope*** wizzard, write the name of your OBP instance into the search field, and then push the ***Search*** button. 
 
 <img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
 </p>
 
-	e. Push the arrow at the left side of the found resource to see the available scopes for the selected resource. 
+9.e) Push the arrow at the left side of the found resource to see the available scopes for the selected resource. 
 
 <img width="528" height="422" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp14_528x422.png"/>
 </p>
 
-	f. Select the scope ending in ***.../restproxy***, push the ***Add** button, and the ***Submit*** button from the parent wizzard. 
+9.f) Select the scope ending in ***.../restproxy***, push the ***Add** button, and the ***Submit*** button from the parent wizzard. 
 
 <img width="1196" height="632" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp15_1196x632.png"/>
 </p>
