@@ -51,7 +51,7 @@ Here you have the links to each of the labs to fulfill this HoL:
    [2. Preparation of Oracle App Builder development environment](../../blob/main/02-Prepare-Dev-Environment/README.md)  
    [3. Creation, Installation and Deployment of a SmartContract handling FTs](../../blob/main/03-Creation-and-Deployment-of-an-FT-SmartContract/README.md)  
    [4. Creation, Installation and Deployment of a SmartContract handling NFTs](../../blob/main/04-Creation-and-Deployment-of-an-NFT-SmartContract/README.md)   
-   [5. Create Confidential Application for OAuth2](../../blob/main/05-ConfidentialApp4MFA/README.md)   
+   [5. Enable OAuth2 for Smartcontract calls](../../blob/main/05-ConfidentialApp4MFA/README.md)   
    [6. Test the SmartContracts using Postman](../../blob/main/06-Test-Smartcontract-Using-Postman/README.md) 
 
 
