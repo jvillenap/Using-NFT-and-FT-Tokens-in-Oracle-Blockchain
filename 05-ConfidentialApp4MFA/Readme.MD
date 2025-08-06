@@ -107,7 +107,7 @@ Scope		<OBP-URL>/restproxy
 <img width="791" height="494" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/images/0-intro-2-4.png"/>
 </p>
 
-First time you try to push the Get New Access Token button, an error will be raised in the browser opened by Postman. In that error the correct callback URL expected by Postman will be shown, so it will need to be configured in our Confidential Application, so It will also imply some changes into the Client Configuration section of your Confidential Applications, they are:
+First time you try to push the ***Get New Access Token*** button, an error will be raised in the browser opened by Postman. In that error the correct callback URL expected by Postman will be shown, so it will need to be configured in our ***Confidential Application***, so It will also imply some changes into the *Client Configuration section* of your ***Confidential Applications***, they are:
 
 1.	Among the "Allowed Grant Types", add: Authorization Code and Implicit.
 
