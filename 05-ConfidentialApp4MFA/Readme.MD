@@ -1,4 +1,4 @@
-# Enable OAuth2 for our Smartcontract
+# Enable OAuth2 for Smartcontract calls
 
 #### Table of Contents  
 [Introduction](#Introduction)  
