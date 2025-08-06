@@ -79,37 +79,27 @@ In this page we also give the details about how to test the generation of the be
 <img width="1196" height="261" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp13_1196x261.png"/>
 </p>
 
-9.e) Push the arrow at the left side of the found resource to see the available scopes for the selected resource. 
+9.e) In the select list of this dialog, click the right arrow of the target instance to see the available scopes for the selected resource.  
+
+Select the ***.../restproxy*** scope, then click 'Add' button
 
 <img width="528" height="422" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp14_528x422.png"/>
 </p>
 
-9.f) Select the scope ending in ***.../restproxy***, push the ***Add** button.
+9.f) Select the scope ending in ***.../restproxy*** and push the ***Add** button.
 
 <img width="1196" height="632" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp15_1196x632.png"/>
 </p>
 
-10) Click the ***Submit*** button to finish the wizzard.
+10) Click the ***Submit*** button to finish the configuration wizzard.
 
 11) Activate the Confidential Application by pushing the ***Activate*** option from the top-right menu ***Actions***.
 
 <img width="1031" height="553" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp16_1031x553.png"/>
 </p>
 
-
-
  
 
-6) Click 'Next' and "Next" and "Finish' . 
-7) Active the application at the top-right of page. 
- 
-
-How to get clientId/clientSecret for restproxy 
-The guide below for how to generate access token is for idcs-e15b8cc3f25a4c3daa6b6e35b02c30f7. The app name is bcsqarestproxy for example. Well, other names are also Okay.
-1.	In the IDCS idcs-e15b8cc3f25a4c3daa6b6e35b02c30f7, create the app bcsqarestproxy as 'How to create an application in IDCS' section in this page.
-2.	Click Configuration→Client Configuration→Token Issuance Policy→Resources→Add Scope to add resource of the target instance to the app bcsqarestproxy. Then there will be a 'Select Scope' dialog.
- 
-3.	In the select list of 'Select Scope' dialog, click the right arrow of the target instance and select the .../restproxy resource, then click 'Add' button
   
 4.	The resource will be listed under the 'Resources' region
  
@@ -149,14 +139,13 @@ https://docs.oracle.com/en/cloud/paas/blockchain-cloud/rest-api/Authentication.h
 
 In case you have to get the Bearer Token in a environment where MFA has been configured, you will need to test it using a method which allows you to provide basic authentication and also the second factor authentication. 
 
-Easiest way to do the test is using Postam, which allows you to get redirected to the IDCS authentication page to perform the MFA Authentication. For it you will need to configure a Postman request setting the following vàlues in the Authentication Tab: 
+Easiest way to do the test is using Postam, which allows you to get redirected to the IDCS authentication page to perform the MFA Authentication. For it you will need to configure in a Postman request the following values into the Authentication Tab: 
 
-POST	<IDCS-URL>/ (DomainURL works, no need to be the regional URL)
-AuthURL	<IDCS-URL>/oauth2/v1/authorize
-AccessT	<IDCS-URL>/oauth2/v1/token
-ClientID	014fb463ed864515a18b628653031fa8
-ClientSecret	29d1ff8b-b95b-481f-bb2a-c7bc905eef7d
-Scope		<OBP-URL>/restproxy
+		AuthURL 	<IDCS-URL>/oauth2/v1/authorize  
+		AccessToken	<IDCS-URL>/oauth2/v1/token  
+		ClientID	014fb463ed864515a18b628653031fa8  
+		ClientSecret	29d1ff8b-b95b-481f-bb2a-c7bc905eef7d  
+		Scope		<OBP-URL>/restproxy
 
 <p align="center">
 <img width="791" height="1074" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/Postman1.png"/>
