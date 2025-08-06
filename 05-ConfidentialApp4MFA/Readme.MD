@@ -1,4 +1,4 @@
-# Prepare for consuming the Smartcontract methods through OAuth2
+# Enable OAuth2 for our Smartcontract
 
 #### Table of Contents  
 [Introduction](#Introduction)  
