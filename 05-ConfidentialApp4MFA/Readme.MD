@@ -44,13 +44,38 @@ In this page we also give the details about how to test the generation of the be
 <img width="1310" height="618" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp5_1310x618.png"/>
 </p>
 
-5) Fill 'Name' and 'Description" of the application and then click ***Submit*** button.
+6) Fill 'Name' and 'Description" of the application and then click ***Submit*** button.
 <p align="center">
 <img width="1309" height="613" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp6_1309x613.png"/>
 </p>
 
- 
-5) Select 'Configure this application as a client now' and then select 'Resource Owner' and 'Client Credentials' for 'Allowed Grant Types'. And then click 'Next' button. 
+7) Select the ***OAuth configuration***.
+<img width="779" height="570" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp8_779x570.png"/>
+</p>
+
+8) Push the ***Edit OAuth configuration*** button.
+<img width="984" height="468" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp9_984x468.png"/>
+</p>
+
+9) In the new appeared wizzard, select the following options:
+
+	a. In the ***Client Configuration*** section, select ***Configure this application as a client now***.
+
+<img width="404" height="266" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp10_404x266.png"/>
+</p>
+
+	b. Inside the same section, select ***Resource Owner*** and ***Client Credentials*** for ***Allowed Grant Types***. And then click 'Next' button. 
+
+<img width="544" height="400" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp11_544x400.png"/>
+</p>
+
+	c. Inside the same section there will be a ***Token isuance policy***, in this section you must select the ***Confidential*** combo, then the ***Add resources*** slider, and pushi the ***Add Scope*** button. 
+
+<img width="1137" height="489" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp12_1137x489.png"/>
+</p>
+
+
+
  
 
 6) Click 'Next' and "Next" and "Finish' . 
