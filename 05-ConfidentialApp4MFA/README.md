@@ -127,3 +127,9 @@ First time you try to push the ***Get New Access Token*** button, an error will 
 </p>
 
 Once configured properly Postman Request and the Confidential Application, we will be able to get a new Bearer token by pushing the ***Get New Access Token*** button in the Authorization tab of the Postman request. After pushing that button a login page to our IDCS tenancy should be opened in our default browser, asking to perform the authentication, and once loged in, Postman will provide the corresponding token, which will be usable as a Bearer token during the lifetime of the token.
+
+Here below you can see how to configure the ***Authorization*** section in a Postman request, to use the bearer token obtained before:
+
+<p align="center">
+<img width="1052" height="311" src="https://github.com/jvillenap/Using-NFT-and-FT-Tokens-in-Oracle-Blockchain/blob/main/05-ConfidentialApp4MFA/images/ConfApp17_1052x311.png"/>
+</p>
